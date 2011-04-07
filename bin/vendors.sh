@@ -58,7 +58,26 @@ install_git doctrine https://github.com/doctrine/doctrine2.git 2.0.3
 install_git doctrine-dbal https://github.com/doctrine/dbal.git 2.0.3
 
 # Doctrine Common
-install_git doctrine-common https://github.com/doctrine/common.git 2.0.1
+install_git doctrine-common https://github.com/doctrine/common.git
+
+# Doctrine migrations
+install_git $VENDOR/doctrine-migrations https://github.com/doctrine/migrations.git
+
+# Doctrine MongoDB
+install_git doctrine-mongodb https://github.com/doctrine/mongodb.git
+
+# Doctrine MongoDB
+install_git doctrine-mongodb-odm https://github.com/doctrine/mongodb-odm.git
+
+# Doctrine CouchDB
+install_git doctrine-couchdb-odm https://github.com/doctrine/couchdb-odm.git
+
+# Doctrine PHPCR
+install_git doctrine-phpcr-odm https://github.com/doctrine/phpcr-odm.git
+cd doctrine-phpcr-odm
+git submodule init
+git submodule update --recursive
+cd $VENDOR
 
 # Swiftmailer
 install_git swiftmailer https://github.com/swiftmailer/swiftmailer.git origin/4.1
@@ -75,19 +94,64 @@ install_git monolog https://github.com/Seldaek/monolog.git
 # SensioFrameworkExtraBundle
 mkdir -p $BUNDLES/Sensio/Bundle
 cd $BUNDLES/Sensio/Bundle
+
 install_git FrameworkExtraBundle https://github.com/sensio/SensioFrameworkExtraBundle.git
 
 # SecurityExtraBundle
 mkdir -p $BUNDLES/JMS
 cd $BUNDLES/JMS
+
 install_git SecurityExtraBundle https://github.com/schmittjoh/SecurityExtraBundle.git
 
 # Symfony bundles
 mkdir -p $BUNDLES/Symfony/Bundle
 cd $BUNDLES/Symfony/Bundle
 
-# WebConfiguratorBundle
-install_git WebConfiguratorBundle https://github.com/symfony/WebConfiguratorBundle.git
+    # WebConfiguratorBundle
+    install_git WebConfiguratorBundle https://github.com/symfony/WebConfiguratorBundle.git
+
+    # DoctrinePHPCRBundle
+    install_git DoctrinePHPCRBundle https://github.com/symfony-cmf/DoctrinePHPCRBundle.git
+
+# FOS bundles
+mkdir -p $BUNDLES/FOS
+cd $BUNDLES/FOS
+
+    # FOSUserBundle
+    install_git UserBundle git@github.com:FriendsOfSymfony/UserBundle.git
+
+    # FOSRestBundle
+    install_git RestBundle git@github.com:FriendsOfSymfony/RestBundle.git
+
+    # FOSFacebookBundle
+    install_git FacebookBundle git@github.com:FriendsOfSymfony/FacebookBundle.git
+
+    # FOSTwitterBundle
+    install_git TwitterBundle git@github.com:FriendsOfSymfony/TwitterBundle.git
+
+# facebook php sdk
+cd $VENDOR
+install_git facebook https://github.com/facebook/php-sdk.git
+
+# Liip bundles
+mkdir -p $BUNDLES/Liip
+cd $BUNDLES/Liip
+
+    # LiipHelloBundle
+    install_git HelloBundle git@github.com:liip/HelloBundle.git
+
+    # LiipFunctionalTestBundle
+    install_git FunctionalTestBundle git@github.com:liip/FunctionalTestBundle.git
+
+    # LiipXsltBundle
+    install_git XsltBundle git@github.com:liip/XsltBundle.git
+
+    # LiipMultiplexBundle
+    install_git MultiplexBundle git@github.com:liip/MultiplexBundle.git
+
+# Doctrine Common
+cd $VENDOR
+install_git lsmith77 git@github.com:lsmith77/Symfony2-Container-service-wrapper.git
 
 # Update the bootstrap files
 $DIR/bin/build_bootstrap.php

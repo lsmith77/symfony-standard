@@ -16,13 +16,22 @@ class AppKernel extends Kernel
             new Symfony\Bundle\DoctrineBundle\DoctrineBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
+#            new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Acme\DemoBundle\AcmeDemoBundle(),
+
+            new Symfony\Bundle\DoctrinePHPCRBundle\DoctrinePHPCRBundle(),
+
+            new FOS\UserBundle\FOSUserBundle(),
+            new FOS\FacebookBundle\FOSFacebookBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+
+            new Liip\HelloBundle\LiipHelloBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Symfony\Bundle\WebConfiguratorBundle\SymfonyWebConfiguratorBundle();
+            $bundles[] = new Liip\FunctionalTestBundle\LiipFunctionalTestBundle();
         }
 
         return $bundles;

@@ -5,6 +5,8 @@ use Symfony\Component\ClassLoader\UniversalClassLoader;
 $loader = new UniversalClassLoader();
 $loader->registerNamespaces(array(
     'Symfony'          => array(__DIR__.'/../vendor/symfony/src', __DIR__.'/../vendor/bundles'),
+    'FOS'              => __DIR__.'/../vendor/bundles',
+    'Liip'             => __DIR__.'/../vendor/bundles',
     'Sensio'           => __DIR__.'/../vendor/bundles',
     'JMS'              => __DIR__.'/../vendor/bundles',
     'Doctrine\\Common' => __DIR__.'/../vendor/doctrine-common/lib',
@@ -13,6 +15,10 @@ $loader->registerNamespaces(array(
     'Monolog'          => __DIR__.'/../vendor/monolog/src',
     'Assetic'          => __DIR__.'/../vendor/assetic/src',
     'Acme'             => __DIR__.'/../src',
+    'Doctrine\\ODM\\PHPCR' => __DIR__.'/../vendor/doctrine-phpcr-odm/lib',
+    'Jackalope'        => __DIR__.'/../vendor/doctrine-phpcr-odm/lib/vendor/jackalope/src',
+    'PHPCR'            => __DIR__.'/../vendor/doctrine-phpcr-odm/lib/vendor/jackalope/lib/phpcr/src',
+    'lsmith77'         => __DIR__.'/../vendor',
 ));
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',

@@ -38,11 +38,9 @@ doctrine:
         default_connection: default
         connections:
             default:
-                driver:   %database_driver%
-                host:     %database_host%
                 dbname:   %database_name%
-                user:     %database_user%
-                password: %database_password%
+                driver:   %database_driver%
+                path:     %kernel.root_dir%/app.db
 
     orm:
         auto_generate_proxy_classes: %kernel.debug%
@@ -51,6 +49,8 @@ doctrine:
             default:
                 mappings:
                     AcmeDemoBundle: ~
+                    LiipHelloBundle: ~
+                    FOSUserBundle: ~
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -59,6 +59,39 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
 
-jms_security_extra:
-    secure_controllers:  true
-    secure_all_services: false
+#jms_security_extra:
+#    secure_controllers:  true
+#    secure_all_services: false
+
+fos_user:
+    db_driver: orm
+    firewall_name: main
+    class:
+        model:
+            user: Liip\HelloBundle\Entity\User
+
+fos_facebook:
+    file:   %kernel.root_dir%/../vendor/facebook/src/facebook.php
+    alias:  facebook
+    app_id: 200207463333974
+    secret: a7d05283b77147f065098358ddb5674c
+    cookie: true
+    permissions: [email, user_birthday, user_location]
+
+fos_rest:
+    frameworkextra: true
+
+doctrine_phpcr:
+    backend:
+        url: http://localhost:8080/server/
+        workspace: default
+        user: admin
+        pass: admin
+        transport:
+
+liip_hello:
+    facebook: true
+
+sensio_framework_extra:
+    view:    { annotations: false }
+    router:  { annotations: true }
