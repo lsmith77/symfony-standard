@@ -98,11 +98,15 @@ cd $BUNDLES/Sensio/Bundle
 
 install_git FrameworkExtraBundle https://github.com/sensio/SensioFrameworkExtraBundle.git
 
-# SecurityExtraBundle
+# Johannes Bundles
 mkdir -p $BUNDLES/JMS
 cd $BUNDLES/JMS
 
-install_git SecurityExtraBundle https://github.com/schmittjoh/SecurityExtraBundle.git
+    # SecurityExtraBundle
+    install_git SecurityExtraBundle https://github.com/schmittjoh/SecurityExtraBundle.git
+
+    # DebuggingBundle
+    install_git DebuggingBundle https://github.com/schmittjoh/DebuggingBundle.git
 
 # Symfony bundles
 mkdir -p $BUNDLES/Symfony/Bundle
@@ -150,12 +154,11 @@ cd $BUNDLES/Liip
     # LiipMultiplexBundle
     install_git MultiplexBundle git@github.com:liip/MultiplexBundle.git
 
-# Doctrine Common
-cd $VENDOR
-install_git lsmith77 git@github.com:lsmith77/Symfony2-Container-service-wrapper.git
+    # LiipContainerWrapperBundle
+    install_git ContainerWrapperBundle git@github.com:liip/ContainerWrapperBundle.git
 
 # Update the bootstrap files
 $DIR/bin/build_bootstrap.php
 
 # Update assets
-$DIR/app/console assets:install $DIR/web/
+$DIR/app/console assets:install $DIR/web

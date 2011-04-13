@@ -18,7 +18,6 @@ $loader->registerNamespaces(array(
     'Doctrine\\ODM\\PHPCR' => __DIR__.'/../vendor/doctrine-phpcr-odm/lib',
     'Jackalope'        => __DIR__.'/../vendor/doctrine-phpcr-odm/lib/vendor/jackalope/src',
     'PHPCR'            => __DIR__.'/../vendor/doctrine-phpcr-odm/lib/vendor/jackalope/lib/phpcr/src',
-    'lsmith77'         => __DIR__.'/../vendor',
 ));
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',

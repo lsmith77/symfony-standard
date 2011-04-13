@@ -25,6 +25,7 @@ class AppKernel extends Kernel
             new FOS\FacebookBundle\FOSFacebookBundle(),
             new FOS\RestBundle\FOSRestBundle(),
 
+            new Liip\ContainerWrapperBundle\LiipContainerWrapperBundle(),
             new Liip\HelloBundle\LiipHelloBundle(),
         );
 
@@ -32,6 +33,7 @@ class AppKernel extends Kernel
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Symfony\Bundle\WebConfiguratorBundle\SymfonyWebConfiguratorBundle();
             $bundles[] = new Liip\FunctionalTestBundle\LiipFunctionalTestBundle();
+            $bundles[] = new JMS\DebuggingBundle\JMSDebuggingBundle($this);
         }
 
         return $bundles;

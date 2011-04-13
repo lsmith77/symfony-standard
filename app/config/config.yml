@@ -95,3 +95,6 @@ liip_hello:
 sensio_framework_extra:
     view:    { annotations: false }
     router:  { annotations: true }
+
+liip_container_wrapper:
+    disable_optimization: false
