@@ -80,6 +80,9 @@ fos_facebook:
 
 fos_rest:
     frameworkextra: true
+    format_listener:
+        detect_format: true
+        default_format: json
 
 doctrine_phpcr:
     backend:
