@@ -64,6 +64,9 @@ install_git doctrine-common https://github.com/doctrine/common.git
 # Doctrine migrations
 install_git $VENDOR/doctrine-migrations https://github.com/doctrine/migrations.git
 
+# Doctrine data fixtures
+install_git $VENDOR/doctrine-data-fixtures https://github.com/doctrine/data-fixtures.git
+
 # Doctrine MongoDB
 install_git doctrine-mongodb https://github.com/doctrine/mongodb.git
 
