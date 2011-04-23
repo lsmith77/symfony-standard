@@ -5,6 +5,7 @@ imports:
 framework:
     charset:       UTF-8
     error_handler: null
+    exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
     csrf_protection:
         enabled: true
         secret: %csrf_secret%
@@ -83,6 +84,9 @@ fos_rest:
     format_listener:
         detect_format: true
         default_format: json
+    exception_map:
+        'Symfony\Component\Routing\Matcher\Exception\NotFoundException': 404
+        'Doctrine\ORM\OptimisticLockException': HTTP_CONFLICT
 
 doctrine_phpcr:
     backend:
