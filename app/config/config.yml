@@ -84,6 +84,7 @@ fos_rest:
     format_listener:
         detect_format: true
         default_format: json
+        decode_body: true
     exception:
         codes:
             'Symfony\Component\Routing\Matcher\Exception\NotFoundException': 404
