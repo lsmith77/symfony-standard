@@ -46,7 +46,7 @@ install_git()
 }
 
 # Assetic
-install_git assetic https://github.com/kriswallsmith/assetic.git #v1.0.0alpha1
+install_git assetic https://github.com/kriswallsmith/assetic.git v1.0.0alpha2
 
 # Symfony
 install_git symfony https://github.com/symfony/symfony.git #v$VERSION
@@ -159,3 +159,6 @@ $DIR/bin/build_bootstrap.php
 
 # Update assets
 $DIR/app/console assets:install $DIR/web
+
+# Clear the cache
+$DIR/app/console cache:clear
