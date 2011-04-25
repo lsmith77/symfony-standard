@@ -81,7 +81,7 @@ cd $VENDOR
 install_git swiftmailer https://github.com/swiftmailer/swiftmailer.git origin/4.1
 
 # Twig
-install_git twig https://github.com/fabpot/Twig.git v1.0.0
+install_git twig https://github.com/fabpot/Twig.git
 
 # Twig Extensions
 install_git twig-extensions https://github.com/fabpot/Twig-extensions.git
