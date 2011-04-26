@@ -93,7 +93,7 @@ fos_rest:
             'Symfony\Component\Routing\Matcher\Exception\NotFoundException': true
     normalizers:
         'Liip\HelloBundle\Document\Article': 'liip_hello.get_set_method_normalizer'
-        'Symfony\Component\Validator\ConstraintViolationList': 'liip_hello.get_set_method_normalizer'
+        'Symfony\Component\Validator\ConstraintViolationList': 'liip_hello.violation_list_normalizer'
 
 doctrine_phpcr:
     backend:
