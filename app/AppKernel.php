@@ -26,6 +26,7 @@ class AppKernel extends Kernel
             new FOS\RestBundle\FOSRestBundle(),
 
             new Liip\ContainerWrapperBundle\LiipContainerWrapperBundle(),
+            new Liip\CacheControlBundle\LiipCacheControlBundle(),
             new Liip\HelloBundle\LiipHelloBundle(),
         );
 

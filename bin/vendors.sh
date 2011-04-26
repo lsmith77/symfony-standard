@@ -154,11 +154,14 @@ cd $BUNDLES/Liip
     # LiipContainerWrapperBundle
     install_git ContainerWrapperBundle git@github.com:liip/ContainerWrapperBundle.git
 
+    # LiipCacheControlBundle
+    install_git CacheControlBundle git@github.com:liip/CacheControlBundle.git
+
 # Update the bootstrap files
 $DIR/bin/build_bootstrap.php
 
-# Update assets
-$DIR/app/console assets:install $DIR/web
-
 # Clear the cache
 $DIR/app/console cache:clear
+
+# Update assets
+$DIR/app/console assets:install $DIR/web
