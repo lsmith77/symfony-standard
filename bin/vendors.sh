@@ -46,7 +46,7 @@ install_git()
 }
 
 # Assetic
-install_git assetic https://github.com/kriswallsmith/assetic.git #v1.0.0alpha2
+install_git assetic http://github.com/kriswallsmith/assetic.git #v1.0.0alpha2
 
 # Symfony
 install_git symfony http://github.com/symfony/symfony.git #v$VERSION
@@ -58,28 +58,24 @@ install_git doctrine http://github.com/doctrine/doctrine2.git 2.0.4
 install_git doctrine-dbal http://github.com/doctrine/dbal.git 2.0.4
 
 # Doctrine Common
-<<<<<<< HEAD
 
-install_git doctrine-common https://github.com/doctrine/common.git
-
-# Doctrine MongoDB
-install_git doctrine-mongodb https://github.com/doctrine/mongodb.git
+install_git doctrine-common http://github.com/doctrine/common.git
 
 # Doctrine MongoDB
-install_git doctrine-mongodb-odm https://github.com/doctrine/mongodb-odm.git
+install_git doctrine-mongodb http://github.com/doctrine/mongodb.git
+
+# Doctrine MongoDB
+install_git doctrine-mongodb-odm http://github.com/doctrine/mongodb-odm.git
 
 # Doctrine CouchDB
-install_git doctrine-couchdb-odm https://github.com/doctrine/couchdb-odm.git
+install_git doctrine-couchdb-odm http://github.com/doctrine/couchdb-odm.git
 
 # Doctrine PHPCR
-install_git doctrine-phpcr-odm https://github.com/doctrine/phpcr-odm.git
+install_git doctrine-phpcr-odm http://github.com/doctrine/phpcr-odm.git
 cd doctrine-phpcr-odm
 git submodule init
 git submodule update --recursive
 cd $VENDOR
-=======
-install_git doctrine-common http://github.com/doctrine/common.git 2.0.2
->>>>>>> upstream/master
 
 # Swiftmailer
 install_git swiftmailer http://github.com/swiftmailer/swiftmailer.git origin/4.1
@@ -96,37 +92,28 @@ install_git monolog http://github.com/Seldaek/monolog.git
 # SensioFrameworkExtraBundle
 mkdir -p $BUNDLES/Sensio/Bundle
 cd $BUNDLES/Sensio/Bundle
-<<<<<<< HEAD
 
-install_git FrameworkExtraBundle https://github.com/sensio/SensioFrameworkExtraBundle.git
-=======
 install_git FrameworkExtraBundle http://github.com/sensio/SensioFrameworkExtraBundle.git
->>>>>>> upstream/master
 
 # Johannes Bundles
 mkdir -p $BUNDLES/JMS
 cd $BUNDLES/JMS
-<<<<<<< HEAD
 
     # SecurityExtraBundle
-    install_git SecurityExtraBundle https://github.com/schmittjoh/SecurityExtraBundle.git
+    install_git SecurityExtraBundle http://github.com/schmittjoh/SecurityExtraBundle.git
 
     # DebuggingBundle
-    install_git DebuggingBundle https://github.com/schmittjoh/DebuggingBundle.git
-=======
-install_git SecurityExtraBundle http://github.com/schmittjoh/SecurityExtraBundle.git
->>>>>>> upstream/master
+    install_git DebuggingBundle http://github.com/schmittjoh/DebuggingBundle.git
 
 # Symfony bundles
 mkdir -p $BUNDLES/Symfony/Bundle
 cd $BUNDLES/Symfony/Bundle
 
-<<<<<<< HEAD
     # WebConfiguratorBundle
-    install_git WebConfiguratorBundle https://github.com/symfony/WebConfiguratorBundle.git
+    install_git WebConfiguratorBundle http://github.com/symfony/WebConfiguratorBundle.git
 
     # DoctrinePHPCRBundle
-    install_git DoctrinePHPCRBundle https://github.com/symfony-cmf/DoctrinePHPCRBundle.git
+    install_git DoctrinePHPCRBundle http://github.com/symfony-cmf/DoctrinePHPCRBundle.git
 
 # FOS bundles
 mkdir -p $BUNDLES/FOS
@@ -146,7 +133,7 @@ cd $BUNDLES/FOS
 
 # facebook php sdk
 cd $VENDOR
-install_git facebook https://github.com/facebook/php-sdk.git
+install_git facebook http://github.com/facebook/php-sdk.git
 
 # Liip bundles
 mkdir -p $BUNDLES/Liip
@@ -169,10 +156,6 @@ cd $BUNDLES/Liip
 
     # LiipCacheControlBundle
     install_git CacheControlBundle git@github.com:liip/CacheControlBundle.git
-=======
-# WebConfiguratorBundle
-install_git WebConfiguratorBundle http://github.com/symfony/WebConfiguratorBundle.git
->>>>>>> upstream/master
 
 # Update the bootstrap files
 $DIR/bin/build_bootstrap.php
