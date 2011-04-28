@@ -14,8 +14,8 @@ _demo:
 hello:
     resource: "@LiipHelloBundle/Resources/config/routing.yml"
 
-user:
-    resource: "@FOSUserBundle/Resources/config/routing/user.xml"
-
 security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+user:
+    resource: "@FOSUserBundle/Resources/config/routing/user.xml"
