@@ -3,6 +3,7 @@ imports:
     - { resource: security.yml }
 
 framework:
+    translator: { fallback: en }
     charset:       UTF-8
     error_handler: null
     exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
@@ -82,7 +83,7 @@ fos_facebook:
 fos_rest:
     frameworkextra: true
     format_listener:
-        detect_format: true
+        format_priorities: true
         default_format: json
         decode_body: true
     exception:
