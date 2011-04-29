@@ -82,10 +82,16 @@ fos_facebook:
 
 fos_rest:
     frameworkextra: true
+    body_listener: true
     format_listener:
-        format_priorities: true
+        default_priorities:
+            - html
+            - json
+            - xml
+            - "*/*"
+            - ding
         default_format: json
-        decode_body: true
+        default_format: ~
     exception:
         codes:
             'Symfony\Component\Routing\Matcher\Exception\NotFoundException': 404
