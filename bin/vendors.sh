@@ -58,13 +58,10 @@ install_git doctrine http://github.com/doctrine/doctrine2.git 2.0.4
 install_git doctrine-dbal http://github.com/doctrine/dbal.git 2.0.4
 
 # Doctrine Common
-
 install_git doctrine-common http://github.com/doctrine/common.git
 
 # Doctrine MongoDB
 install_git doctrine-mongodb http://github.com/doctrine/mongodb.git
-
-# Doctrine MongoDB
 install_git doctrine-mongodb-odm http://github.com/doctrine/mongodb-odm.git
 
 # Doctrine CouchDB
@@ -72,10 +69,12 @@ install_git doctrine-couchdb-odm http://github.com/doctrine/couchdb-odm.git
 
 # Doctrine PHPCR
 install_git doctrine-phpcr-odm http://github.com/doctrine/phpcr-odm.git
-cd doctrine-phpcr-odm
-git submodule init
-git submodule update --recursive
-cd $VENDOR
+
+# Jackalope
+install_git jackalope http://github.com/jackalope/jackalope.git
+
+# PHPCR
+install_git phpcr http://github.com/phpcr/phpcr.git
 
 # Swiftmailer
 install_git swiftmailer http://github.com/swiftmailer/swiftmailer.git origin/4.1
@@ -104,6 +103,9 @@ cd $BUNDLES/JMS
 
     # DebuggingBundle
     install_git DebuggingBundle http://github.com/schmittjoh/DebuggingBundle.git
+
+    # SerializerBundle
+    install_git SerializerBundle http://github.com/schmittjoh/SerializerBundle.git
 
 # Symfony bundles
 mkdir -p $BUNDLES/Symfony/Bundle

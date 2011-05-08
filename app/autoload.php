@@ -16,8 +16,8 @@ $loader->registerNamespaces(array(
     'Assetic'          => __DIR__.'/../vendor/assetic/src',
     'Acme'             => __DIR__.'/../src',
     'Doctrine\\ODM\\PHPCR' => __DIR__.'/../vendor/doctrine-phpcr-odm/lib',
-    'Jackalope'        => __DIR__.'/../vendor/doctrine-phpcr-odm/lib/vendor/jackalope/src',
-    'PHPCR'            => __DIR__.'/../vendor/doctrine-phpcr-odm/lib/vendor/jackalope/lib/phpcr/src',
+    'Jackalope'        => __DIR__.'/../vendor/jackalope/src',
+    'PHPCR'            => __DIR__.'/../vendor/jackalope/lib/phpcr/src',
 ));
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',
