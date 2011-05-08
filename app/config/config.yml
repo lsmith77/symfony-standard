@@ -6,7 +6,6 @@ framework:
     translator: { fallback: en }
     secret:        %secret%
     charset:       UTF-8
-    error_handler: null
     exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
     csrf_protection:
         enabled: true
@@ -115,3 +114,7 @@ liip_container_wrapper:
 #liip_cache_control:
 #    rules:
 #        - { path: /, controls: { public: true, max_age: 15, s_maxage: 30, last_modified: "-1 hour" } }
+#      purger:
+#          domain: http://symfony-standard.lo
+#          varnishes: 10.0.0.10, 10.0.0.11 # comma separated list of ips, or an array of ips
+#          port: 80  # port varnish is listening on for incoming web connections
