@@ -36,6 +36,7 @@ assetic:
 # Doctrine Configuration
 doctrine:
     dbal:
+        path:     %database_path%
         driver:   %database_driver%
         host:     %database_host%
         dbname:   %database_name%
@@ -73,7 +74,8 @@ fos_facebook:
     permissions: [email, user_birthday, user_location]
 
 fos_rest:
-    frameworkextra: true
+    frameworkextra_bundle: true
+#    serializer_bundle: true
     body_listener: true
     format_listener:
         default_priorities:
@@ -99,7 +101,7 @@ doctrine_phpcr:
         workspace: default
         user: admin
         pass: admin
-        transport:
+#        transport: doctrinedbal
 
 liip_hello:
     facebook: true
@@ -111,7 +113,7 @@ sensio_framework_extra:
 liip_container_wrapper:
     disable_optimization: false
 
-#liip_cache_control:
+liip_cache_control:
 #    rules:
 #        - { path: /, controls: { public: true, max_age: 15, s_maxage: 30, last_modified: "-1 hour" } }
 #      purger:
