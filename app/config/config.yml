@@ -83,7 +83,9 @@ fos_rest:
             - json
             - xml
             - "*/*"
+            # never reached due to "*/*"
             - ding
+        # the subsequent line overrides the following line, so the default is NULL
         default_format: json
         default_format: ~
     exception:
