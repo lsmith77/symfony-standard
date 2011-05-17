@@ -4,6 +4,7 @@ use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\ClassLoader\DebugUniversalClassLoader;
 use Symfony\Component\HttpKernel\Debug\ErrorHandler;
+use Symfony\Component\HttpKernel\Debug\ExceptionHandler;
 
 class AppKernel extends Kernel
 {
@@ -21,8 +22,6 @@ class AppKernel extends Kernel
 
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
-            new Acme\DemoBundle\AcmeDemoBundle(),
-
 #            new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
 
@@ -36,6 +35,7 @@ class AppKernel extends Kernel
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
+            $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Symfony\Bundle\WebConfiguratorBundle\SymfonyWebConfiguratorBundle();
             $bundles[] = new Liip\FunctionalTestBundle\LiipFunctionalTestBundle();
@@ -53,6 +53,7 @@ class AppKernel extends Kernel
 
             DebugUniversalClassLoader::enable();
             ErrorHandler::register();
+            ExceptionHandler::register();
         } else {
             ini_set('display_errors', 0);
         }
