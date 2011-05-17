@@ -88,10 +88,10 @@ fos_rest:
         default_format: ~
     exception:
         codes:
-            'Symfony\Component\Routing\Matcher\Exception\NotFoundException': 404
+            'Symfony\Component\Routing\Exception\NotFoundException': 404
             'Doctrine\ORM\OptimisticLockException': HTTP_CONFLICT
         messages:
-            'Symfony\Component\Routing\Matcher\Exception\NotFoundException': true
+            'Symfony\Component\Routing\Exception\NotFoundException': true
     normalizers:
         'Liip\HelloBundle\Document\Article': 'fos_rest.get_set_method_normalizer'
 
@@ -104,7 +104,7 @@ doctrine_phpcr:
 #        transport: doctrinedbal
 
 liip_hello:
-    facebook: true
+    facebook: false
 
 sensio_framework_extra:
     view:    { annotations: false }
