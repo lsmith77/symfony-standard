@@ -13,6 +13,7 @@ Symfony Standard Edition comes pre-configured with the following bundles:
 * SwiftmailerBundle
 * MonologBundle
 * AsseticBundle
+* JMSSecurityExtraBundle
 * WebProfilerBundle (in dev/test env)
 * SymfonyWebConfiguratorBundle (in dev/test env)
 * AcmeDemoBundle (in dev/test env)
@@ -49,7 +50,7 @@ Run the following commands:
 
 .. note::
 
-    Symfony SE does/can not use git submodules as it you should not keep the
+    Symfony SE does/can not use git submodules as you should not keep the
     `.git` directory.
 
 Configuration
