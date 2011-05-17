@@ -88,10 +88,10 @@ fos_rest:
         default_format: ~
     exception:
         codes:
-            'Symfony\Component\Routing\Exception\NotFoundException': 404
+            'Symfony\Component\Routing\Exception\ResourceNotFoundException': 404
             'Doctrine\ORM\OptimisticLockException': HTTP_CONFLICT
         messages:
-            'Symfony\Component\Routing\Exception\NotFoundException': true
+            'Symfony\Component\Routing\Exception\ResourceNotFoundException': true
     normalizers:
         'Liip\HelloBundle\Document\Article': 'fos_rest.get_set_method_normalizer'
 
