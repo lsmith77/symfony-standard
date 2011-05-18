@@ -29,9 +29,9 @@
 
 /bundles/FOS            TwitterBundle           http://github.com/FriendsOfSymfony/TwitterBundle.git
 
-/bundles/Liip           HelloBundle              http://github.com/Liip/HelloBundle.git
-/bundles/Liip           FunctionalTestBundle     http://github.com/Liip/FunctionalTestBundle.git
-/bundles/Liip           XsltBundle               http://github.com/Liip/XsltBundle.git
-/bundles/Liip           MultiplexBundle          http://github.com/Liip/MultiplexBundle.git
-/bundles/Liip           ContainerWrapperBundle   http://github.com/Liip/ContainerWrapperBundle.git
-/bundles/Liip           CacheControlBundle       http://github.com/Liip/CacheControlBundle.git
+/bundles/Liip           HelloBundle              http://github.com/liip/HelloBundle.git
+/bundles/Liip           FunctionalTestBundle     http://github.com/liip/FunctionalTestBundle.git
+/bundles/Liip           XsltBundle               http://github.com/liip/XsltBundle.git
+/bundles/Liip           MultiplexBundle          http://github.com/liip/MultiplexBundle.git
+/bundles/Liip           ContainerWrapperBundle   http://github.com/liip/ContainerWrapperBundle.git
+/bundles/Liip           CacheControlBundle       http://github.com/liip/CacheControlBundle.git
