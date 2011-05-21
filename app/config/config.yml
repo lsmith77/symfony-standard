@@ -66,7 +66,7 @@ fos_user:
             user: Liip\HelloBundle\Entity\User
 
 fos_facebook:
-    file:   %kernel.root_dir%/../vendor/facebook/src/facebook.php
+    file:   %kernel.root_dir%/facebook.php
     alias:  facebook
     app_id: 200207463333974
     secret: a7d05283b77147f065098358ddb5674c
