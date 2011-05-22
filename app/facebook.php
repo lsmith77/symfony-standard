@@ -15,7 +15,7 @@
  * under the License.
  */
 
-require '../vendor/facebook/src/base_facebook.php';
+require __DIR__.'/../vendor/facebook/src/base_facebook.php';
 
 /**
  * Extends the BaseFacebook class with the intent of using
