@@ -70,5 +70,5 @@ system($rootDir.'/bin/build_bootstrap.php');
 // Update assets
 system($rootDir.'/app/console assets:install '.$rootDir.'/web/');
 
-// Clear cache
-system($rootDir.'/app/console cache:clear');
+// Remove the cache
+system($rootDir.'/app/console cache:clear --no-warmup');
