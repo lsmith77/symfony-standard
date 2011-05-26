@@ -22,7 +22,7 @@ class AppKernel extends Kernel
 
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
-#            new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
+            new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
 
             new FOS\UserBundle\FOSUserBundle(),
