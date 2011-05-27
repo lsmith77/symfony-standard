@@ -86,7 +86,9 @@ fos_rest:
             # never reached due to "*/*"
             - ding
         # the subsequent line overrides the following line, so the default is NULL
-        default_format: json
+        fallback_format: json
+        fallback_format: ~
+    routing_loader:
         default_format: ~
     exception:
         codes:
@@ -118,7 +120,8 @@ liip_container_wrapper:
 liip_cache_control:
 #    rules:
 #        - { path: /, controls: { public: true, max_age: 15, s_maxage: 30, last_modified: "-1 hour" } }
-#      purger:
-#          domain: http://symfony-standard.lo
-#          varnishes: 10.0.0.10, 10.0.0.11 # comma separated list of ips, or an array of ips
-#          port: 80  # port varnish is listening on for incoming web connections
+#    varnish:
+#        domain: http://symfony-standard.lo
+#        ips: 10.0.0.10, 10.0.0.11 # comma separated list of ips, or an array of ips
+#        port: 80  # port varnish is listening on for incoming web connections
+    authorization_listener: true
