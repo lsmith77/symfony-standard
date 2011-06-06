@@ -11,3 +11,4 @@ metadata origin/HEAD
 FrameworkExtraBundle origin/HEAD
 SecurityExtraBundle origin/HEAD
 WebConfiguratorBundle origin/HEAD
+facebook v2.1.2
