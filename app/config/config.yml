@@ -98,6 +98,8 @@ fos_rest:
             'Symfony\Component\Routing\Exception\ResourceNotFoundException': true
     normalizers:
         'Liip\HelloBundle\Document\Article': 'fos_rest.get_set_method_normalizer'
+        'Symfony\Component\Validator\ConstraintViolationList': 'fos_rest.constraint_violation_list_normalizer'
+        'Symfony\Component\Validator\ConstraintViolation':  'fos_rest.constraint_violation_normalizer'
 
 doctrine_phpcr:
     backend:
