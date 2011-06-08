@@ -17,5 +17,8 @@ hello:
 security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
 
-user:
-    resource: "@FOSUserBundle/Resources/config/routing/user.xml"
+profile:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+
+registration:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
