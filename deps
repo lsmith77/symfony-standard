@@ -14,7 +14,7 @@ SecurityExtraBundle   /bundles/JMS            http://github.com/schmittjoh/Secur
 WebConfiguratorBundle /bundles/Symfony/Bundle http://github.com/symfony/WebConfiguratorBundle.git
 
 DebuggingBundle         /bundles/JMS          http://github.com/schmittjoh/DebuggingBundle.git
-SerializerBundle        /bundles/JMS          http://github.com/schmittjoh/SerializerBundle.git
+SerializerBundle        /bundles/JMS          http://github.com/lsmith77/SerializerBundle.git@origin/use_core
 
 DoctrinePHPCRBundle     /bundles/Symfony/Bundle    http://github.com/symfony-cmf/DoctrinePHPCRBundle.git
 doctrine-mongodb        /                     http://github.com/doctrine/mongodb.git

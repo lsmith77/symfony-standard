@@ -74,7 +74,7 @@ fos_facebook:
 
 fos_rest:
     frameworkextra_bundle: true
-#    serializer_bundle: true
+    serializer_bundle: true
     body_listener: true
     format_listener:
         default_priorities:
@@ -96,9 +96,9 @@ fos_rest:
         messages:
             'Symfony\Component\Routing\Exception\ResourceNotFoundException': true
     normalizers:
-        - 'fos_rest.get_set_method_normalizer'
         - 'fos_rest.constraint_violation_list_normalizer'
         - 'fos_rest.constraint_violation_normalizer'
+        - 'fos_rest.get_set_method_normalizer'
 
 doctrine_phpcr:
     backend:
