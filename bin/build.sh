@@ -15,7 +15,6 @@ if [ ! -d "$DIR/build" ]; then
     mkdir -p $DIR/build
 fi
 
-$DIR/bin/build_bootstrap.php
 $DIR/app/console assets:install web/
 
 # Without vendors

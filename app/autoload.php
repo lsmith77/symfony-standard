@@ -1,8 +1,11 @@
 <?php
 
-use Symfony\Component\ClassLoader\UniversalClassLoader;
+require __DIR__.'/../vendor/symfony/src/Symfony/Component/ClassLoader/UniversalClassLoader.php';
+require __DIR__.'/../vendor/symfony/src/Symfony/Component/ClassLoader/ApcUniversalClassLoader.php';
 
-$loader = new UniversalClassLoader();
+use Symfony\Component\ClassLoader\ApcUniversalClassLoader;
+
+$loader = new ApcUniversalClassLoader('techtalk');
 $loader->registerNamespaces(array(
     'Symfony'          => array(__DIR__.'/../vendor/symfony/src', __DIR__.'/../vendor/bundles'),
     'FOS'              => __DIR__.'/../vendor/bundles',
