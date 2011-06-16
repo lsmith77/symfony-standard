@@ -9,7 +9,7 @@
 
 DIR=`php -r "echo realpath(dirname(\\$_SERVER['argv'][0]));"`
 cd $DIR
-VERSION=`cat VERSION`
+VERSION=`grep 'VERSION' vendor/symfony/src/Symfony/Component/HttpKernel/Kernel.php | sed -E "s/.*'(.+)'.*/\1/g"`
 
 if [ ! -d "$DIR/build" ]; then
     mkdir -p $DIR/build
@@ -26,7 +26,8 @@ cp -r src /tmp/Symfony/
 cp -r web /tmp/Symfony/
 cp -r README.rst /tmp/Symfony/
 cp -r LICENSE /tmp/Symfony/
-cp -r VERSION /tmp/Symfony/
+cp -r deps /tmp/Symfony/
+cp -r deps.lock /tmp/Symfony/
 cd /tmp/Symfony
 sudo rm -rf app/cache/* app/logs/* .git*
 chmod 777 app/cache app/logs
@@ -54,9 +55,6 @@ if [ ! -d "$DIR/vendor" ]; then
 fi
 
 cp -r $DIR/vendor/* $TARGET/
-
-# Assetic
-cd $TARGET/assetic && rm -rf phpunit.xml* README* tests
 
 # Doctrine ORM
 cd $TARGET/doctrine && rm -rf UPGRADE* build* bin tests tools lib/vendor
