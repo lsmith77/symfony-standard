@@ -1,41 +1,140 @@
-assetic               /                       http://github.com/kriswallsmith/assetic.git
-symfony               /                       http://github.com/symfony/symfony.git
-doctrine              /                       http://github.com/doctrine/doctrine2.git@2.0.5
-doctrine-dbal         /                       http://github.com/doctrine/dbal.git@2.0.5
-doctrine-common       /                       http://github.com/doctrine/common.git@origin/3.0.x
-doctrine-data-fixtures /                       http://github.com/doctrine/data-fixtures.git
-swiftmailer           /                       http://github.com/swiftmailer/swiftmailer.git@origin/4.1
-twig                  /                       http://github.com/fabpot/Twig.git
-twig-extensions       /                       http://github.com/fabpot/Twig-extensions.git
-monolog               /                       http://github.com/Seldaek/monolog.git
-metadata              /                       http://github.com/schmittjoh/metadata.git
+[symfony]
+    git=http://github.com/symfony/symfony.git
 
-DoctrineFixturesBundle /bundles/Symfony/Bundle http://github.com/symfony/DoctrineFixturesBundle.git
-FrameworkExtraBundle  /bundles/Sensio/Bundle  http://github.com/sensio/SensioFrameworkExtraBundle.git
-SecurityExtraBundle   /bundles/JMS            http://github.com/schmittjoh/SecurityExtraBundle.git
-WebConfiguratorBundle /bundles/Symfony/Bundle http://github.com/symfony/WebConfiguratorBundle.git
+[twig]
+    git=http://github.com/fabpot/Twig.git
 
-DebuggingBundle         /bundles/JMS          http://github.com/schmittjoh/DebuggingBundle.git
-SerializerBundle        /bundles/JMS          http://github.com/lsmith77/SerializerBundle.git@origin/use_core
+[monolog]
+    git=http://github.com/Seldaek/monolog.git
 
-DoctrinePHPCRBundle     /bundles/Symfony/Bundle    http://github.com/symfony-cmf/DoctrinePHPCRBundle.git
-doctrine-mongodb        /                     http://github.com/doctrine/mongodb.git
-doctrine-mongodb-odm    /                     http://github.com/doctrine/mongodb-odm.git
-doctrine-couchdb-odm    /                     http://github.com/doctrine/couchdb-odm.git
-doctrine-phpcr-odm      /                     http://github.com/doctrine/phpcr-odm.git
-jackalope               /                     http://github.com/jackalope/jackalope.git
-phpcr                   /                     http://github.com/phpcr/phpcr.git
+[doctrine-common]
+    git=http://github.com/doctrine/common.git
+    version=origin/3.0.x
 
-UserBundle              /bundles/FOS          http://github.com/FriendsOfSymfony/UserBundle.git
-RestBundle              /bundles/FOS          http://github.com/FriendsOfSymfony/RestBundle.git
-TwitterBundle           /bundles/FOS          http://github.com/FriendsOfSymfony/TwitterBundle.git
-FacebookBundle          /bundles/FOS          http://github.com/FriendsOfSymfony/FacebookBundle.git
-facebook                /                     http://github.com/facebook/php-sdk.git@v2.1.2
+[doctrine-data-fixtures]
+    git=http://github.com/doctrine/data-fixtures.git
 
-HelloBundle             /bundles/Liip         http://github.com/liip/HelloBundle.git
-FunctionalTestBundle    /bundles/Liip         http://github.com/liip/FunctionalTestBundle.git
-XsltBundle              /bundles/Liip         http://github.com/liip/XsltBundle.git
-MultiplexBundle         /bundles/Liip         http://github.com/liip/MultiplexBundle.git
-ContainerWrapperBundle  /bundles/Liip         http://github.com/liip/ContainerWrapperBundle.git
-CacheControlBundle      /bundles/Liip         http://github.com/liip/CacheControlBundle.git
-ThemeBundle             /bundles/Liip         http://github.com/liip/ThemeBundle.git
+[doctrine-dbal]
+    git=http://github.com/doctrine/dbal.git
+
+[doctrine]
+    git=http://github.com/doctrine/doctrine2.git
+
+[swiftmailer]
+    git=http://github.com/swiftmailer/swiftmailer.git
+    version=origin/4.1
+
+[assetic]
+    git=http://github.com/kriswallsmith/assetic.git
+
+[twig-extensions]
+    git=http://github.com/fabpot/Twig-extensions.git
+
+[metadata]
+    git=http://github.com/schmittjoh/metadata.git
+
+[SensioFrameworkExtraBundle]
+    git=http://github.com/sensio/SensioFrameworkExtraBundle.git
+    target=/bundles/Sensio/Bundle/FrameworkExtraBundle
+
+[JMSSecurityExtraBundle]
+    git=http://github.com/schmittjoh/SecurityExtraBundle.git
+    target=/bundles/JMS/SecurityExtraBundle
+
+[WebConfiguratorBundle]
+    git=http://github.com/symfony/WebConfiguratorBundle.git
+    target=/bundles/Symfony/Bundle/WebConfiguratorBundle
+
+[AsseticBundle]
+    git=http://github.com/symfony/AsseticBundle.git
+    target=/bundles/Symfony/Bundle/AsseticBundle
+
+[DoctrineFixturesBundle]
+    git=http://github.com/symfony/DoctrineFixturesBundle.git
+    target=/bundles/Symfony/Bundle/DoctrineFixturesBundle
+
+[JMSDebuggingBundle]
+    git=http://github.com/schmittjoh/DebuggingBundle.git
+    target=/bundles/JMS/DebuggingBundle
+
+[JMSSerializerBundle]
+    git=http://github.com/lsmith77/SerializerBundle.git
+    target=/bundles/JMS/SerializerBundle
+    version=origin/use_core
+
+[DoctrinePHPCRBundle]
+    git=http://github.com/symfony-cmf/DoctrinePHPCRBundle.git
+    target=/bundles/Symfony/Bundle/DoctrinePHPCRBundle
+
+[doctrine]
+    git=http://github.com/doctrine/doctrine2.git
+
+[doctrine-mongodb]
+    git=http://github.com/doctrine/mongodb.git
+
+[doctrine-mongodb-odm]
+    git=http://github.com/doctrine/mongodb-odm.git
+
+[doctrine-couchdb-odm]
+    git=http://github.com/doctrine/couchdb-odm.git
+
+[doctrine-phpcr-odm]
+    git=http://github.com/doctrine/phpcr-odm.git
+
+[jackalope]
+    git=http://github.com/jackalope/jackalope.git
+
+[phpcr]
+    git=http://github.com/phpcr/phpcr.git
+
+[FOSUserBundle]
+    git=http://github.com/FriendsOfSymfony/UserBundle.git
+    target=/bundles/FOS/UserBundle
+
+[FOSRestBundle]
+    git=http://github.com/FriendsOfSymfony/RestBundle.git
+    target=/bundles/FOS/RestBundle
+
+[FOSTwitterBundle]
+    git=http://github.com/FriendsOfSymfony/TwitterBundle.git
+    target=/bundles/FOS/TwitterBundle
+
+[FOSFacebookBundle]
+    git=http://github.com/FriendsOfSymfony/FacebookBundle.git
+    target=/bundles/FOS/FacebookBundle
+
+[FOSUserBundle]
+    git=http://github.com/FriendsOfSymfony/UserBundle.git
+    target=/bundles/FOS/UserBundle
+
+[facebook]
+    git=http://github.com/facebook/php-sdk.git
+    version=v2.1.2
+
+[LiipHelloBundle]
+    git=http://github.com/liip/HelloBundle.git
+    target=/bundles/Liip/HelloBundle
+
+[LiipFunctionalTestBundle]
+    git=http://github.com/liip/FunctionalTestBundle.git
+    target=/bundles/Liip/FunctionalTestBundle
+
+[LiipXsltBundle]
+    git=http://github.com/liip/XsltBundle.git
+    target=/bundles/Liip/XsltBundle
+
+[LiipMultiplexBundle]
+    git=http://github.com/liip/MultiplexBundle.git
+    target=/bundles/Liip/MultiplexBundle
+
+[LiipContainerWrapperBundle]
+    git=http://github.com/liip/ContainerWrapperBundle.git
+    target=/bundles/Liip/ContainerWrapperBundle
+
+[LiipCacheControlBundle]
+    git=http://github.com/liip/CacheControlBundle.git
+    target=/bundles/Liip/CacheControlBundle
+
+[LiipThemeBundle]
+    git=http://github.com/liip/ThemeBundle.git
+    target=/bundles/Liip/ThemeBundle
