@@ -102,6 +102,7 @@ fos_rest:
         - 'fos_rest.form_type_normalizer'
         - 'fos_rest.constraint_violation_list_normalizer'
         - 'fos_rest.constraint_violation_normalizer'
+        - 'fos_rest.custom_normalizer'
         - 'fos_rest.get_set_method_normalizer'
 
 doctrine_phpcr:
