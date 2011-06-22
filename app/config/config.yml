@@ -75,6 +75,7 @@ fos_rest:
     frameworkextra_bundle: true
     serializer_bundle: true
     body_listener: true
+    flash_message_listener: true
     format_listener:
         default_priorities:
             - html
