@@ -9,7 +9,6 @@
 
 [doctrine-common]
     git=http://github.com/doctrine/common.git
-    version=origin/3.0.x
 
 [doctrine-data-fixtures]
     git=http://github.com/doctrine/data-fixtures.git
