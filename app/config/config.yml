@@ -5,6 +5,7 @@ imports:
 framework:
     translator: { fallback: en }
     exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
+    # esi:             ~
     secret:          %secret%
     charset:         UTF-8
     router:          { resource: "%kernel.root_dir%/config/routing.yml" }
