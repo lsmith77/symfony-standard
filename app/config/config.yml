@@ -106,12 +106,16 @@ fos_rest:
         - 'fos_rest.get_set_method_normalizer'
 
 doctrine_phpcr:
-    backend:
-        url: http://localhost:8080/server/
+    session:
+        backend:
+            type: doctrinedbal
+            url: http://localhost:8080/server/
         workspace: default
-        user: admin
-        pass: admin
-#        transport: doctrinedbal
+        username: admin
+        password: admin
+    odm:
+        mappings:
+            LiipHelloBundle: true
 
 liip_hello:
     facebook: true
