@@ -22,7 +22,7 @@
 
 [swiftmailer]
     git=http://github.com/swiftmailer/swiftmailer.git
-    version=origin/4.1
+    version=v4.1.0
 
 [assetic]
     git=http://github.com/kriswallsmith/assetic.git
@@ -95,53 +95,49 @@
     git=http://github.com/phpcr/phpcr.git
 
 [FOSUserBundle]
-    git=http://github.com/FriendsOfSymfony/UserBundle.git
+    git=http://github.com/FriendsOfSymfony/FOSUserBundle.git
     target=/bundles/FOS/UserBundle
 
 [FOSRestBundle]
-    git=http://github.com/FriendsOfSymfony/RestBundle.git
+    git=http://github.com/FriendsOfSymfony/FOSRestBundle.git
     target=/bundles/FOS/RestBundle
 
 [FOSTwitterBundle]
-    git=http://github.com/FriendsOfSymfony/TwitterBundle.git
+    git=http://github.com/FriendsOfSymfony/FOSTwitterBundle.git
     target=/bundles/FOS/TwitterBundle
 
 [FOSFacebookBundle]
-    git=http://github.com/FriendsOfSymfony/FacebookBundle.git
+    git=http://github.com/FriendsOfSymfony/FOSFacebookBundle.git
     target=/bundles/FOS/FacebookBundle
-
-[FOSUserBundle]
-    git=http://github.com/FriendsOfSymfony/UserBundle.git
-    target=/bundles/FOS/UserBundle
 
 [facebook]
     git=http://github.com/facebook/php-sdk.git
     version=v2.1.2
 
 [LiipHelloBundle]
-    git=http://github.com/liip/HelloBundle.git
+    git=http://github.com/liip/LiipHelloBundle.git
     target=/bundles/Liip/HelloBundle
 
 [LiipFunctionalTestBundle]
-    git=http://github.com/liip/FunctionalTestBundle.git
+    git=http://github.com/liip/LiipFunctionalTestBundle.git
     target=/bundles/Liip/FunctionalTestBundle
 
 [LiipXsltBundle]
-    git=http://github.com/liip/XsltBundle.git
+    git=http://github.com/liip/LiipXsltBundle.git
     target=/bundles/Liip/XsltBundle
 
 [LiipMultiplexBundle]
-    git=http://github.com/liip/MultiplexBundle.git
+    git=http://github.com/liip/LiipMultiplexBundle.git
     target=/bundles/Liip/MultiplexBundle
 
 [LiipContainerWrapperBundle]
-    git=http://github.com/liip/ContainerWrapperBundle.git
+    git=http://github.com/liip/LiipContainerWrapperBundle.git
     target=/bundles/Liip/ContainerWrapperBundle
 
 [LiipCacheControlBundle]
-    git=http://github.com/liip/CacheControlBundle.git
+    git=http://github.com/liip/LiipCacheControlBundle.git
     target=/bundles/Liip/CacheControlBundle
 
 [LiipThemeBundle]
-    git=http://github.com/liip/ThemeBundle.git
+    git=http://github.com/liip/LiipThemeBundle.git
     target=/bundles/Liip/ThemeBundle
