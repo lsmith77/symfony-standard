@@ -69,7 +69,6 @@
 [DoctrinePHPCRBundle]
     git=http://github.com/symfony-cmf/DoctrinePHPCRBundle.git
     target=/bundles/Symfony/Bundle/DoctrinePHPCRBundle
-    version=origin/rewrite_from_couchdb
 
 [doctrine]
     git=http://github.com/doctrine/doctrine2.git
@@ -85,11 +84,9 @@
 
 [doctrine-phpcr-odm]
     git=http://github.com/doctrine/phpcr-odm.git
-    version=lsmith77/couchdb_alignment
 
 [jackalope]
     git=http://github.com/jackalope/jackalope.git
-    version=origin/DoctrineDBALTransport
 
 [phpcr]
     git=http://github.com/phpcr/phpcr.git
