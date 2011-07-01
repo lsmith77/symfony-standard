@@ -89,7 +89,7 @@
 
 [jackalope]
     git=http://github.com/jackalope/jackalope.git
-    version=origin/DoctrineDBAL_lsmith77
+    version=origin/DoctrineDBALTransport
 
 [phpcr]
     git=http://github.com/phpcr/phpcr.git
