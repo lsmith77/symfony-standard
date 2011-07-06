@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html
+    version="HTML+RDFa 1.0"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+        {% block javascripts %}{% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
     </body>
 </html>
