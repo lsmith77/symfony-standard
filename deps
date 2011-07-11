@@ -141,3 +141,7 @@
 [LiipThemeBundle]
     git=http://github.com/liip/LiipThemeBundle.git
     target=/bundles/Liip/ThemeBundle
+
+[LiipVieBundle]
+    git=http://github.com/liip/LiipVieBundle.git
+    target=/bundles/Liip/VieBundle
