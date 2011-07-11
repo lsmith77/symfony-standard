@@ -110,7 +110,9 @@ doctrine_phpcr:
     session:
         backend:
             type: doctrinedbal
-            url: http://localhost:8080/server/
+            connection: database_connection
+#            type: davex
+#            url: http://localhost:8080/server/
         workspace: default
         username: admin
         password: admin
@@ -120,6 +122,10 @@ doctrine_phpcr:
 
 liip_hello:
     facebook: true
+
+liip_vie:
+    map:
+        '<sioc:Post>': 'Liip\HelloBundle\Document\Article'
 
 sensio_framework_extra:
     view:    { annotations: false }
