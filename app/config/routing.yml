@@ -23,6 +23,9 @@ profile:
 registration:
     resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
 
+vie:
+    resource: "@LiipVieBundle/Resources/config/routing.yml"
+
 # Internal routing configuration to handle ESI
 #_internal:
 #   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
