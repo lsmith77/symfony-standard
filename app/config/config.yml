@@ -125,6 +125,7 @@ liip_hello:
     facebook: true
 
 liip_vie:
+    phpcr: true
     map:
         '<sioc:Post>': 'Liip\HelloBundle\Document\Article'
 

@@ -24,7 +24,8 @@ registration:
     resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
 
 vie:
-    resource: "@LiipVieBundle/Resources/config/routing.yml"
+    resource: liip_vie.phpcr.controller
+    type:     rest
 
 # Internal routing configuration to handle ESI
 #_internal:
