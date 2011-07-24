@@ -3,10 +3,15 @@
 require __DIR__.'/../vendor/symfony/src/Symfony/Component/ClassLoader/UniversalClassLoader.php';
 require __DIR__.'/../vendor/symfony/src/Symfony/Component/ClassLoader/ApcUniversalClassLoader.php';
 
+use Symfony\Component\ClassLoader\UniversalClassLoader;
 use Symfony\Component\ClassLoader\ApcUniversalClassLoader;
 use Doctrine\Common\Annotations\AnnotationRegistry;
 
-$loader = new ApcUniversalClassLoader('techtalk');
+if (function_exists('apc_store')) {
+    $loader = new ApcUniversalClassLoader('techtalk');
+} else {
+    $loader = new UniversalClassLoader();
+}
 $loader->registerNamespaces(array(
     'Symfony'          => array(__DIR__.'/../vendor/symfony/src', __DIR__.'/../vendor/bundles'),
     'FOS'              => __DIR__.'/../vendor/bundles',
@@ -53,4 +58,3 @@ AnnotationRegistry::registerFile(__DIR__.'/../vendor/doctrine/lib/Doctrine/ORM/M
 // the lazy loading of the init file (which is expensive)
 require_once __DIR__.'/../vendor/swiftmailer/lib/classes/Swift.php';
 Swift::registerAutoload(__DIR__.'/../vendor/swiftmailer/lib/swift_init.php');
-
