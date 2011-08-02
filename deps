@@ -12,10 +12,6 @@
     git=http://github.com/Seldaek/monolog.git
     version=1.0.0
 
-[doctrine-common]
-    git=http://github.com/doctrine/common.git
-    version=2.1.0
-
 [doctrine-data-fixtures]
     git=http://github.com/doctrine/data-fixtures.git
 
@@ -90,15 +86,6 @@
 
 [doctrine-couchdb-odm]
     git=http://github.com/doctrine/couchdb-odm.git
-
-[doctrine-phpcr-odm]
-    git=http://github.com/doctrine/phpcr-odm.git
-
-[jackalope]
-    git=http://github.com/jackalope/jackalope.git
-
-[phpcr]
-    git=http://github.com/phpcr/phpcr.git
 
 [FOSUserBundle]
     git=http://github.com/FriendsOfSymfony/FOSUserBundle.git
