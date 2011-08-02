@@ -112,8 +112,9 @@ doctrine_phpcr:
         backend:
             type: doctrinedbal
             connection: database_connection
-#            type: davex
+#            type: jackrabbit
 #            url: http://localhost:8080/server/
+#            disable_stream_wrapper: true
         workspace: default
         username: admin
         password: admin
@@ -125,9 +126,9 @@ liip_hello:
     facebook: true
 
 liip_vie:
-    phpcr: true
+    phpcr_odm: true
     map:
-        '<sioc:Post>': 'Liip\HelloBundle\Document\Article'
+        '<article>': 'Liip\HelloBundle\Document\Article'
 
 sensio_framework_extra:
     view:    { annotations: false }
