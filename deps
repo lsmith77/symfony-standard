@@ -75,18 +75,6 @@
     git=http://github.com/symfony-cmf/DoctrinePHPCRBundle.git
     target=/bundles/Symfony/Bundle/DoctrinePHPCRBundle
 
-[doctrine]
-    git=http://github.com/doctrine/doctrine2.git
-
-[doctrine-mongodb]
-    git=http://github.com/doctrine/mongodb.git
-
-[doctrine-mongodb-odm]
-    git=http://github.com/doctrine/mongodb-odm.git
-
-[doctrine-couchdb-odm]
-    git=http://github.com/doctrine/couchdb-odm.git
-
 [FOSUserBundle]
     git=http://github.com/FriendsOfSymfony/FOSUserBundle.git
     target=/bundles/FOS/UserBundle
