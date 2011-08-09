@@ -71,9 +71,9 @@
     target=/bundles/JMS/SerializerBundle
     version=origin/use_core
 
-[DoctrinePHPCRBundle]
-    git=http://github.com/symfony-cmf/DoctrinePHPCRBundle.git
-    target=/bundles/Symfony/Bundle/DoctrinePHPCRBundle
+[SymfonyCMFChainRoutingBundle]
+    git=http://github.com/symfony-cmf/ChainRoutingBundle.git
+    target=/bundles/Symfony/Cmf/Bundle/ChainRoutingBundle
 
 [FOSUserBundle]
     git=http://github.com/FriendsOfSymfony/FOSUserBundle.git
