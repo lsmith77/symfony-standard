@@ -1,12 +1,13 @@
 [symfony]
     git=http://github.com/symfony/symfony.git
+    version=v2.0.0
 
 [symfony-cmf]
     git=http://github.com/symfony-cmf/symfony-cmf.git
 
 [twig]
     git=http://github.com/fabpot/Twig.git
-    version=v1.1.1
+    version=v1.1.2
 
 [monolog]
     git=http://github.com/Seldaek/monolog.git
@@ -56,7 +57,7 @@
 [AsseticBundle]
     git=http://github.com/symfony/AsseticBundle.git
     target=/bundles/Symfony/Bundle/AsseticBundle
-    version=v1.0.0RC1
+    version=v1.0.0
 
 [DoctrineFixturesBundle]
     git=http://github.com/symfony/DoctrineFixturesBundle.git
