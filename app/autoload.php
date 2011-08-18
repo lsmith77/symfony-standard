@@ -13,8 +13,8 @@ if (function_exists('apc_store')) {
     $loader = new UniversalClassLoader();
 }
 $loader->registerNamespaces(array(
-     'Symfony\\Cmf' => array(__DIR__.'/../vendor/symfony/src', __DIR__.'/../vendor/symfony-cmf/src'),
-     'Symfony\\Bundle\\DoctrinePHPCRBundle'  => __DIR__.'/../vendor/symfony-cmf/src',
+    'Symfony\\Cmf' => array(__DIR__.'/../vendor/symfony/src', __DIR__.'/../vendor/symfony-cmf/src'),
+    'Symfony\\Bundle\\DoctrinePHPCRBundle'  => __DIR__.'/../vendor/symfony-cmf/src',
     'Symfony'          => array(__DIR__.'/../vendor/symfony/src', __DIR__.'/../vendor/bundles'),
     'FOS'              => __DIR__.'/../vendor/bundles',
     'Liip'             => __DIR__.'/../vendor/bundles',
