@@ -74,8 +74,15 @@ fos_facebook:
     permissions: [email, user_birthday, user_location]
 
 fos_rest:
-    frameworkextra_bundle: true
-    serializer_bundle: true
+    view:
+#        default_engine: php
+        view_response_listener: true
+        formats:
+            json: true
+            xml: true
+            rss: false
+        templating_formats:
+            html: true
     body_listener: true
     flash_message_listener: true
     format_listener:
@@ -97,15 +104,6 @@ fos_rest:
             'Doctrine\ORM\OptimisticLockException': HTTP_CONFLICT
         messages:
             'Symfony\Component\Routing\Exception\ResourceNotFoundException': true
-    normalizers:
-        - 'fos_rest.form_normalizer'
-        - 'fos_rest.form_error_normalizer'
-        - 'fos_rest.form_view_normalizer'
-        - 'fos_rest.form_type_normalizer'
-        - 'fos_rest.constraint_violation_list_normalizer'
-        - 'fos_rest.constraint_violation_normalizer'
-        - 'fos_rest.custom_normalizer'
-        - 'fos_rest.get_set_method_normalizer'
 
 doctrine_phpcr:
     session:
@@ -131,7 +129,6 @@ liip_vie:
         '<article>': 'Liip\HelloBundle\Document\Article'
 
 sensio_framework_extra:
-    view:    { annotations: false }
     router:  { annotations: true }
 
 liip_container_wrapper:
