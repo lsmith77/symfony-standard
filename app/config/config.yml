@@ -4,7 +4,7 @@ imports:
 
 framework:
     #esi:             ~
-    #translator:      { fallback: en }
+    #translator:      { fallback: %locale% }
     secret:          %secret%
     charset:         UTF-8
     router:          { resource: "%kernel.root_dir%/config/routing.yml" }
@@ -84,7 +84,6 @@ fos_rest:
         templating_formats:
             html: true
     body_listener: true
-    flash_message_listener: true
     format_listener:
         default_priorities:
             - html
@@ -142,3 +141,4 @@ liip_cache_control:
 #        ips: 10.0.0.10, 10.0.0.11 # comma separated list of ips, or an array of ips
 #        port: 80  # port varnish is listening on for incoming web connections
     authorization_listener: true
+    flash_message_listener: true
