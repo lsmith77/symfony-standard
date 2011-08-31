@@ -37,7 +37,6 @@
 
 [metadata]
     git=http://github.com/schmittjoh/metadata.git
-    version=origin/1.0.x
 
 [SensioFrameworkExtraBundle]
     git=http://github.com/sensio/SensioFrameworkExtraBundle.git
@@ -69,9 +68,8 @@
     target=/bundles/JMS/DebuggingBundle
 
 [JMSSerializerBundle]
-    git=http://github.com/lsmith77/SerializerBundle.git
+    git=http://github.com/schmittjoh/JMSSerializerBundle.git
     target=/bundles/JMS/SerializerBundle
-    version=origin/use_core
 
 [SymfonyCMFChainRoutingBundle]
     git=http://github.com/symfony-cmf/ChainRoutingBundle.git
