@@ -76,7 +76,7 @@ fos_facebook:
 fos_rest:
     view:
 #        default_engine: php
-        view_response_listener: true
+        view_response_listener: force
         formats:
             json: true
             xml: true
