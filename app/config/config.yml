@@ -95,6 +95,7 @@ fos_rest:
         # the subsequent line overrides the following line, so the default is NULL
         fallback_format: json
         fallback_format: ~
+        prefer_extension: true
     routing_loader:
         default_format: ~
     exception:
