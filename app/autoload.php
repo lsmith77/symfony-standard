@@ -61,3 +61,6 @@ AnnotationRegistry::registerFile(__DIR__.'/../vendor/symfony-cmf/vendor/doctrine
 // the lazy loading of the init file (which is expensive)
 require_once __DIR__.'/../vendor/swiftmailer/lib/classes/Swift.php';
 Swift::registerAutoload(__DIR__.'/../vendor/swiftmailer/lib/swift_init.php');
+
+//Load Hyphenator
+require_once __DIR__ . '/../vendor/OrgHeiglHyphenator/src/Org/Heigl/Hyphenator.php';

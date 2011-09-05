@@ -147,3 +147,7 @@ liip_cache_control:
 #        port: 80  # port varnish is listening on for incoming web connections
     authorization_listener: true
     flash_message_listener: true
+
+liip_hyphenator:
+    language: de
+    hyphen: '&shy;'
