@@ -8,4 +8,6 @@ use Symfony\Component\HttpFoundation\Request;
 
 $kernel = new AppKernel('prod', false);
 //$kernel = new AppCache($kernel);
-$kernel->handle(Request::createFromGlobals())->send();
+$request = Request::createFromGlobals();
+$request->setFormat('rss', 'application/rss+xml');
+$kernel->handle($request)->send();

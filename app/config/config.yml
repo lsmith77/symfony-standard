@@ -93,6 +93,7 @@ fos_rest:
             - html
             - json
             - xml
+            - rss
             - "*/*"
             # never reached due to "*/*"
             - ding
@@ -108,6 +109,8 @@ fos_rest:
             'Doctrine\ORM\OptimisticLockException': HTTP_CONFLICT
         messages:
             'Symfony\Component\Routing\Exception\ResourceNotFoundException': true
+    service:
+        view_handler: liip_hello.view_handler
 
 doctrine_phpcr:
     session:
