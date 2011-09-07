@@ -31,6 +31,7 @@ class AppKernel extends Kernel
             new Liip\HelloBundle\LiipHelloBundle(),
             new Liip\VieBundle\LiipVieBundle(),
             new Liip\HyphenatorBundle\LiipHyphenatorBundle(),
+            new Liip\ThemeBundle\LiipThemeBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
