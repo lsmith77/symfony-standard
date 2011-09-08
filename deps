@@ -121,7 +121,6 @@
 [LiipThemeBundle]
     git=http://github.com/liip/LiipThemeBundle.git
     target=/bundles/Liip/ThemeBundle
-    version=origin/cache_warming
 
 [LiipVieBundle]
     git=http://github.com/liip/LiipVieBundle.git
