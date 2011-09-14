@@ -57,7 +57,6 @@ swiftmailer:
     password:  %mailer_password%
 
 jms_security_extra:
-    secure_controllers:  false
     secure_all_services: false
 
 jms_serializer:
@@ -136,6 +135,7 @@ liip_vie:
         '<article>': 'Liip\HelloBundle\Document\Article'
 
 sensio_framework_extra:
+    view:    { annotations: false }
     router:  { annotations: true }
 
 liip_container_wrapper:
