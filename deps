@@ -133,3 +133,7 @@
 [OrgHeiglHyphenator]
    git=http://github.com/heiglandreas/Org_Heigl_Hyphenator.git
    target=/OrgHeiglHyphenator
+
+[LiipMagentoBundle]
+   git=http://github.com/liip/LiipMagentoBundle.git
+   target=/bundles/Liip/MagentoBundle
