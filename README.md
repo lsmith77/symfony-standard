@@ -15,7 +15,8 @@ git submodule update --recursive
 ```
 
 List of additional bundles and libs:
-    * symfony-cmf (includes DoctrinePHPCRBundle, doctrine-phpcr-odm, jackalope ..)
+
+* symfony-cmf (includes DoctrinePHPCRBundle, doctrine-phpcr-odm, jackalope ..)
 
     * FOSUserBundle
     * FOSFacebookBundle (and facebook PHP SDK)
@@ -32,7 +33,8 @@ List of additional bundles and libs:
     * JMSDebuggingBundle
 
 It also includes the following Bundles which are not enabled:
-    * LiipXsltBundle
+
+* LiipXsltBundle
     * LiipMagentoBundle
     * LiipMultiplexBundle
     * LiipFunctionalTestBundle
