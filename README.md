@@ -34,7 +34,7 @@ List of additional bundles and libs:
 
 It also includes the following Bundles which are not enabled:
 
-* LiipXsltBundle
+    * LiipXsltBundle
     * LiipMagentoBundle
     * LiipMultiplexBundle
     * LiipFunctionalTestBundle
