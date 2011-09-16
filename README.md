@@ -9,9 +9,8 @@ https://github.com/symfony/symfony-standard/blob/master/README.md
 
 After following the installation instructions at the above url please also run:
 ```
-cd vendor/symfony-cmf/vendor/doctrine-phpcr-odm
-git submodule init
-git submodule update --recursive
+cd vendor/symfony-cmf
+git submodule update --recursive --init
 ```
 
 List of additional bundles and libs:
