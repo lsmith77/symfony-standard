@@ -36,7 +36,6 @@
 
 [metadata]
     git=http://github.com/schmittjoh/metadata.git
-    version=origin/1.0.x
 
 [SensioFrameworkExtraBundle]
     git=http://github.com/sensio/SensioFrameworkExtraBundle.git
@@ -138,3 +137,8 @@
 [LiipMagentoBundle]
    git=http://github.com/liip/LiipMagentoBundle.git
    target=/bundles/Liip/MagentoBundle
+
+[AvalancheImagineBundle]
+   git=http://github.com/liip/AvalancheImagineBundle.git
+   target=/bundles/Avalanche/ImagineBundle
+    version=origin/refactoring
