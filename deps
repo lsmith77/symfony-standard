@@ -139,7 +139,10 @@
    git=http://github.com/liip/LiipMagentoBundle.git
    target=/bundles/Liip/MagentoBundle
 
-[AvalancheImagineBundle]
-   git=http://github.com/liip/AvalancheImagineBundle.git
-   target=/bundles/Avalanche/ImagineBundle
-    version=origin/refactoring
+[LiipImagineBundle]
+   git=http://github.com/liip/LiipImagineBundle.git
+   target=/bundles/Liip/ImagineBundle
+
+[Imagine]
+    git=http://github.com/avalanche123/Imagine.git
+    target=imagine
