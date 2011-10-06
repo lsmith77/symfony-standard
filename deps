@@ -146,3 +146,4 @@
 [Imagine]
     git=http://github.com/avalanche123/Imagine.git
     target=imagine
+    version=v0.2.0
