@@ -36,11 +36,12 @@ $loader->registerNamespaces(array(
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',
     'Twig_'            => __DIR__.'/../vendor/twig/lib',
+    'Org_Heigl_Hyphenator' => __DIR__ . '/../vendor/OrgHeiglHyphenator/src',
 ));
 
 // intl
 if (!function_exists('intl_get_error_code')) {
-    require_once __DIR__.'/../vendor/symfony/src/Symfony/Component/Locale/Resources/stubs/functions.php';
+    require __DIR__.'/../vendor/symfony/src/Symfony/Component/Locale/Resources/stubs/functions.php';
 
     $loader->registerPrefixFallbacks(array(__DIR__.'/../vendor/symfony/src/Symfony/Component/Locale/Resources/stubs'));
 }
@@ -59,8 +60,5 @@ AnnotationRegistry::registerFile(__DIR__.'/../vendor/symfony-cmf/vendor/doctrine
 
 // Swiftmailer needs a special autoloader to allow
 // the lazy loading of the init file (which is expensive)
-require_once __DIR__.'/../vendor/swiftmailer/lib/classes/Swift.php';
+require __DIR__.'/../vendor/swiftmailer/lib/classes/Swift.php';
 Swift::registerAutoload(__DIR__.'/../vendor/swiftmailer/lib/swift_init.php');
-
-//Load Hyphenator
-require_once __DIR__ . '/../vendor/OrgHeiglHyphenator/src/Org/Heigl/Hyphenator.php';
