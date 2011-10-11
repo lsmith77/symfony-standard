@@ -13,12 +13,7 @@ Make sure to switch to the ``techtalk`` branch
 git checkout techtalk
 ```
 
-Then after following the installation instructions at the above url please also run:
-
-```
-cd vendor/symfony-cmf:
-git submodule update --recursive --init
-```
+Then following the installation instructions at the above url.
 
 List of additional bundles and libs:
 
