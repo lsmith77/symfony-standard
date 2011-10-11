@@ -7,9 +7,16 @@ and configuration options that I use for demo purposes.
 You can read the original README.md here:
 https://github.com/symfony/symfony-standard/blob/master/README.md
 
-After following the installation instructions at the above url please also run:
+Make sure to switch to the ``techtalk`` branch
+
 ```
-cd vendor/symfony-cmf
+git checkout techtalk
+```
+
+Then after following the installation instructions at the above url please also run:
+
+```
+cd vendor/symfony-cmf:
 git submodule update --recursive --init
 ```
 
