@@ -86,6 +86,8 @@ fos_rest:
             rss: false
         templating_formats:
             html: true
+        mime_types:
+            json: ['application/json', 'application/x-json', 'application/vnd.example-com.foo+json']
     body_listener: true
     format_listener:
         default_priorities:
@@ -149,7 +151,7 @@ liip_cache_control:
 #        ips: 10.0.0.10, 10.0.0.11 # comma separated list of ips, or an array of ips
 #        port: 80  # port varnish is listening on for incoming web connections
     authorization_listener: true
-    flash_message_listener: true
+    flash_message_listener: false
 
 liip_hyphenator:
     language: de
