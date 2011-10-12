@@ -15,6 +15,10 @@ git checkout techtalk
 
 Then following the installation instructions at the above url.
 
+Make sure to ensure that the ``app/cache`` and ``app/logs`` directories are
+write-able for the web server (and also for the CLI):
+http://symfony.com/doc/2.0/book/installation.html#configuration-and-setup
+
 List of additional bundles and libs:
 
     * symfony-cmf (includes DoctrinePHPCRBundle, doctrine-phpcr-odm, jackalope ..)
