@@ -19,6 +19,8 @@ $loader->registerNamespaces(array(
     'FOS'              => __DIR__.'/../vendor/bundles',
     'Liip'             => __DIR__.'/../vendor/bundles',
     'Sensio'           => __DIR__.'/../vendor/bundles',
+    'Ideato'           => __DIR__.'/../vendor/bundles',
+    'Sonata'           => __DIR__.'/../vendor/bundles',
     'JMS'              => __DIR__.'/../vendor/bundles',
     'Doctrine\\Common\\DataFixtures' => __DIR__.'/../vendor/doctrine-data-fixtures/lib',
     'Doctrine\\DBAL'   => __DIR__.'/../vendor/doctrine-dbal/lib',
@@ -27,12 +29,12 @@ $loader->registerNamespaces(array(
     'Assetic'          => __DIR__.'/../vendor/assetic/src',
     'Metadata'         => __DIR__.'/../vendor/metadata/src',
     'Acme'             => __DIR__.'/../src',
-    'Doctrine\\Common'                      => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/doctrine-common/lib',
-    'Doctrine\\ODM\\PHPCR'                  => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib',
-    'Jackalope'                             => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/jackalope/src',
-    'PHPCR'                                 => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/jackalope/lib/phpcr/src',
+    'Doctrine\\Common' => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/doctrine-common/lib',
+    'Doctrine\\ODM\\PHPCR' => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib',
+    'Jackalope'        => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/jackalope/src',
+    'PHPCR'            => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/jackalope/lib/phpcr/src',
+));
 
-                            ));
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',
     'Twig_'            => __DIR__.'/../vendor/twig/lib',

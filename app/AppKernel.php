@@ -32,6 +32,11 @@ class AppKernel extends Kernel
             new Liip\VieBundle\LiipVieBundle(),
             new Liip\HyphenatorBundle\LiipHyphenatorBundle(),
             new Liip\ThemeBundle\LiipThemeBundle(),
+
+            new Ideato\Bundle\TreeBundle\IdeatoTreeBundle(),
+            new Sonata\jQueryBundle\SonatajQueryBundle(),
+
+            new Symfony\Cmf\Bundle\PHPCRBrowserBundle\SymfonyCmfPHPCRBrowserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
