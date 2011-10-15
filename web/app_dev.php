@@ -17,5 +17,4 @@ use Symfony\Component\HttpFoundation\Request;
 
 $kernel = new AppKernel('dev', true);
 $request = Request::createFromGlobals();
-$request->setFormat('rss', 'application/rss+xml');
 $kernel->handle($request)->send();

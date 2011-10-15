@@ -88,6 +88,7 @@ fos_rest:
             html: true
         mime_types:
             json: ['application/json', 'application/x-json', 'application/vnd.example-com.foo+json']
+            rss: 'application/rss+xml'
     body_listener: true
     format_listener:
         default_priorities:
