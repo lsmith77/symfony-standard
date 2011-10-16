@@ -32,6 +32,7 @@ class AppKernel extends Kernel
             new Liip\VieBundle\LiipVieBundle(),
             new Liip\HyphenatorBundle\LiipHyphenatorBundle(),
             new Liip\ThemeBundle\LiipThemeBundle(),
+            new Liip\ImagineBundle\LiipImagineBundle(),
 
             new Ideato\Bundle\TreeBundle\IdeatoTreeBundle(),
             new Sonata\jQueryBundle\SonatajQueryBundle(),

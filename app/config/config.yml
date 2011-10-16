@@ -89,6 +89,8 @@ fos_rest:
         mime_types:
             json: ['application/json', 'application/x-json', 'application/vnd.example-com.foo+json']
             rss: 'application/rss+xml'
+            jpg: 'image/jpeg'
+            png: 'image/png'
     body_listener: true
     format_listener:
         default_priorities:
@@ -162,3 +164,10 @@ liip_theme:
     themes: ['desktop', 'tablet', 'phone']
     active_theme: 'desktop'
     theme_cookie: 'device'
+
+liip_imagine:
+    formats: [ jpg, png]
+    filters:
+        my_thumb:
+            type:    thumbnail
+            options: { size: [120, 90], mode: outbound }

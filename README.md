@@ -33,6 +33,10 @@ List of additional bundles and libs:
     * LiipVieBundle
     * LiipHyphenatorBundle (and OrgHeiglHyphenator)
     * LiipThemeBundle
+    * LiipImagineBundle (and imagine lib)
+
+    * IdeatoTreeBundle
+    * SonatajQueryBundle
 
     * JMSSerializerBundle
     * JMSDebuggingBundle
@@ -48,5 +52,6 @@ The key Bundle in this list is LiipHelloBundle as it provides usage examples
 for most of the above mentioned Bundles:
 https://github.com/liip/LiipHelloBundle
 
-Furthermore it shows how to customize the app.php/app_dev.php and autoload.php
-to use the ApcUniversalClassLoader and as a result not use the bootstrap files.
+Furthermore this application shows how to customize the ``app.php``/``app_dev.php``
+and ``autoload.php`` to use the ApcUniversalClassLoader while dropping use of the
+bootstrap files.

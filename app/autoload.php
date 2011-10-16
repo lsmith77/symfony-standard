@@ -33,6 +33,7 @@ $loader->registerNamespaces(array(
     'Doctrine\\ODM\\PHPCR' => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib',
     'Jackalope'        => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/jackalope/src',
     'PHPCR'            => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/jackalope/lib/phpcr/src',
+    'Imagine'   => __DIR__.'/../vendor/imagine/lib',
 ));
 
 $loader->registerPrefixes(array(
