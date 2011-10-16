@@ -6,7 +6,6 @@
 
 [twig]
     git=http://github.com/fabpot/Twig.git
-    version=v1.3.0
 
 [monolog]
     git=http://github.com/Seldaek/monolog.git
