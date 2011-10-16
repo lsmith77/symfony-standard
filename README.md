@@ -19,6 +19,11 @@ Make sure to ensure that the ``app/cache`` and ``app/logs`` directories are
 write-able for the web server (and also for the CLI):
 http://symfony.com/doc/2.0/book/installation.html#configuration-and-setup
 
+Finally install the FOSUserBundle schema:
+```
+app/console doctrine:schema:create
+```
+
 List of additional bundles and libs:
 
     * symfony-cmf (includes DoctrinePHPCRBundle, doctrine-phpcr-odm, jackalope ..)
