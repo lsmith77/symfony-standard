@@ -34,7 +34,7 @@ class AppKernel extends Kernel
             new Liip\ThemeBundle\LiipThemeBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
 
-            new Ideato\Bundle\TreeBundle\IdeatoTreeBundle(),
+            new Ideato\TreeBundle\IdeatoTreeBundle(),
             new Sonata\jQueryBundle\SonatajQueryBundle(),
 
             new Symfony\Cmf\Bundle\PHPCRBrowserBundle\SymfonyCmfPHPCRBrowserBundle(),

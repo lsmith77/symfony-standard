@@ -147,7 +147,7 @@
 
 [TreeBundle]
    git=http://github.com/symfony-cmf/TreeBundle.git
-   target=/bundles/Ideato/Bundle/TreeBundle
+   target=/bundles/Ideato/TreeBundle
 
 [SonatajQueryBundle]
    git=https://github.com/sonata-project/SonatajQueryBundle.git
