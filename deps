@@ -146,9 +146,9 @@
     target=imagine
     version=v0.2.0
 
-[TreeBundle]
+[SymfonyCmfTreeBundle]
    git=http://github.com/symfony-cmf/TreeBundle.git
-   target=/bundles/Ideato/TreeBundle
+   target=/bundles/Symfony/Cmf/Bundle/TreeBundle
 
 [SonatajQueryBundle]
    git=https://github.com/sonata-project/SonatajQueryBundle.git

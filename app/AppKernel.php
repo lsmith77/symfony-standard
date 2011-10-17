@@ -34,10 +34,12 @@ class AppKernel extends Kernel
             new Liip\ThemeBundle\LiipThemeBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
 
-            new Ideato\TreeBundle\IdeatoTreeBundle(),
+            new Symfony\Cmf\Bundle\TreeBundle\SymfonyCmfTreeBundle(),
             new Sonata\jQueryBundle\SonatajQueryBundle(),
 
             new Symfony\Cmf\Bundle\PHPCRBrowserBundle\SymfonyCmfPHPCRBrowserBundle(),
+
+//            new Symfony\Cmf\Bundle\ChainRoutingBundle\ChainRoutingBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
