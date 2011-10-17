@@ -3,6 +3,7 @@
 
 [symfony-cmf]
     git=http://github.com/symfony-cmf/symfony-cmf.git
+    git_command=git submodule update --recursive --init
 
 [twig]
     git=http://github.com/fabpot/Twig.git
