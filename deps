@@ -153,3 +153,6 @@
 [SonatajQueryBundle]
    git=https://github.com/sonata-project/SonatajQueryBundle.git
    target=/bundles/Sonata/jQueryBundle
+
+[KnpMenu]
+   git=https://github.com/knplabs/KnpMenu.git

@@ -13,7 +13,7 @@ if (function_exists('apc_store')) {
     $loader = new UniversalClassLoader();
 }
 $loader->registerNamespaces(array(
-    'Symfony\\Cmf' => array(__DIR__.'/../vendor/symfony/src', __DIR__.'/../vendor/symfony-cmf/src'),
+    'Symfony\\Cmf'     => array(__DIR__.'/../vendor/symfony/src', __DIR__.'/../vendor/symfony-cmf/src'),
     'Symfony\\Bundle\\DoctrinePHPCRBundle'  => __DIR__.'/../vendor/symfony-cmf/src',
     'Symfony'          => array(__DIR__.'/../vendor/symfony/src', __DIR__.'/../vendor/bundles'),
     'FOS'              => __DIR__.'/../vendor/bundles',
@@ -32,7 +32,8 @@ $loader->registerNamespaces(array(
     'Doctrine\\ODM\\PHPCR' => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib',
     'Jackalope'        => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/jackalope/src',
     'PHPCR'            => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/jackalope/lib/phpcr/src',
-    'Imagine'   => __DIR__.'/../vendor/imagine/lib',
+    'Imagine'          => __DIR__.'/../vendor/imagine/lib',
+    'Knp\Menu'         => __DIR__.'/vendor/KnpMenu/src',
 ));
 
 $loader->registerPrefixes(array(
