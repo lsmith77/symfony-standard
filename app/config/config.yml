@@ -167,7 +167,7 @@ liip_theme:
 
 liip_imagine:
     formats: [ jpg, png]
-    filters:
+    filter_sets:
         my_thumb:
-            type:    thumbnail
-            options: { size: [120, 90], mode: outbound }
+            filters:
+                thumbnail: { size: [120, 90], mode: outbound }
