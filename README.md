@@ -19,6 +19,9 @@ Make sure to ensure that the ``app/cache`` and ``app/logs`` directories are
 write-able for the web server (and also for the CLI):
 http://symfony.com/doc/2.0/book/installation.html#configuration-and-setup
 
+Please also make the ``web`` dir writeable if you want to try out the
+LiipImagineBundle.
+
 Finally install the FOSUserBundle schema:
 ```
 app/console doctrine:schema:create
@@ -50,7 +53,7 @@ It also includes the following Bundles which are not enabled:
 
     * LiipXsltBundle
     * LiipMagentoBundle
-    * LiipMultiplexBundle
+    * LiipSearchBundle
     * LiipFunctionalTestBundle
 
 The key Bundle in this list is LiipHelloBundle as it provides usage examples

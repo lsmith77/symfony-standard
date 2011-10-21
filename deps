@@ -5,6 +5,17 @@
     git=http://github.com/symfony-cmf/symfony-cmf.git
     git_command=submodule update --init --recursive
 
+[KnpMenu]
+   git=https://github.com/knplabs/KnpMenu.git
+
+[SymfonyCmfTreeBundle]
+   git=http://github.com/symfony-cmf/TreeBundle.git
+   target=/bundles/Symfony/Cmf/Bundle/TreeBundle
+
+[SonatajQueryBundle]
+   git=https://github.com/sonata-project/SonatajQueryBundle.git
+   target=/bundles/Sonata/jQueryBundle
+
 [twig]
     git=http://github.com/fabpot/Twig.git
 
@@ -105,10 +116,6 @@
     git=http://github.com/liip/LiipXsltBundle.git
     target=/bundles/Liip/XsltBundle
 
-[LiipMultiplexBundle]
-    git=http://github.com/liip/LiipMultiplexBundle.git
-    target=/bundles/Liip/MultiplexBundle
-
 [LiipContainerWrapperBundle]
     git=http://github.com/liip/LiipContainerWrapperBundle.git
     target=/bundles/Liip/ContainerWrapperBundle
@@ -146,13 +153,6 @@
     target=imagine
     version=v0.2.0
 
-[SymfonyCmfTreeBundle]
-   git=http://github.com/symfony-cmf/TreeBundle.git
-   target=/bundles/Symfony/Cmf/Bundle/TreeBundle
-
-[SonatajQueryBundle]
-   git=https://github.com/sonata-project/SonatajQueryBundle.git
-   target=/bundles/Sonata/jQueryBundle
-
-[KnpMenu]
-   git=https://github.com/knplabs/KnpMenu.git
+[LiipSearchBundle]
+   git=http://github.com/liip/LiipSearchBundle.git
+   target=/bundles/Liip/SearchBundle
