@@ -34,6 +34,7 @@ $loader->registerNamespaces(array(
     'PHPCR'            => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/jackalope/lib/phpcr/src',
     'Imagine'          => __DIR__.'/../vendor/imagine/lib',
     'Knp\Menu'         => __DIR__.'/vendor/KnpMenu/src',
+    'DMS\Filter'       => __DIR__.'/vendor/DMS-Filter',
 ));
 
 $loader->registerPrefixes(array(

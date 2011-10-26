@@ -135,6 +135,7 @@ liip_hello:
     facebook: true
 
 liip_vie:
+    filter: true
     phpcr_odm: true
     map:
         '<article>': 'Liip\HelloBundle\Document\Article'
@@ -169,5 +170,6 @@ liip_imagine:
     formats: [ jpg, png]
     filter_sets:
         my_thumb:
+            quality: 50
             filters:
                 thumbnail: { size: [120, 90], mode: outbound }
