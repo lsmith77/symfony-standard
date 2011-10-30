@@ -21,7 +21,7 @@
 
 [monolog]
     git=http://github.com/Seldaek/monolog.git
-    version=1.0.1
+    version=1.0.2
 
 [doctrine-data-fixtures]
     git=http://github.com/doctrine/data-fixtures.git
