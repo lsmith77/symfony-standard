@@ -35,6 +35,7 @@ $loader->registerNamespaces(array(
     'Imagine'          => __DIR__.'/../vendor/imagine/lib',
     'Knp\Menu'         => __DIR__.'/vendor/KnpMenu/src',
     'DMS\Filter'       => __DIR__.'/vendor/DMS-Filter',
+    'Profiler'         => __DIR__.'/../vendor/bundles',
 ));
 
 $loader->registerPrefixes(array(

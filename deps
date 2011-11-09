@@ -157,5 +157,9 @@
     version=v0.2.0
 
 [LiipSearchBundle]
-   git=http://github.com/liip/LiipSearchBundle.git
-   target=/bundles/Liip/SearchBundle
+    git=http://github.com/liip/LiipSearchBundle.git
+    target=/bundles/Liip/SearchBundle
+
+[ProfilerLiveBundle]
+    git=http://github.com/dsyph3r/ProfilerLiveBundle.git
+    target=/bundles/Profiler/LiveBundle
