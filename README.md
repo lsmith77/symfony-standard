@@ -42,12 +42,16 @@ List of additional bundles and libs:
     * LiipHyphenatorBundle (and OrgHeiglHyphenator)
     * LiipThemeBundle
     * LiipImagineBundle (and imagine lib)
+    * LiipDoctrineCacheBundle
 
     * IdeatoTreeBundle
     * SonatajQueryBundle
 
     * JMSSerializerBundle
     * JMSDebuggingBundle
+
+    * BehatBundle
+    * MinkBundle
 
 It also includes the following Bundles which are not enabled:
 
