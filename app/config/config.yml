@@ -175,3 +175,9 @@ liip_imagine:
             quality: 50
             filters:
                 thumbnail: { size: [120, 90], mode: outbound }
+
+liip_doctrine_cache:
+    namespaces:
+        foo:
+            namespace: ding
+            type: apc

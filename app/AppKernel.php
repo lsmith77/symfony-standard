@@ -33,6 +33,7 @@ class AppKernel extends Kernel
             new Liip\HyphenatorBundle\LiipHyphenatorBundle(),
             new Liip\ThemeBundle\LiipThemeBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
+            new Liip\DoctrineCacheBundle\LiipDoctrineCacheBundle(),
 
             new Symfony\Cmf\Bundle\TreeBundle\SymfonyCmfTreeBundle(),
             new Sonata\jQueryBundle\SonatajQueryBundle(),

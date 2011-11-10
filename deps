@@ -160,6 +160,10 @@
     git=http://github.com/liip/LiipSearchBundle.git
     target=/bundles/Liip/SearchBundle
 
+[LiipDoctrineCacheBundle]
+    git=http://github.com/liip/LiipDoctrineCacheBundle.git
+    target=/bundles/Liip/DoctrineCacheBundle
+
 [ProfilerLiveBundle]
     git=http://github.com/dsyph3r/ProfilerLiveBundle.git
     target=/bundles/Profiler/LiveBundle
