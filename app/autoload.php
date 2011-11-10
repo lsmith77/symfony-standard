@@ -36,6 +36,13 @@ $loader->registerNamespaces(array(
     'Knp\Menu'         => __DIR__.'/vendor/KnpMenu/src',
     'DMS\Filter'       => __DIR__.'/vendor/DMS-Filter',
     'Profiler'         => __DIR__.'/../vendor/bundles',
+    'Behat\Gherkin' => __DIR__.'/../vendor/behat/gherkin/src',
+    'Behat\Behat'   => __DIR__.'/../vendor/behat/behat/src',
+    'Behat\Mink'       => __DIR__.'/../vendor/behat/mink/src',
+    'Behat\SahiClient' => __DIR__.'/../vendor/behat/sahi/src',
+    'Buzz'             => __DIR__.'/../vendor/buzz/lib',
+    'Behat\BehatBundle' => __DIR__.'/../vendor/bundles',
+    'Behat\MinkBundle' => __DIR__.'/../vendor/bundles',
 ));
 
 $loader->registerPrefixes(array(
