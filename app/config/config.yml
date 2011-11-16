@@ -176,6 +176,13 @@ liip_imagine:
             filters:
                 thumbnail: { size: [120, 90], mode: outbound }
 
+        my_thumb_resize:
+            quality: 50
+            cache: false
+            filters:
+                thumbnail: { size: [120, 90], mode: outbound }
+                relative_resize: { heighten: 78 }
+
 liip_doctrine_cache:
     namespaces:
         foo:
