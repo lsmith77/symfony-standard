@@ -164,6 +164,10 @@
     git=http://github.com/liip/LiipDoctrineCacheBundle.git
     target=/bundles/Liip/DoctrineCacheBundle
 
+[LiipProcessManager]
+    git=http://github.com/liip/LiipProcessManager.git
+    target=/bundles/Liip/ProcessManager
+
 [ProfilerLiveBundle]
     git=http://github.com/dsyph3r/ProfilerLiveBundle.git
     target=/bundles/Profiler/LiveBundle
