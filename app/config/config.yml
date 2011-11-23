@@ -169,7 +169,7 @@ liip_theme:
     theme_cookie: 'device'
 
 liip_imagine:
-    formats: [ jpg, png]
+    formats: [jpg, png]
     filter_sets:
         my_thumb:
             quality: 50
