@@ -32,6 +32,10 @@
 [doctrine]
     git=http://github.com/doctrine/doctrine2.git
 
+[DoctrinePHPCRBundle]
+    git=http://github.com/doctrine/DoctrinePHPCRBundle.git
+    target=/bundles/Doctrine/Bundle/PHPCRBundle
+
 [swiftmailer]
     git=http://github.com/swiftmailer/swiftmailer.git
     version=v4.1.2

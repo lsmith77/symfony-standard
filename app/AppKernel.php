@@ -15,7 +15,8 @@ class AppKernel extends Kernel
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Symfony\Bundle\DoctrineBundle\DoctrineBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
-            new Symfony\Bundle\DoctrinePHPCRBundle\DoctrinePHPCRBundle(),
+
+            new Doctrine\Bundle\PHPCRBundle\DoctrinePHPCRBundle(),
 
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
@@ -35,11 +36,9 @@ class AppKernel extends Kernel
             new Liip\ImagineBundle\LiipImagineBundle(),
             new Liip\DoctrineCacheBundle\LiipDoctrineCacheBundle(),
 
-            new Symfony\Cmf\Bundle\TreeBundle\SymfonyCmfTreeBundle(),
             new Sonata\jQueryBundle\SonatajQueryBundle(),
-
+            new Symfony\Cmf\Bundle\TreeBundle\SymfonyCmfTreeBundle(),
             new Symfony\Cmf\Bundle\PHPCRBrowserBundle\SymfonyCmfPHPCRBrowserBundle(),
-
 //            new Symfony\Cmf\Bundle\ChainRoutingBundle\ChainRoutingBundle(),
         );
 
