@@ -29,7 +29,9 @@ app/console doctrine:schema:create
 
 List of additional bundles and libs:
 
-    * symfony-cmf (includes DoctrinePHPCRBundle, doctrine-phpcr-odm, jackalope ..)
+    * symfony-cmf (includes doctrine-phpcr-odm, jackalope ..)
+
+    * DoctrinePHPCRBundle
 
     * FOSUserBundle
     * FOSFacebookBundle (and facebook PHP SDK)
