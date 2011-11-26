@@ -135,6 +135,3 @@ system(sprintf('%s %s assets:install %s --symlink', $interpreter, escapeshellarg
 
 // Remove the cache
 system(sprintf('%s %s cache:clear --no-warmup', $interpreter, escapeshellarg($rootDir.'/app/console')));
-
-// Get submodules for symfony-cmf
-system(sprintf('cd %s; git submodule update --recursive --init; cd %s', escapeshellarg($vendorDir.'/symfony-cmf'), escapeshellarg($installDir)));
