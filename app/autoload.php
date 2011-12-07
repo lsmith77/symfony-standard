@@ -46,12 +46,12 @@ $loader->registerNamespaces(array(
     'Buzz'             => __DIR__.'/../vendor/buzz/lib',
     'Behat\BehatBundle'=> __DIR__.'/../vendor/bundles',
     'Behat\MinkBundle' => __DIR__.'/../vendor/bundles',
+    'Org\Heigl\Hyphenator' => __DIR__ . '/../vendor/OrgHeiglHyphenator/src',
 ));
 
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',
     'Twig_'            => __DIR__.'/../vendor/twig/lib',
-    'Org_Heigl_Hyphenator' => __DIR__ . '/../vendor/OrgHeiglHyphenator/src',
 ));
 
 // intl

@@ -160,13 +160,14 @@ liip_cache_control:
     flash_message_listener: false
 
 liip_hyphenator:
-    language: de
+    language: de_DE
     hyphen: '&shy;'
 
 liip_theme:
     themes: ['desktop', 'tablet', 'phone']
     active_theme: 'desktop'
     theme_cookie: 'device'
+    autodetect_theme: true
 
 liip_imagine:
     formats: [jpg, png]
