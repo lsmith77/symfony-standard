@@ -103,14 +103,22 @@ foreach ($deps as $name => $dep) {
             $rev = isset($dep['version']) ? $dep['version'] : 'origin/HEAD';
         }
 
-        // patch to enable submodules with the vendors script
-        if (isset($dep['git_command'])) {
-            $git_command = ' && git ' . $dep['git_command'] . ' ';
-        } else {
-            $git_command = '';
+        $status = system(sprintf('cd %s && git status --porcelain -uno', escapeshellarg($installDir)));
+        if (!empty($status)) {
+            exit(sprintf('"%s" has local modifications. Please revert or commit/push them before running this command again.', $name));
         }
 
-        system(sprintf('cd %s && git fetch origin && git reset --hard %s' . $git_command, escapeshellarg($installDir), escapeshellarg($rev)));
+        $current_rev = system(sprintf('cd %s && git rev-list --max-count=1 HEAD', escapeshellarg($installDir)));
+        if ($current_rev === $rev) {
+            continue;
+        }
+
+        $git_command = '';
+        if (isset($dep['git_command'])) {
+            $git_command = ' && git ' . $dep['git_command'] . ' ';
+        }
+
+        system(sprintf('cd %s && git fetch origin && git reset --hard %s %s', escapeshellarg($installDir), escapeshellarg($rev), $git_command));
     }
 
     if ('update' === $command || 'lock' === $command) {
@@ -127,11 +135,13 @@ if ('update' === $command || 'lock' === $command) {
     file_put_contents($rootDir.'/deps.lock', implode("\n", $newversions));
 }
 
-// php on windows can't use the shebang line from system()
-$interpreter = defined('PHP_WINDOWS_VERSION_BUILD') ? 'php.exe' : '';
+if ('lock' !== $command) {
+    // php on windows can't use the shebang line from system()
+    $interpreter = defined('PHP_WINDOWS_VERSION_BUILD') ? 'php.exe' : '';
 
-// Update assets
-system(sprintf('%s %s assets:install %s --symlink', $interpreter, escapeshellarg($rootDir.'/app/console'), escapeshellarg($rootDir.'/web/')));
+    // Update assets
+    system(sprintf('%s %s assets:install %s --symlink', $interpreter, escapeshellarg($rootDir.'/app/console'), escapeshellarg($rootDir.'/web/')));
 
-// Remove the cache
-system(sprintf('%s %s cache:clear --no-warmup', $interpreter, escapeshellarg($rootDir.'/app/console')));
+    // Remove the cache
+    system(sprintf('%s %s cache:clear --no-warmup', $interpreter, escapeshellarg($rootDir.'/app/console')));
+}
