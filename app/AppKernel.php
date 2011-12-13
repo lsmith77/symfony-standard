@@ -48,11 +48,12 @@ class AppKernel extends Kernel
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
-            $bundles[] = new JMS\DebuggingBundle\JMSDebuggingBundle($this);
             if ('test' === $this->getEnvironment()) {
 //                $bundles[] = new Liip\FunctionalTestBundle\LiipFunctionalTestBundle();
                 $bundles[] = new Behat\BehatBundle\BehatBundle();
                 $bundles[] = new Behat\MinkBundle\MinkBundle();
+            } else {
+                $bundles[] = new JMS\DebuggingBundle\JMSDebuggingBundle($this);
             }
         }
 
