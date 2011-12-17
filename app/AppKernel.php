@@ -53,7 +53,7 @@ class AppKernel extends Kernel
                 $bundles[] = new Behat\BehatBundle\BehatBundle();
                 $bundles[] = new Behat\MinkBundle\MinkBundle();
             } else {
-                $bundles[] = new JMS\DebuggingBundle\JMSDebuggingBundle($this);
+//                $bundles[] = new JMS\DebuggingBundle\JMSDebuggingBundle($this);
             }
         }
 

@@ -21,4 +21,5 @@ use Symfony\Component\HttpFoundation\Request;
 
 $kernel = new AppKernel('dev', true);
 $request = Request::createFromGlobals();
-$kernel->handle($request)->send();
+$response = $kernel->handle($request);
+$kernel->terminate($request, $response);
