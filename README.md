@@ -22,9 +22,14 @@ http://symfony.com/doc/2.0/book/installation.html#configuration-and-setup
 Please also make the ``web`` dir writeable if you want to try out the
 LiipImagineBundle.
 
-Finally install the FOSUserBundle schema:
+Install the FOSUserBundle schema:
 ```
 app/console doctrine:schema:create
+```
+
+And the PHPCR Doctrine DBAL schema:
+```
+app/console doctrine:phpcr:init:dbal
 ```
 
 List of additional bundles and libs:
