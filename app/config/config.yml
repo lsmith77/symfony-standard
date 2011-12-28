@@ -131,6 +131,7 @@ doctrine_phpcr:
         username: admin
         password: admin
     odm:
+        auto_generate_proxy_classes: %kernel.debug%
         mappings:
             LiipHelloBundle: true
 
