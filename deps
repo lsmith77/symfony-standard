@@ -5,9 +5,6 @@
     git=http://github.com/symfony-cmf/symfony-cmf.git
     git_command=submodule update --init --recursive
 
-[KnpMenu]
-   git=https://github.com/knplabs/KnpMenu.git
-
 [SymfonyCmfTreeBundle]
    git=http://github.com/symfony-cmf/TreeBundle.git
    target=/bundles/Symfony/Cmf/Bundle/TreeBundle
@@ -38,7 +35,7 @@
 
 [swiftmailer]
     git=http://github.com/swiftmailer/swiftmailer.git
-    version=v4.1.4
+    version=v4.1.5
 
 [assetic]
     git=http://github.com/kriswallsmith/assetic.git
@@ -78,8 +75,8 @@
     target=/bundles/Doctrine/Bundle/DoctrineBundle
 
 [DoctrineFixturesBundle]
-    git=http://github.com/symfony/DoctrineFixturesBundle.git
-    target=/bundles/Symfony/Bundle/DoctrineFixturesBundle
+    git=http://github.com/doctrine/DoctrineFixturesBundle.git
+    target=/bundles/Doctrine/Bundle/FixturesBundle
 
 [JMSDebuggingBundle]
     git=http://github.com/schmittjoh/JMSDebuggingBundle.git
