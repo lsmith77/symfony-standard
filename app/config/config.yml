@@ -168,7 +168,8 @@ liip_hyphenator:
 liip_theme:
     themes: ['desktop', 'tablet', 'phone']
     active_theme: 'desktop'
-    theme_cookie: 'device'
+    cookie:
+        name: 'device'
     autodetect_theme: true
 
 liip_imagine:
