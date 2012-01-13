@@ -21,9 +21,9 @@ $loader->registerNamespaces(array(
     'Sonata'           => __DIR__.'/../vendor/bundles',
     'JMS'              => __DIR__.'/../vendor/bundles',
     'Doctrine\\Bundle' => __DIR__.'/../vendor/bundles',
-    'Doctrine\\Common' => __DIR__ . '/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/doctrine-common/lib',
-    'Doctrine\\ODM\\PHPCR' => __DIR__ . '/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib',
-    'Doctrine\\Common\\DataFixtures' => __DIR__ . '/../vendor/doctrine-data-fixtures/lib',
+    'Doctrine\\Common' => __DIR__. '/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/doctrine-common/lib',
+    'Doctrine\\ODM\\PHPCR' => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib',
+    'Doctrine\\Common\\DataFixtures' => __DIR__.'/../vendor/doctrine-data-fixtures/lib',
     'Doctrine\\DBAL'   => __DIR__.'/../vendor/doctrine-dbal/lib',
     'Doctrine'         => __DIR__.'/../vendor/doctrine/lib',
     'Monolog'          => __DIR__.'/../vendor/monolog/src',
@@ -47,7 +47,7 @@ $loader->registerNamespaces(array(
     'Buzz'             => __DIR__.'/../vendor/buzz/lib',
     'Behat\BehatBundle'=> __DIR__.'/../vendor/bundles',
     'Behat\MinkBundle' => __DIR__.'/../vendor/bundles',
-    'Org\Heigl\Hyphenator' => __DIR__ . '/../vendor/OrgHeiglHyphenator/src',
+    'Org\Heigl\Hyphenator' => __DIR__.'/../vendor/OrgHeiglHyphenator/src',
 ));
 
 $loader->registerPrefixes(array(
