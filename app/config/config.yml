@@ -95,6 +95,7 @@ fos_rest:
             jpg: 'image/jpeg'
             png: 'image/png'
     body_listener: true
+    query_fetcher_listener: true
     format_listener:
         default_priorities:
             - html
