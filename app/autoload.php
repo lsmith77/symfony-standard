@@ -21,8 +21,8 @@ $loader->registerNamespaces(array(
     'Sonata'           => __DIR__.'/../vendor/bundles',
     'JMS'              => __DIR__.'/../vendor/bundles',
     'Doctrine\\Bundle' => __DIR__.'/../vendor/bundles',
-    'Doctrine\\Common' => __DIR__. '/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/doctrine-common/lib',
-    'Doctrine\\ODM\\PHPCR' => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib',
+    'Doctrine\\Common' => __DIR__. '/../vendor/doctrine-common/lib',
+    'Doctrine\\ODM\\PHPCR' => __DIR__.'/../vendor/doctrine-phpcr-odm/lib',
     'Doctrine\\Common\\DataFixtures' => __DIR__.'/../vendor/doctrine-data-fixtures/lib',
     'Doctrine\\DBAL'   => __DIR__.'/../vendor/doctrine-dbal/lib',
     'Doctrine'         => __DIR__.'/../vendor/doctrine/lib',
@@ -31,10 +31,13 @@ $loader->registerNamespaces(array(
     'Metadata'         => __DIR__.'/../vendor/metadata/src',
     'Acme'             => __DIR__.'/../src',
     'Doctrine'         => __DIR__.'/../vendor/doctrine/lib',
-    'Jackalope'        => __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/jackalope/src',
+    'Jackalope'        => array(
+        __DIR__.'/../vendor/jackalope/src',
+        __DIR__.'/../vendor/jackalope-doctrine-dbal/src',
+    ),
     'PHPCR'            => array(
-        __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/jackalope/lib/phpcr/src',
-        __DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/vendor/jackalope/lib/phpcr-utils/src',
+        __DIR__.'/../vendor/phpcr/src',
+        __DIR__.'/../vendor/phpcr-utils/src',
     ),
     'Imagine'          => __DIR__.'/../vendor/imagine/lib',
     'Knp\Menu'         => __DIR__.'/vendor/KnpMenu/src',
@@ -72,7 +75,7 @@ AnnotationRegistry::registerLoader(function($class) use ($loader) {
     return class_exists($class, false);
 });
 AnnotationRegistry::registerFile(__DIR__.'/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php');
-AnnotationRegistry::registerFile(__DIR__.'/../vendor/symfony-cmf/vendor/doctrine-phpcr-odm/lib/Doctrine/ODM/PHPCR/Mapping/Annotations/DoctrineAnnotations.php');
+AnnotationRegistry::registerFile(__DIR__.'/../vendor/doctrine-phpcr-odm/lib/Doctrine/ODM/PHPCR/Mapping/Annotations/DoctrineAnnotations.php');
 
 // Swiftmailer needs a special autoloader to allow
 // the lazy loading of the init file (which is expensive)
