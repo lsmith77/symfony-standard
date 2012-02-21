@@ -113,11 +113,11 @@
 [FOSRestBundle]
     git=http://github.com/FriendsOfSymfony/FOSRestBundle.git
     target=/bundles/FOS/RestBundle
+    version=origin/query_param-proof-of-concept
 
 [FOSTwitterBundle]
     git=http://github.com/FriendsOfSymfony/FOSTwitterBundle.git
     target=/bundles/FOS/TwitterBundle
-    version=origin/query_param-proof-of-concept
 
 [FOSFacebookBundle]
     git=http://github.com/FriendsOfSymfony/FOSFacebookBundle.git
