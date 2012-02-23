@@ -14,3 +14,7 @@ parameters:
 
   locale:            en
   secret:            ThisTokenIsNotSoSecretChangeIt
+
+  symfony_cmf_core.mainmenu_basepath: /cms/navigation/main
+  symfony_cmf_core.routing_basepath: /cms/routes
+  symfony_cmf_content.static_basepath: /cms
