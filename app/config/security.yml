@@ -36,7 +36,7 @@ security:
             form_login:
                 check_path: /demo/secured/login_check
                 login_path: /demo/secured/login
-#                default_target_path: /demo/secured/hello
+                default_target_path: /demo/secured/hello
             logout:
                 path:   /demo/secured/logout
                 target: /demo/
