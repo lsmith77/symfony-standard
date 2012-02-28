@@ -19,11 +19,11 @@
                 </form>
             </div>
 
-            {% if app.session.flash('notice') %}
-                <div class="flash-message">
-                    <em>Notice</em>: {{ app.session.flash('notice') }}
-                </div>
-            {% endif %}
+            {% for key, message in app.session.getFlashes() %}
+            <div class="{{ key }}">
+                Flash message: {{ message }}
+            </div>
+            {% endfor %}
 
             {% block content_header %}
                 <ul id="menu">
