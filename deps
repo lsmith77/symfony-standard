@@ -121,6 +121,11 @@
     git=http://github.com/FriendsOfSymfony/FOSUserBundle.git
     target=/bundles/FOS/UserBundle
 
+[FOSRest]
+    git=http://github.com/FriendsOfSymfony/FOSRest.git
+    target=fos/FOS/Rest
+    version=origin/master
+
 [FOSRestBundle]
     git=http://github.com/FriendsOfSymfony/FOSRestBundle.git
     target=/bundles/FOS/RestBundle

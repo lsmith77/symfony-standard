@@ -15,7 +15,7 @@ if (function_exists('apc_store')) {
 $loader->registerNamespaces(array(
     'Symfony\\Cmf'     => array(__DIR__.'/../vendor/symfony/src', __DIR__.'/../vendor/symfony-cmf/src'),
     'Symfony'          => array(__DIR__.'/../vendor/symfony/src', __DIR__.'/../vendor/bundles'),
-    'FOS'              => __DIR__.'/../vendor/bundles',
+    'FOS'              => array(__DIR__.'/../vendor/fos', __DIR__.'/../vendor/bundles'),
     'Liip'             => __DIR__.'/../vendor/bundles',
     'Sensio'           => __DIR__.'/../vendor/bundles',
     'Sonata'           => __DIR__.'/../vendor/bundles',
