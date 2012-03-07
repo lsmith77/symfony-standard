@@ -56,7 +56,6 @@
 
 [assetic]
     git=http://github.com/kriswallsmith/assetic.git
-    version=v1.0.2
 
 [twig-extensions]
     git=http://github.com/fabpot/Twig-extensions.git
@@ -112,6 +111,13 @@
 [JMSSerializerBundle]
     git=http://github.com/schmittjoh/JMSSerializerBundle.git
     target=/bundles/JMS/SerializerBundle
+
+[JMSAopBundle]
+    git=http://github.com/schmittjoh/JMSAopBundle.git
+    target=/bundles/JMS/AopBundle
+
+[cg-library]
+    git=http://github.com/schmittjoh/cg-library.git
 
 [SymfonyCMFChainRoutingBundle]
     git=http://github.com/symfony-cmf/ChainRoutingBundle.git
