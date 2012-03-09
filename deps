@@ -145,7 +145,7 @@
     target=/bundles/FOS/FacebookBundle
 
 [facebook]
-    git=http://github.com/facebook/php-sdk.git
+    git=http://github.com/facebook/facebook-php-sdk.git
 
 [LiipHelloBundle]
     git=http://github.com/liip/LiipHelloBundle.git
