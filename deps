@@ -1,17 +1,6 @@
 [symfony]
     git=http://github.com/symfony/symfony.git
 
-[symfony-cmf]
-    git=http://github.com/symfony-cmf/symfony-cmf.git
-
-[SymfonyCmfTreeBundle]
-   git=http://github.com/symfony-cmf/TreeBundle.git
-   target=/bundles/Symfony/Cmf/Bundle/TreeBundle
-
-[SonatajQueryBundle]
-   git=https://github.com/sonata-project/SonatajQueryBundle.git
-   target=/bundles/Sonata/jQueryBundle
-
 [twig]
     git=http://github.com/fabpot/Twig.git
 
@@ -118,10 +107,6 @@
 [cg-library]
     git=http://github.com/schmittjoh/cg-library.git
 
-[SymfonyCMFChainRoutingBundle]
-    git=http://github.com/symfony-cmf/ChainRoutingBundle.git
-    target=/bundles/Symfony/Cmf/Bundle/ChainRoutingBundle
-
 [FOSUserBundle]
     git=http://github.com/FriendsOfSymfony/FOSUserBundle.git
     target=/bundles/FOS/UserBundle
@@ -135,10 +120,6 @@
     git=http://github.com/FriendsOfSymfony/FOSRestBundle.git
     target=/bundles/FOS/RestBundle
     version=origin/query_param-proof-of-concept
-
-[FOSTwitterBundle]
-    git=http://github.com/FriendsOfSymfony/FOSTwitterBundle.git
-    target=/bundles/FOS/TwitterBundle
 
 [FOSFacebookBundle]
     git=http://github.com/FriendsOfSymfony/FOSFacebookBundle.git
@@ -155,10 +136,6 @@
 [LiipFunctionalTestBundle]
     git=http://github.com/liip/LiipFunctionalTestBundle.git
     target=/bundles/Liip/FunctionalTestBundle
-
-[LiipXsltBundle]
-    git=http://github.com/liip/LiipXsltBundle.git
-    target=/bundles/Liip/XsltBundle
 
 [LiipContainerWrapperBundle]
     git=http://github.com/liip/LiipContainerWrapperBundle.git
@@ -187,10 +164,6 @@
    git=http://github.com/heiglandreas/Org_Heigl_Hyphenator.git
    target=/OrgHeiglHyphenator
 
-[LiipMagentoBundle]
-   git=http://github.com/liip/LiipMagentoBundle.git
-   target=/bundles/Liip/MagentoBundle
-
 [LiipImagineBundle]
    git=http://github.com/liip/LiipImagineBundle.git
    target=/bundles/Liip/ImagineBundle
@@ -199,17 +172,9 @@
     git=http://github.com/avalanche123/Imagine.git
     target=imagine
 
-[LiipSearchBundle]
-    git=http://github.com/liip/LiipSearchBundle.git
-    target=/bundles/Liip/SearchBundle
-
 [LiipDoctrineCacheBundle]
     git=http://github.com/liip/LiipDoctrineCacheBundle.git
     target=/bundles/Liip/DoctrineCacheBundle
-
-[LiipProcessManager]
-    git=http://github.com/liip/LiipProcessManager.git
-    target=/bundles/Liip/ProcessManager
 
 [ProfilerLiveBundle]
     git=http://github.com/dsyph3r/ProfilerLiveBundle.git

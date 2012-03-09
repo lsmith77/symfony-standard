@@ -26,6 +26,6 @@ _configurator:
 _main:
     resource: routing.yml
 
-#ProfilerLiveBundle:
-#    resource: "@ProfilerLiveBundle/Resources/config/routing.yml"
-#    prefix:   /
+ProfilerLiveBundle:
+    resource: "@ProfilerLiveBundle/Resources/config/routing.yml"
+    prefix:   /

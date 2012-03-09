@@ -17,7 +17,7 @@ Then following the installation instructions at the above url.
 
 Make sure to ensure that the ``app/cache`` and ``app/logs`` directories are
 write-able for the web server (and also for the CLI):
-http://symfony.com/doc/2.0/book/installation.html#configuration-and-setup
+http://symfony.com/doc/current/book/installation.html#configuration-and-setup
 
 Please also make the ``web`` dir writeable if you want to try out the
 LiipImagineBundle.
@@ -34,38 +34,31 @@ app/console doctrine:phpcr:init:dbal
 
 List of additional bundles and libs:
 
-    * symfony-cmf (includes doctrine-phpcr-odm, jackalope ..)
+    * doctrine-phpcr-odm, jackalope, jackalope-doctrine-dbal, phpcr, phpcr-utils
 
     * DoctrinePHPCRBundle
+    * DoctrineFixturesBundle
 
     * FOSUserBundle
     * FOSFacebookBundle (and facebook PHP SDK)
-    * FOSRestBundle
+    * FOSRestBundle (and FOSRest)
 
     * LiipContainerWrapperBundle
     * LiipCacheControlBundle
     * LiipHelloBundle
-    * LiipVieBundle
+    * LiipVieBundle (and DMS-Filter)
     * LiipHyphenatorBundle (and OrgHeiglHyphenator)
     * LiipThemeBundle
     * LiipImagineBundle (and imagine lib)
     * LiipDoctrineCacheBundle
+    * LiipFunctionalTestBundle
 
-    * IdeatoTreeBundle
-    * SonatajQueryBundle
-
+    * JMSAopBundle (and cg-library)
     * JMSSerializerBundle
     * JMSDebuggingBundle
 
-    * BehatBundle
+    * BehatBundle (and behat, buzz)
     * MinkBundle
-
-It also includes the following Bundles which are not enabled:
-
-    * LiipXsltBundle
-    * LiipMagentoBundle
-    * LiipSearchBundle
-    * LiipFunctionalTestBundle
 
 The key Bundle in this list is LiipHelloBundle as it provides usage examples
 for most of the above mentioned Bundles:

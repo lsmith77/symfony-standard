@@ -36,21 +36,16 @@ class AppKernel extends Kernel
             new Liip\ThemeBundle\LiipThemeBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
             new Liip\DoctrineCacheBundle\LiipDoctrineCacheBundle(),
-
-            new Sonata\jQueryBundle\SonatajQueryBundle(),
-            new Symfony\Cmf\Bundle\TreeBundle\SymfonyCmfTreeBundle(),
-            new Symfony\Cmf\Bundle\PHPCRBrowserBundle\SymfonyCmfPHPCRBrowserBundle(),
-//            new Symfony\Cmf\Bundle\ChainRoutingBundle\ChainRoutingBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
-//            $bundles[] = new Profiler\LiveBundle\ProfilerLiveBundle();
+            $bundles[] = new Profiler\LiveBundle\ProfilerLiveBundle();
             $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
             if ('test' === $this->getEnvironment()) {
-//                $bundles[] = new Liip\FunctionalTestBundle\LiipFunctionalTestBundle();
+                $bundles[] = new Liip\FunctionalTestBundle\LiipFunctionalTestBundle();
                 $bundles[] = new Behat\BehatBundle\BehatBundle();
                 $bundles[] = new Behat\MinkBundle\MinkBundle();
             } else {
