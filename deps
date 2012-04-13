@@ -211,3 +211,7 @@
 [MinkBundle]
     git=https://github.com/Behat/MinkBundle.git
     target=/bundles/Behat/MinkBundle
+
+[NelmioApiDocBundle]
+    git=https://github.com/nelmio/NelmioApiDocBundle.git
+    target=/bundles/Nelmio/ApiDocBundle

@@ -36,6 +36,8 @@ class AppKernel extends Kernel
             new Liip\ThemeBundle\LiipThemeBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
             new Liip\DoctrineCacheBundle\LiipDoctrineCacheBundle(),
+
+            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

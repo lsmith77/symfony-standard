@@ -19,6 +19,7 @@ $loader->registerNamespaces(array(
     'Liip'             => __DIR__.'/../vendor/bundles',
     'Sensio'           => __DIR__.'/../vendor/bundles',
     'Sonata'           => __DIR__.'/../vendor/bundles',
+    'Nelmio'           => __DIR__.'/../vendor/bundles',
     'CG'               => __DIR__.'/../vendor/cg-library/src',
     'JMS'              => __DIR__.'/../vendor/bundles',
     'Doctrine\\Bundle' => __DIR__.'/../vendor/bundles',
