@@ -155,6 +155,7 @@
 
 [DMS-Filter]
    git=http://github.com/rdohms/DMS-Filter.git
+   target=/DMS-Filter/DMS/Filter
 
 [LiipHyphenatorBundle]
    git=http://github.com/liip/LiipHyphenatorBundle.git
