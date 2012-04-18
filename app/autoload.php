@@ -43,7 +43,7 @@ $loader->registerNamespaces(array(
     ),
     'Imagine'          => __DIR__.'/../vendor/imagine/lib',
     'Knp\Menu'         => __DIR__.'/../vendor/KnpMenu/src',
-    'DMS\Filter'       => __DIR__.'/../vendor/DMS-Filter',
+    'DMS'              => __DIR__.'/../vendor/DMS',
     'Profiler'         => __DIR__.'/../vendor/bundles',
     'Behat\Gherkin'    => __DIR__.'/../vendor/behat/gherkin/src',
     'Behat\Behat'      => __DIR__.'/../vendor/behat/behat/src',
