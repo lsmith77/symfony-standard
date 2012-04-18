@@ -119,6 +119,9 @@ fos_rest:
             'Symfony\Component\Routing\Exception\ResourceNotFoundException': true
     service:
         view_handler: liip_hello.view_handler
+    serializer:
+#        version: 1.0
+#        groups: [data]
 
 doctrine_phpcr:
     session:
