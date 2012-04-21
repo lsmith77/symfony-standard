@@ -151,6 +151,7 @@ liip_vie:
 sensio_framework_extra:
     view:    { annotations: false }
     router:  { annotations: true }
+    request: { converters: true }
 
 liip_container_wrapper:
     disable_optimization: false
