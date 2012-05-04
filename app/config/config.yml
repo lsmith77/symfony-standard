@@ -134,6 +134,8 @@ doctrine_phpcr:
         workspace: default
         username: admin
         password: admin
+        options:
+            'jackalope.fetch_depth': 1
     odm:
         auto_generate_proxy_classes: %kernel.debug%
         mappings:
