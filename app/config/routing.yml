@@ -3,12 +3,15 @@ hello:
 
 security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+    prefix:   /liip
 
 profile:
     resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix:   /liip/profile
 
 registration:
     resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix:   /liip/register
 
 vie:
     resource: "@LiipVieBundle/Resources/config/routing/phpcr_odm.xml"
