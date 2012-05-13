@@ -83,6 +83,9 @@ fos_rest:
     view:
 #        default_engine: php
         view_response_listener: force
+        force_redirects:
+          html: true
+#          xml: true
         formats:
             json: true
             xml: true
