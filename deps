@@ -115,7 +115,6 @@
 [FOSRestBundle]
     git=http://github.com/FriendsOfSymfony/FOSRestBundle.git
     target=/bundles/FOS/RestBundle
-    version=origin/query_param-proof-of-concept
 
 [FOSFacebookBundle]
     git=http://github.com/FriendsOfSymfony/FOSFacebookBundle.git
@@ -127,7 +126,6 @@
 [LiipHelloBundle]
     git=http://github.com/liip/LiipHelloBundle.git
     target=/bundles/Liip/HelloBundle
-    version=origin/query_param-proof-of-concept
 
 [LiipFunctionalTestBundle]
     git=http://github.com/liip/LiipFunctionalTestBundle.git
