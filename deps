@@ -175,34 +175,6 @@
     git=http://github.com/dsyph3r/ProfilerLiveBundle.git
     target=/bundles/Profiler/LiveBundle
 
-[gherkin]
-    git=https://github.com/Behat/Gherkin.git
-    target=/behat/gherkin
-
-[behat]
-    git=https://github.com/Behat/Behat.git
-    target=/behat/behat
-
-[mink]
-    git=https://github.com/Behat/Mink.git
-    target=/behat/mink
-
-[buzz]
-    git=https://github.com/kriswallsmith/Buzz.git
-    target=/buzz
-
-[SahiClient]
-    git=https://github.com/Behat/SahiClient
-    target=/behat/sahi
-
-[BehatBundle]
-    git=https://github.com/Behat/BehatBundle.git
-    target=/bundles/Behat/BehatBundle
-
-[MinkBundle]
-    git=https://github.com/Behat/MinkBundle.git
-    target=/bundles/Behat/MinkBundle
-
 [NelmioApiDocBundle]
     git=https://github.com/nelmio/NelmioApiDocBundle.git
     target=/bundles/Nelmio/ApiDocBundle

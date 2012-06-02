@@ -48,8 +48,6 @@ class AppKernel extends Kernel
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
             if ('test' === $this->getEnvironment()) {
                 $bundles[] = new Liip\FunctionalTestBundle\LiipFunctionalTestBundle();
-                $bundles[] = new Behat\BehatBundle\BehatBundle();
-                $bundles[] = new Behat\MinkBundle\MinkBundle();
             } else {
                 $bundles[] = new JMS\DebuggingBundle\JMSDebuggingBundle($this);
             }
