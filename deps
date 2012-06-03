@@ -97,9 +97,13 @@
     git=http://github.com/schmittjoh/JMSSerializerBundle.git
     target=/bundles/JMS/SerializerBundle
 
-[JMSAopBundle]
+[JMSDiExtraBundle]
     git=http://github.com/schmittjoh/JMSAopBundle.git
     target=/bundles/JMS/AopBundle
+
+[JMSAopBundle]
+    git=http://github.com/schmittjoh/JMSDiExtraBundle.git
+    target=/bundles/JMS/DiExtraBundle
 
 [cg-library]
     git=http://github.com/schmittjoh/cg-library.git
