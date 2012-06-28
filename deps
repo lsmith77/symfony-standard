@@ -175,10 +175,29 @@
     git=http://github.com/liip/LiipDoctrineCacheBundle.git
     target=/bundles/Liip/DoctrineCacheBundle
 
+[LiipUrlAutoConverterBundle]
+    git=http://github.com/liip/LiipUrlAutoConverterBundle.git
+    target=/bundles/Liip/UrlAutoConverterBundle
+
+[LiipSearchBundle]
+    git=http://github.com/liip/LiipSearchBundle.git
+    target=/bundles/Liip/SearchBundle
+
+[LiipMonitorBundle]
+    git=http://github.com/liip/LiipMonitorBundle.git
+    target=/bundles/Liip/MonitorBundle
+
+[LiipMonitorExtraBundle]
+    git=http://github.com/liip/LiipMonitorExtraBundle.git
+    target=/bundles/Liip/MonitorExtraBundle
+
 [ProfilerLiveBundle]
-    git=http://github.com/dsyph3r/ProfilerLiveBundle.git
+    git=https://github.com/dsyph3r/ProfilerLiveBundle.git
     target=/bundles/Profiler/LiveBundle
 
 [NelmioApiDocBundle]
     git=https://github.com/nelmio/NelmioApiDocBundle.git
     target=/bundles/Nelmio/ApiDocBundle
+
+[LiipProcessManager]
+    git=git://github.com/liip/LiipProcessManager.git

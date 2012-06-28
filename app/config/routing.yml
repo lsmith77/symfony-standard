@@ -28,3 +28,7 @@ _imagine:
 NelmioApiDocBundle:
     resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
     prefix:   /api/doc
+
+theme:
+    resource: "@LiipThemeBundle/Resources/config/routing.xml"
+    prefix:   /liip/theme
