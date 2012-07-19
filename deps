@@ -191,13 +191,13 @@
     git=http://github.com/liip/LiipMonitorExtraBundle.git
     target=/bundles/Liip/MonitorExtraBundle
 
-[ProfilerLiveBundle]
-    git=https://github.com/dsyph3r/ProfilerLiveBundle.git
-    target=/bundles/Profiler/LiveBundle
-
 [NelmioApiDocBundle]
     git=https://github.com/nelmio/NelmioApiDocBundle.git
     target=/bundles/Nelmio/ApiDocBundle
+
+[KnpMarkdownBundle]
+    git=https://github.com/KnpLabs/KnpMarkdownBundle.git
+    target=/bundles/Knp/Bundle/MarkdownBundle
 
 [LiipProcessManager]
     git=git://github.com/liip/LiipProcessManager.git

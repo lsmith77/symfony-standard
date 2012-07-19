@@ -22,6 +22,7 @@ $loader->registerNamespaces(array(
     'Nelmio'           => __DIR__.'/../vendor/bundles',
     'CG'               => __DIR__.'/../vendor/cg-library/src',
     'JMS'              => __DIR__.'/../vendor/bundles',
+    'Knp'              => __DIR__.'/../vendor/bundles',
     'Doctrine\\Bundle' => __DIR__.'/../vendor/bundles',
     'Doctrine\\Common' => __DIR__. '/../vendor/doctrine-common/lib',
     'Doctrine\\ODM\\PHPCR' => __DIR__.'/../vendor/doctrine-phpcr-odm/lib',
@@ -32,7 +33,6 @@ $loader->registerNamespaces(array(
     'Assetic'          => __DIR__.'/../vendor/assetic/src',
     'Metadata'         => __DIR__.'/../vendor/metadata/src',
     'Acme'             => __DIR__.'/../src',
-    'Doctrine'         => __DIR__.'/../vendor/doctrine/lib',
     'Jackalope'        => array(
         __DIR__.'/../vendor/jackalope/src',
         __DIR__.'/../vendor/jackalope-doctrine-dbal/src',
