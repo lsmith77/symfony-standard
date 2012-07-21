@@ -195,9 +195,20 @@
     git=https://github.com/nelmio/NelmioApiDocBundle.git
     target=/bundles/Nelmio/ApiDocBundle
 
-[KnpMarkdownBundle]
-    git=https://github.com/KnpLabs/KnpMarkdownBundle.git
-    target=/bundles/Knp/Bundle/MarkdownBundle
+[dflydev-markdown]
+    git=https://github.com/dflydev/dflydev-markdown.git
 
 [LiipProcessManager]
     git=git://github.com/liip/LiipProcessManager.git
+
+[SimpleThingsFormSerializerBundle]
+    git=https://github.com/simplethings/SimpleThingsFormSerializerBundle.git
+    target=/bundles/SimpleThings/FormSerializerBundle
+
+[Ladybug]
+    git=http://github.com/raulfraile/Ladybug.git
+    target=ladybug
+
+[RaulFraileLadybugBundle]
+    git=http://github.com/raulfraile/LadybugBundle.git
+    target=/bundles/RaulFraile/Bundle/LadybugBundle

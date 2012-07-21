@@ -13,16 +13,17 @@ if (function_exists('apc_store')) {
     $loader = new UniversalClassLoader();
 }
 $loader->registerNamespaces(array(
-    'Symfony\\Cmf'     => array(__DIR__.'/../vendor/symfony/src', __DIR__.'/../vendor/symfony-cmf/src'),
     'Symfony'          => array(__DIR__.'/../vendor/symfony/src', __DIR__.'/../vendor/bundles'),
     'FOS'              => array(__DIR__.'/../vendor/fos', __DIR__.'/../vendor/bundles'),
     'Liip'             => __DIR__.'/../vendor/bundles',
     'Sensio'           => __DIR__.'/../vendor/bundles',
-    'Sonata'           => __DIR__.'/../vendor/bundles',
     'Nelmio'           => __DIR__.'/../vendor/bundles',
+    'dflydev'          => __DIR__.'/../vendor/dflydev-markdown/src',
     'CG'               => __DIR__.'/../vendor/cg-library/src',
     'JMS'              => __DIR__.'/../vendor/bundles',
-    'Knp'              => __DIR__.'/../vendor/bundles',
+    'SimpleThings'     => __DIR__.'/../vendor/bundles',
+    'Ladybug'          => __DIR__.'/../vendor/ladybug/lib',
+    'RaulFraile'       => __DIR__.'/../vendor/bundles',
     'Doctrine\\Bundle' => __DIR__.'/../vendor/bundles',
     'Doctrine\\Common' => __DIR__. '/../vendor/doctrine-common/lib',
     'Doctrine\\ODM\\PHPCR' => __DIR__.'/../vendor/doctrine-phpcr-odm/lib',
@@ -42,7 +43,6 @@ $loader->registerNamespaces(array(
         __DIR__.'/../vendor/phpcr-utils/src',
     ),
     'Imagine'          => __DIR__.'/../vendor/imagine/lib',
-    'Knp\Menu'         => __DIR__.'/../vendor/KnpMenu/src',
     'DMS'              => __DIR__.'/../vendor/DMS',
     'Profiler'         => __DIR__.'/../vendor/bundles',
     'Buzz'             => __DIR__.'/../vendor/buzz/lib',
