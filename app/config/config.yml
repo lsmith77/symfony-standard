@@ -201,3 +201,7 @@ liip_doctrine_cache:
         foo:
             namespace: ding
             type: apc
+
+liip_monitor:
+#    checks:
+#        php_extensions: [apc, xdebug]

@@ -189,7 +189,7 @@
 
 [LiipMonitorExtraBundle]
     git=http://github.com/liip/LiipMonitorExtraBundle.git
-    target=/bundles/Liip/MonitorExtraBundle
+    target=/bundles/Liip/Monitor
 
 [NelmioApiDocBundle]
     git=https://github.com/nelmio/NelmioApiDocBundle.git
