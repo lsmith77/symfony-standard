@@ -7,7 +7,7 @@
     use Sonata\AdminBundle\Datagrid\ListMapper;
     use Sonata\AdminBundle\Form\FormMapper;
 
-    class PostCMFAdmin extends Admin
+    class PostBackAdmin extends BackAdmin
     {
         protected function configureFormFields(FormMapper $formMapper)
         {

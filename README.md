@@ -29,7 +29,7 @@ http://symfony.com/doc/current/contributing/code/standards.html
 http://symfony.com/doc/current/cmf/bundles/block/index.html
 https://sonata-project.org/bundles/block/master/doc/index.html
 
-## PHPStorm Symfony 2 Plugins
+## PHPStorm Plugins - Symfony 2 
 http://plugins.jetbrains.com/plugin/7320
 http://plugins.jetbrains.com/plugin/7219
 

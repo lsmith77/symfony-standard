@@ -3,7 +3,7 @@
     namespace BackBundle\Document\ContentTypes;
 
     use BackBundle\Document\Traits\TitleDescTrait;
-    use Symfony\Component\Routing\RouteReferrersReadInterface;
+    use Symfony\Cmf\Component\Routing\RouteReferrersReadInterface;
     use Doctrine\ODM\PHPCR\Mapping\Annotations as PHPCR;
 
     /**

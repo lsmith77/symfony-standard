@@ -7,7 +7,7 @@
     use Sonata\AdminBundle\Datagrid\ListMapper;
     use Sonata\AdminBundle\Form\FormMapper;
 
-    class CMFAdmin extends Admin
+    class BackAdmin extends Admin
     {
         protected function configureListFields(ListMapper $listMapper)
         {

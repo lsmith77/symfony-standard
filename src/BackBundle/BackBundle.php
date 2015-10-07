@@ -4,6 +4,6 @@ namespace BackBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class CMFBackBundle extends Bundle
+class BackBundle extends Bundle
 {
 }

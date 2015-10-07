@@ -1,17 +1,17 @@
 services:
-    CMF.back.admin.page_title_image:
-        class: BackBundle\Admin\CMFAdmin
-        arguments:
-            - ''
-            - BackBundle\Document\ContentTypes\TitleImage
-            - 'SonataAdminBundle:CRUD'
-        tags:
-            - { name: sonata.admin, manager_type: doctrine_phpcr, group: 'Content Types', label: Title + Image }
-        calls:
-            - [setRouteBuilder, ['@sonata.admin.route.path_info_slashes']]
+    cmf_back.admin.page_title_image:
+            class: BackBundle\Admin\BackAdmin
+            arguments:
+                - ''
+                - BackBundle\Document\ContentTypes\TitleImage
+                - 'SonataAdminBundle:CRUD'
+            tags:
+                - { name: sonata.admin, manager_type: doctrine_phpcr, group: 'Content Types', label: Title + Image }
+            calls:
+                - [setRouteBuilder, ['@sonata.admin.route.path_info_slashes']]
 
-    CMF.back.admin.page_title_desc:
-        class: BackBundle\Admin\CMFAdmin
+    cmf_back.admin.page_title_desc:
+        class: BackBundle\Admin\BackAdmin
         arguments:
             - ''
             - BackBundle\Document\ContentTypes\TitleDesc
@@ -21,8 +21,8 @@ services:
         calls:
             - [setRouteBuilder, ['@sonata.admin.route.path_info_slashes']]
 
-    CMF.back.admin.page_title_desc_image:
-        class: BackBundle\Admin\CMFAdmin
+    cmf_back.admin.page_title_desc_image:
+        class: BackBundle\Admin\BackAdmin
         arguments:
             - ''
             - BackBundle\Document\Page

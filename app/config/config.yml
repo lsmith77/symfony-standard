@@ -143,6 +143,8 @@ sonata_block:
             settings:
                 id: '/cms'
             contexts:   [admin]
+        sonata.admin.content_types:
+            contexts:   [admin]
     blocks_by_class:
         Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\RssBlock:
             cache: cmf.block.cache.js_async
@@ -179,11 +181,19 @@ sonata_admin:
     templates:
         layout:     admin/custom_layout.html.twig
         user_block: admin/user_block.html.twig
+
     dashboard:
         blocks:
             - { position: right, type: sonata.admin.block.admin_list }
-            - { position: left, type: sonata_admin_doctrine_phpcr.tree_block }
+            - { position: center, type: sonata_admin_doctrine_phpcr.tree_block }
         groups:
+            content_types:
+                label: Content Types
+                icon: '<i class="fa fa-plus-square"></i>'
+                items:
+                    - cmf_back.admin.page_title_image
+                    - cmf_back.admin.page_title_desc
+                    - cmf_back.admin.page_title_desc_image
             content:
                 label: Content
                 icon: '<i class="fa fa-file-text-o"></i>'
@@ -266,6 +276,9 @@ sonata_doctrine_phpcr_admin:
         Symfony\Cmf\Bundle\MenuBundle\Doctrine\Phpcr\MenuNode:
             valid_children:
                 - Symfony\Cmf\Bundle\MenuBundle\Doctrine\Phpcr\MenuNode
+        BackBundle\Document\ContentTypes\TitleDesc:
+            valid_children:
+                - all
 
 sonata_seo:
     page:
