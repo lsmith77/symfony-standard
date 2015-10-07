@@ -33,6 +33,23 @@ https://sonata-project.org/bundles/block/master/doc/index.html
 http://plugins.jetbrains.com/plugin/7320
 http://plugins.jetbrains.com/plugin/7219
 
+## Quick start
+
+Install Vendors
+> composer install
+
+Prepare Database
+> php app/console doctrine:database:create
+> php app/console doctrine:phpcr:init:dbal
+> php app/console doctrine:phpcr:repository:init
+> php app/console doctrine:phpcr:fixtures:load
+
+Set permissions
+> chmod -R 777 /app/cache
+
+Optional .bashrc aliase (insert the following line at the end, save document, restart terminal or type "source ~/.bashrc"
+> alias symfonyFastPermissions="sudo rm -rf app/cache/*; sudo chmod -R 775 app/logs app/cache;sudo chown -R $(whoami):www-data app/*"
+
 ## See also:
 
 * [All Symfony CMF documentation](http://symfony.com/doc/master/cmf/index.html) - complete Symfony CMF reference
