@@ -37,3 +37,24 @@ for a guide to running the tests.
 
 Thanks to
 [everyone who has contributed](https://github.com/symfony-cmf/standard-edition/contributors) already.
+
+* [ - - - - - - - - - - - - - - - )
+
+# Symfony CMF Standard Edition (SE)
+
+## Installing the Standard Edition
+http://symfony.com/doc/current/cmf/book/installation.html
+
+## The Symfony CMF Book
+http://symfony.com/pdf/Symfony_cmf_master.pdf
+
+## Coding Standards (Contributing to Symfony)
+http://symfony.com/doc/current/contributing/code/standards.html
+
+## Block's documentation
+http://symfony.com/doc/current/cmf/bundles/block/index.html
+https://sonata-project.org/bundles/block/master/doc/index.html
+
+## PHPStorm Symfony 2 Plugins
+http://plugins.jetbrains.com/plugin/7320
+http://plugins.jetbrains.com/plugin/7219

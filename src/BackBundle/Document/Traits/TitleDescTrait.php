@@ -1,6 +1,6 @@
 <?php
 
-    namespace Promocash\BackBundle\Document\Traits;
+    namespace BackBundle\Document\Traits;
 
     use Doctrine\ODM\PHPCR\Mapping\Annotations as PHPCR;
 

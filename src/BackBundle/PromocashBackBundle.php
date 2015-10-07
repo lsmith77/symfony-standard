@@ -1,9 +1,9 @@
 <?php
 
-namespace Promocash\BackBundle;
+namespace BackBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class PromocashBackBundle extends Bundle
+class CMFBackBundle extends Bundle
 {
 }

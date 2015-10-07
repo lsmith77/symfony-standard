@@ -1,6 +1,6 @@
 <?php
 
-namespace Promocash\AppBundle\Controller;
+namespace AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('PromocashAppBundle:home:index.html.twig');
+        return $this->render('CMFAppBundle:home:index.html.twig');
     }
 }

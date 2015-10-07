@@ -1,31 +1,31 @@
 services:
-    promocash.back.admin.page_title_image:
-        class: Promocash\BackBundle\Admin\PromocashAdmin
+    CMF.back.admin.page_title_image:
+        class: BackBundle\Admin\CMFAdmin
         arguments:
             - ''
-            - Promocash\BackBundle\Document\ContentTypes\TitleImage
+            - BackBundle\Document\ContentTypes\TitleImage
             - 'SonataAdminBundle:CRUD'
         tags:
             - { name: sonata.admin, manager_type: doctrine_phpcr, group: 'Content Types', label: Title + Image }
         calls:
             - [setRouteBuilder, ['@sonata.admin.route.path_info_slashes']]
 
-    promocash.back.admin.page_title_desc:
-        class: Promocash\BackBundle\Admin\PromocashAdmin
+    CMF.back.admin.page_title_desc:
+        class: BackBundle\Admin\CMFAdmin
         arguments:
             - ''
-            - Promocash\BackBundle\Document\ContentTypes\TitleDesc
+            - BackBundle\Document\ContentTypes\TitleDesc
             - 'SonataAdminBundle:CRUD'
         tags:
             - { name: sonata.admin, manager_type: doctrine_phpcr, group: 'Content Types', label: Title + Description }
         calls:
             - [setRouteBuilder, ['@sonata.admin.route.path_info_slashes']]
 
-    promocash.back.admin.page_title_desc_image:
-        class: Promocash\BackBundle\Admin\PromocashAdmin
+    CMF.back.admin.page_title_desc_image:
+        class: BackBundle\Admin\CMFAdmin
         arguments:
             - ''
-            - Promocash\BackBundle\Document\Page
+            - BackBundle\Document\Page
             - 'SonataAdminBundle:CRUD'
         tags:
             - { name: sonata.admin, manager_type: doctrine_phpcr, group: 'Content Types', label: Title + Description + Image }

@@ -1,9 +1,9 @@
 <?php
 
-    namespace Promocash\BackBundle\Document\ContentTypes;
+    namespace BackBundle\Document\ContentTypes;
 
-    use Promocash\BackBundle\Document\Traits\TitleDescTrait;
-    use Symfony\Cmf\Component\Routing\RouteReferrersReadInterface;
+    use BackBundle\Document\Traits\TitleDescTrait;
+    use Symfony\Component\Routing\RouteReferrersReadInterface;
     use Doctrine\ODM\PHPCR\Mapping\Annotations as PHPCR;
 
     /**

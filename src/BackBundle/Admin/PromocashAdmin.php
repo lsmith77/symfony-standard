@@ -1,13 +1,13 @@
 <?php
 
-    namespace Promocash\BackBundle\Admin;
+    namespace BackBundle\Admin;
 
     use Sonata\DoctrinePHPCRAdminBundle\Admin\Admin;
     use Sonata\AdminBundle\Datagrid\DatagridMapper;
     use Sonata\AdminBundle\Datagrid\ListMapper;
     use Sonata\AdminBundle\Form\FormMapper;
 
-    class PromocashAdmin extends Admin
+    class CMFAdmin extends Admin
     {
         protected function configureListFields(ListMapper $listMapper)
         {
