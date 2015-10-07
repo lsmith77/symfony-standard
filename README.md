@@ -48,7 +48,7 @@ Set permissions
 > chmod -R 775 app/cache
 
 Optional .bashrc aliase (insert the following line at the end, save document, restart terminal or type "source ~/.bashrc"
-> alias symfonyFastPermissions="sudo chmod -R 775 app/logs app/cache;sudo chown -R $(whoami):www-data app/\**\*; sudo rm -rf app/cache/\**\*"
+> alias symfonyFastPermissions="sudo chmod -R 775 app/logs app/cache;sudo chown -R $(whoami):www-data app/\**; sudo rm -rf app/cache/\**"
 
 ## See also:
 
