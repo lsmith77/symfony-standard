@@ -94,7 +94,7 @@ cmf_core:
         phpcr: true
         # if you want another basepath
         # basepath: /custom/basepath
-    publish_workflow: false
+    #publish_workflow: false
 
 # Cmf Routing Configuration
 cmf_routing:
