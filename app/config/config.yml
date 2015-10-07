@@ -10,9 +10,8 @@ framework:
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
-        strict_requirements: ~
-    form:            ~
-    csrf_protection: ~
+    form:            true
+    csrf_protection: true
     validation:
       enable_annotations: true
     templating:
@@ -23,9 +22,12 @@ framework:
     trusted_proxies: ~
     session:
         # handler_id set to null will use default session handler from php.ini
+        name: symfony-sonata
         handler_id:  ~
     fragments:       ~
     http_method_override: true
+    #    strict_requirements: ~
+    #form:            ~
 
 # Twig Configuration
 twig:
@@ -68,7 +70,7 @@ doctrine_phpcr:
         backend: "%phpcr_backend%"
         workspace: "%phpcr_workspace%"
         username: "%phpcr_user%"
-        password: "%phpcr_password%"
+        password: "%phpcr_pass%"
     odm:
         auto_mapping: true
         auto_generate_proxy_classes: %kernel.debug%
@@ -264,7 +266,6 @@ sonata_doctrine_phpcr_admin:
         Symfony\Cmf\Bundle\MenuBundle\Doctrine\Phpcr\MenuNode:
             valid_children:
                 - Symfony\Cmf\Bundle\MenuBundle\Doctrine\Phpcr\MenuNode
-
 
 sonata_seo:
     page:

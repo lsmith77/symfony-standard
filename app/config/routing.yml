@@ -1,6 +1,13 @@
+
+
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal
+
 _app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+    resource: "@AppBundle/Controller"
+    type: annotation
 
 home_redirect:
     pattern: /
@@ -40,15 +47,15 @@ sonata_admin:
     type: sonata_admin
     prefix: /{_locale}/admin
 
+_liip_imagine:
+    resource: "@LiipImagineBundle/Resources/config/routing.xml"
+
+fos_js_routing:
+    resource: @FOSJsRoutingBundle/Resources/config/routing/routing.xml
+
 cmf_tree:
     resource: .
     type: 'cmf_tree'
-
-fos_js_routing:
-    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
-
-_liip_imagine:
-    resource: "@LiipImagineBundle/Resources/config/routing.xml"
 
 create:
     resource: "@CmfCreateBundle/Resources/config/routing/rest.xml"
@@ -73,9 +80,6 @@ elfinder:
      resource: "@FMElfinderBundle/Resources/config/routing.yml"
 
 # AcmeDemoBundle routes (to be removed)
-_demo:
-    resource: "@AcmeDemoBundle/Resources/config/routing.yml"
-    prefix: /demo
-
-_cmf_create:
-    resource: "@CmfCreateBundle/Resources/config/routing/rest.xml"
+#_demo:
+#    resource: "@AcmeDemoBundle/Resources/config/routing.yml"
+#    prefix: /demos

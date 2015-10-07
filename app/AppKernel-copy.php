@@ -8,7 +8,7 @@ class AppKernel extends Kernel
     public function registerBundles()
     {
         $bundles = array(
-            // enable symfony-standard bundles
+            // Symfony Standard Edition Bundles
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
@@ -49,9 +49,6 @@ class AppKernel extends Kernel
             new Sonata\SeoBundle\SonataSeoBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
 
-            // language switcher
-            new Lunetics\LocaleBundle\LuneticsLocaleBundle(),
-
             // Media support
             new Liip\ImagineBundle\LiipImagineBundle(),
 
@@ -61,17 +58,19 @@ class AppKernel extends Kernel
 
             // and the app bundle
             new AppBundle\AppBundle(),
+
+            // language switcher
+            new Lunetics\LocaleBundle\LuneticsLocaleBundle(),
+
+            // Remove this Bundle when using the SE as the basis for a new project
+            new Acme\DemoBundle\AcmeDemoBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
+            $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
-            $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
-
-            // additional bundle for tests
-            if ('test' === $this->getEnvironment()) {
-                $bundles[] = new Liip\FunctionalTestBundle\LiipFunctionalTestBundle();
-            }
+            $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
         }
 
         return $bundles;
@@ -79,6 +78,6 @@ class AppKernel extends Kernel
 
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
-        $loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.yml');
+        $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
     }
 }
