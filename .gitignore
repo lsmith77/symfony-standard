@@ -16,4 +16,4 @@
 *.sqlite
 app/check.php
 app/SymfonyRequirements.php
-.idea
+*.idea*
