@@ -8,7 +8,8 @@ class AppKernel extends Kernel
     public function registerBundles()
     {
         $bundles = array(
-            // enable symfony-standard bundles
+
+            // Symfony Standard Edition Bundles
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
@@ -49,17 +50,13 @@ class AppKernel extends Kernel
             new Sonata\SeoBundle\SonataSeoBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
 
-            // language switcher
+            // Language switcher, Media support, Block cache, Block feeds
             new Lunetics\LocaleBundle\LuneticsLocaleBundle(),
-
-            // Media support
             new Liip\ImagineBundle\LiipImagineBundle(),
-
-            // block caching and feeds
             new Sonata\CacheBundle\SonataCacheBundle(),
             new Eko\FeedBundle\EkoFeedBundle(),
 
-            // and the app bundle
+            // Default App Bundle
             new AppBundle\AppBundle(),
         );
 
