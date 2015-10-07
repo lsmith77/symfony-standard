@@ -45,10 +45,10 @@ Prepare Database
 > php app/console doctrine:phpcr:fixtures:load
 
 Set permissions
-> chmod -R 777 /app/cache
+> chmod -R 775 app/cache
 
 Optional .bashrc aliase (insert the following line at the end, save document, restart terminal or type "source ~/.bashrc"
-> alias symfonyFastPermissions="sudo rm -rf app/cache/*; sudo chmod -R 775 app/logs app/cache;sudo chown -R $(whoami):www-data app/*"
+> alias symfonyFastPermissions="sudo chmod -R 775 app/logs app/cache;sudo chown -R $(whoami):www-data app/\**\*; sudo rm -rf app/cache/\**\*"
 
 ## See also:
 
