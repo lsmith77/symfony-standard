@@ -145,6 +145,22 @@ sonata_block:
             contexts:   [admin]
         sonata.admin.content_types:
             contexts:   [admin]
+        #sonata.admin_doctrine_orm.block.audit:
+        #    contexts:   [admin]
+
+        sonata.block.service.text:
+            contexts:   [admin]
+        sonata.block.service.rss:
+            contexts:   [admin]
+
+        # Some specific block from the SonataMediaBundle
+        sonata.media.block.media:
+             contexts:   [admin]
+        sonata.media.block.galery:
+             contexts:   [admin]
+        sonata.media.block.feature_media:
+             contexts:   [admin]
+
     blocks_by_class:
         Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\RssBlock:
             cache: cmf.block.cache.js_async
@@ -185,7 +201,9 @@ sonata_admin:
     dashboard:
         blocks:
             - { position: right, type: sonata.admin.block.admin_list }
-            - { position: center, type: sonata_admin_doctrine_phpcr.tree_block }
+            - { position: left, type: sonata_admin_doctrine_phpcr.tree_block }
+            - { position: left, type: sonata.block.service.text }
+            - { position: left, type: sonata.block.service.rss }
         groups:
             content_types:
                 label: Content Types

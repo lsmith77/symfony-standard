@@ -15,6 +15,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Sonata\BlockBundle\Model\BlockInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 class DefaultController extends Controller
 {
@@ -34,9 +35,10 @@ class DefaultController extends Controller
 
     /**
      * @Route("/hello", name="symfony_route")
+     * @Template("static_content/hello.html.twig")
      */
     public function helloAction()
     {
-        return $this->render('static_content/hello.html.twig');
+       return array();
     }
 }
