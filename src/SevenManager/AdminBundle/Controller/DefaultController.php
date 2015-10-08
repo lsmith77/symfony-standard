@@ -23,6 +23,9 @@ class DefaultController extends Controller
      */
     public function slideshowAction($machine_name)
     {
+
+        dump('yhg');
+
         //promoslide
         return array();
     }
