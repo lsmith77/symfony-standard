@@ -439,3 +439,12 @@ sonata_media:
         local:
             directory:  %kernel.root_dir%/../web/uploads/media
             create:     false
+
+sonata_intl:
+    timezone:
+        detectors:
+                    #- sonata.intl.timezone_detector.user
+                    - sonata.intl.timezone_detector.locale
+        locales:
+            fr:    Europe/Paris
+            en:    Europe/London
