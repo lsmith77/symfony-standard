@@ -9,58 +9,71 @@ class AppKernel extends Kernel
     {
         $bundles = array(
 
-            // Symfony Standard Edition Bundles
+            // Doctrine
+            new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+            new Doctrine\Bundle\PHPCRBundle\DoctrinePHPCRBundle(),
+            new Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle(),
+
+            // "Symfony" Core Bundles
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
-            new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Symfony\Bundle\DebugBundle\DebugBundle(),
 
-            // Symfony CMF Standard Edition Bundles
-            new Doctrine\Bundle\PHPCRBundle\DoctrinePHPCRBundle(),
-            new Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle(),
+            // "Symfony" CMF Bundles
             new Symfony\Cmf\Bundle\CoreBundle\CmfCoreBundle(),
-            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Symfony\Cmf\Bundle\MenuBundle\CmfMenuBundle(),
             new Symfony\Cmf\Bundle\ContentBundle\CmfContentBundle(),
             new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
             new Symfony\Cmf\Bundle\SimpleCmsBundle\CmfSimpleCmsBundle(),
             new Symfony\Cmf\Bundle\SeoBundle\CmfSeoBundle(),
-            new \Burgov\Bundle\KeyValueFormBundle\BurgovKeyValueFormBundle(),
-            new Liip\SearchBundle\LiipSearchBundle(),
             new Symfony\Cmf\Bundle\SearchBundle\CmfSearchBundle(),
             new Symfony\Cmf\Bundle\MediaBundle\CmfMediaBundle(),
-            new FM\ElfinderBundle\FMElfinderBundle(),
             new Symfony\Cmf\Bundle\RoutingAutoBundle\CmfRoutingAutoBundle(),
             new Symfony\Cmf\Bundle\CreateBundle\CmfCreateBundle(),
             new Symfony\Cmf\Bundle\TreeBrowserBundle\CmfTreeBrowserBundle(),
-            new FOS\RestBundle\FOSRestBundle(),
-            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new Symfony\Cmf\Bundle\BlockBundle\CmfBlockBundle(),
 
-            // Admin Bundle's
+            // "Sonata" Bundles
+            new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\jQueryBundle\SonatajQueryBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
-            new Symfony\Cmf\Bundle\BlockBundle\CmfBlockBundle(),
-            new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
-            new Sonata\DoctrinePHPCRAdminBundle\SonataDoctrinePHPCRAdminBundle(),
             new Sonata\SeoBundle\SonataSeoBundle(),
-            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
-
-            // Language switcher, Media support, Block cache, Block feeds
-            new Lunetics\LocaleBundle\LuneticsLocaleBundle(),
-            new Liip\ImagineBundle\LiipImagineBundle(),
+            // new Sonata\PageBundle\SonataPageBundle(),
+            // new Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle(),
+            new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Sonata\CacheBundle\SonataCacheBundle(),
-            new Eko\FeedBundle\EkoFeedBundle(),
+            new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
+            new Sonata\DoctrinePHPCRAdminBundle\SonataDoctrinePHPCRAdminBundle(),
+            new Sonata\DatagridBundle\SonataDatagridBundle(),
+            new Sonata\NotificationBundle\SonataNotificationBundle(),
+            new Sonata\FormatterBundle\SonataFormatterBundle(),
+            new Sonata\MediaBundle\SonataMediaBundle(),
 
-            // Default App Bundle
+            // Misc Bundles
+            new Liip\SearchBundle\LiipSearchBundle(),
+            new Liip\ImagineBundle\LiipImagineBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new Eko\FeedBundle\EkoFeedBundle(),
+            new FM\ElfinderBundle\FMElfinderBundle(),
+            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
+            new Lunetics\LocaleBundle\LuneticsLocaleBundle(),
+            new Burgov\Bundle\KeyValueFormBundle\BurgovKeyValueFormBundle(),
+
+            // Custom Bundles
             new AppBundle\AppBundle(),
             new BackBundle\BackBundle(),
             new SevenManager\AdminBundle\SevenManagerAdminBundle(),
+            new Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

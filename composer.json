@@ -11,12 +11,16 @@
         }
     ],
     "autoload": {
-        "psr-0": {"": "src/"}
+        "psr-0": {
+          "": "src/",
+          "Application": "app/"
+        }
     },
     "repositories": [
         {
-            "type": "vcs",
-            "url": "github.com/luiseverino-com/symfony-sonata.git"
+            "type": "git",
+            "url": "https://github.com/sonata-project/SonataDatagridBundle.git",
+            "branch": "master"
         }
     ],
     "minimum-stability": "stable",
@@ -36,6 +40,7 @@
         "sonata-project/doctrine-phpcr-admin-bundle": "1.2.*",
         "sonata-project/admin-bundle": ">=2.3.3",
         "sonata-project/cache-bundle": "~2.1",
+        "sonata-project/datagrid-bundle": "2.2.*@dev",
         "symfony-cmf/symfony-cmf": "1.2.*",
         "symfony-cmf/simple-cms-bundle": "1.2.*",
         "symfony-cmf/create-bundle": "1.2.*",
@@ -54,7 +59,13 @@
         "liip/imagine-bundle": "~1.0",
         "wjzijderveld/check-bundles": "~1.1",
         "helios-ag/fm-elfinder-bundle": "~1.4",
-        "burgov/key-value-form-bundle": "~1.0"
+        "burgov/key-value-form-bundle": "~1.0",
+        "sonata-project/page-bundle": "2.3.*",
+        "sonata-project/doctrine-orm-admin-bundle": "^2.3",
+        "sonata-project/easy-extends-bundle": "^2.1",
+        "sonata-project/notification-bundle": "^2.3",
+        "sonata-project/formatter-bundle": "^2.3",
+        "sonata-project/media-bundle": "^2.3"
     },
     "require-dev": {
         "liip/functional-test-bundle": "~1.0",
