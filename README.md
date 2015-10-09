@@ -16,39 +16,44 @@ use cases, and can be used to create a new Symfony/CMF project from scratch.
 * Symfony 2.3.x
 * See also the `require` section of [composer.json](composer.json)
 
-## Installing the Standard Edition
-http://symfony.com/doc/current/cmf/book/installation.html
-
-## The Symfony CMF Book
-http://symfony.com/pdf/Symfony_cmf_master.pdf
-
-## Coding Standards (Contributing to Symfony)
-http://symfony.com/doc/current/contributing/code/standards.html
-
-## Block's documentation
-http://symfony.com/doc/current/cmf/bundles/block/index.html
-https://sonata-project.org/bundles/block/master/doc/index.html
-
-## PHPStorm Plugins - Symfony 2 
-http://plugins.jetbrains.com/plugin/7320
-http://plugins.jetbrains.com/plugin/7219
 
 ## Quick start
 
-Install Vendors
-> composer install
+#### Clone Symfony CM
+- git clone https://github.com/luiseverino-com/symfony-sonata.git
 
-Prepare Database
-> php app/console doctrine:database:create
-> php app/console doctrine:phpcr:init:dbal
-> php app/console doctrine:phpcr:repository:init
-> php app/console doctrine:phpcr:fixtures:load
+#### Install Vendors
+- composer install
 
-Set permissions
-> chmod -R 777 app web
+#### Setup Database
+- php app/console doctrine:database:create
+- php app/console doctrine:phpcr:init:dbal
+- php app/console doctrine:phpcr:repository:init
+- php app/console doctrine:phpcr:fixtures:load
 
-Optional .bashrc aliase (insert the following line at the end, save document, restart terminal or type "source ~/.bashrc"
-> alias symfonyFastPermissions="sudo chmod -R 777 app web; sudo chown -R $(whoami):www-data app web; sudo rm -rf app/cache/"
+#### Set permissions
+- chmod -R 777 app web
+
+
+## Documentation
+
+#### Installing the Standard Edition
+http://symfony.com/doc/current/cmf/book/installation.html
+
+#### The Symfony CMF Book
+http://symfony.com/pdf/Symfony_cmf_master.pdf
+
+#### Coding Standards (Contributing to Symfony)
+http://symfony.com/doc/current/contributing/code/standards.html
+
+#### Block's documentation
+http://symfony.com/doc/current/cmf/bundles/block/index.html
+https://sonata-project.org/bundles/block/master/doc/index.html
+
+#### PHPStorm Plugins - Symfony 2 
+http://plugins.jetbrains.com/plugin/7320
+http://plugins.jetbrains.com/plugin/7219
+
 
 ## See also:
 
