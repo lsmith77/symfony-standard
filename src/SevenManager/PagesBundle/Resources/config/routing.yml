@@ -1,0 +1,3 @@
+seven_manager_pages_homepage:
+    path:     /{lang}/hello/{name}
+    defaults: { _controller: SevenManagerPagesBundle:Default:index }

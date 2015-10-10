@@ -1,0 +1,4 @@
+services:
+#    seven_manager_pages.example:
+#        class: SevenManager\PagesBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

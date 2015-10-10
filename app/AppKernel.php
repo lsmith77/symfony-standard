@@ -77,6 +77,7 @@ class AppKernel extends Kernel
             new BackBundle\BackBundle(),
             new SevenManager\AdminBundle\SevenManagerAdminBundle(),
             new Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle(),
+            new SevenManager\PagesBundle\SevenManagerPagesBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
