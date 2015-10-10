@@ -5,6 +5,7 @@ imports:
     - { resource: services.yml }
     - { resource: sonata_formatter.yml }
     #- { resource: sonata_page.yml }
+    - { resource: sonata_routing.yml }
 
 sonata_core:
     form_type: horizontal
