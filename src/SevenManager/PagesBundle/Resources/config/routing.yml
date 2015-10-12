@@ -1,3 +1,7 @@
 seven_manager_pages_homepage:
     path:     /{lang}/hello/{name}
     defaults: { _controller: SevenManagerPagesBundle:Default:index }
+
+seven_manager_pages_create_task:
+    path:     /create_task
+    defaults: { _controller: SevenManagerPagesBundle:Default:create }

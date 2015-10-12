@@ -32,7 +32,7 @@ class DefaultController extends Controller
     {
         // Get Documents
         $documentManager = $this->get('doctrine_phpcr')->getManager();
-        $rootTask = $documentManager->find(null, '/tasks');
+        $rootTask = $documentManager->find(null, '/');
 
         $task = new Task();
         $task->setDescription('Finish CMF project');
