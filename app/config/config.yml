@@ -12,7 +12,7 @@ sonata_core:
 
 framework:
     #esi:             ~
-    translator:      { fallback: en }
+    translator:      { fallback: "%locale%" }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -229,6 +229,12 @@ sonata_admin:
                     - cmf_back.admin.page_title_image
                     - cmf_back.admin.page_title_desc
                     - cmf_back.admin.page_title_desc_image
+            simple_content_types:
+                label: Simple Content Types
+                icon: '<i class="fa fa-plus-square"></i>'
+                items:
+                    - seven_manager_admin.admin.pages
+                    - seven_manager_admin.admin.posts
             content:
                 label: Content
                 icon: '<i class="fa fa-file-text-o"></i>'
