@@ -10,3 +10,8 @@ cmf_routing:
         persistence:
             phpcr:
                 route_basepath: /seven-manager/routes
+
+cmf_routing_auto:
+    persistence:
+        phpcr:
+            enabled: true
