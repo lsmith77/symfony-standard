@@ -1,0 +1,8 @@
+services:
+    seven_manager_basic_cms.basic_cms.phpcr.initializer:
+        class: Doctrine\Bundle\PHPCRBundle\Initializer\GenericInitializer
+        arguments:
+            - Seven Manager - Simple Initializer
+            - ["/cms/pages", "/cms/posts", "/cms/routes", "/seven-manager/routes", "/seven-manager/posts", "/seven-manager/pages"]
+        tags:
+            - { name: doctrine_phpcr.initializer }
