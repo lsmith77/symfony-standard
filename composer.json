@@ -1,15 +1,8 @@
 {
-  "name": "symfony-cmf/standard-edition",
-  "homepage": "http://cmf.symfony.com",
+  "name": "luiseverino-com/symfony-sonata",
   "license": "MIT",
   "type": "project",
-  "description": "The \"Symfony CMF Standard Edition\" distribution",
-  "authors": [
-    {
-      "name": "Symfony CMF Community",
-      "homepage": "https://github.com/symfony-cmf/standard-edition/contributors"
-    }
-  ],
+  "description": "Built on \"Symfony CMF Standard Edition\" architecture and infrastructure",
   "autoload": {
     "psr-0": {
       "": "src/",
