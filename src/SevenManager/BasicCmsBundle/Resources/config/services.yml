@@ -3,6 +3,6 @@ services:
         class: Doctrine\Bundle\PHPCRBundle\Initializer\GenericInitializer
         arguments:
             - Seven Manager - Simple Initializer
-            - ["/cms/pages", "/cms/posts", "/cms/routes", "/seven-manager/routes", "/seven-manager/posts", "/seven-manager/pages"]
+            - ["/cms/pages", "/cms/posts", "/cms/routes", "/seven-manager-basic/routes", "/seven-manager-basic/posts", "/seven-manager-basic/pages"]
         tags:
             - { name: doctrine_phpcr.initializer }
