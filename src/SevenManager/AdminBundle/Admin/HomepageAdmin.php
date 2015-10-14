@@ -12,6 +12,7 @@
     use Sonata\AdminBundle\Datagrid\DatagridMapper;
     use Sonata\AdminBundle\Datagrid\ListMapper;
     use Sonata\AdminBundle\Form\FormMapper;
+    use Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\ImagineBlock;
 
     class HomepageAdmin extends Admin
     {
@@ -37,11 +38,13 @@
                 ->add('subtitle', 'text', array('required' => false))
                 ->add('name', 'text', array('required' => false))
                 ->add('content', 'textarea')
+                ->add('image', 'cmf_media_image', array('required' => false))
                 ->setHelps(array(
                     'title' => 'seven_manager.admin.fields.title.helper',
                     'subtitle' => 'seven_manager.admin.fields.subtitle.helper',
                     'name' => 'seven_manager.admin.fields.name.helper',
                     'content' => 'seven_manager.admin.fields.content.helper',
+                    'image' => 'seven_manager.admin.fields.image.helper',
                 ))
                 ->end();
         }

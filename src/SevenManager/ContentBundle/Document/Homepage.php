@@ -17,6 +17,7 @@
     class Homepage implements RouteReferrersReadInterface
     {
         use SharedProperties;
+        use SharedMedias;
 
         /**
          * @PHPCR\String(type="string", nullable=true)
