@@ -10,13 +10,15 @@ and licensed under the [MIT License](LICENSE).
 
 * PHP >=5.3.9
 
-#### Clone this Symfony CMF based repository
+#### Clone this and change to new directory
 - git clone https://github.com/luiseverino-com/symfony-sonata.git
+- cd symfony-sonata
 
-#### Install Vendors
-- composer install
+#### Install Vendors/Dependencies
+- curl -s http://getcomposer.org/installer | php
+- php composer.phar install
 
-#### Setup Database
+#### Setup Database and project structure
 - php app/console doctrine:database:create
 - php app/console doctrine:phpcr:init:dbal
 - php app/console doctrine:phpcr:repository:init
