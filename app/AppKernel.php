@@ -79,6 +79,7 @@ class AppKernel extends Kernel
             new Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle(),
             new SevenManager\PagesBundle\SevenManagerPagesBundle(),
             new SevenManager\BasicCmsBundle\SevenManagerBasicCmsBundle(),
+            new SevenManager\ContentBundle\SevenManagerContentBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

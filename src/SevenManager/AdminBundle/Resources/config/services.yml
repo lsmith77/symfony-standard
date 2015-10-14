@@ -20,3 +20,95 @@ services:
             - { name: sonata.admin, manager_type: doctrine_phpcr, group: 'Seven Manager - Simple Content', label: 'Posts' }
         calls:
             - [setRouteBuilder, ['@sonata.admin.route.path_info_slashes']]
+
+
+    # Seven Manager - Call Content Bundle
+    seven_manager_admin.admin.content.homepage:
+        class: SevenManager\AdminBundle\Admin\HomepageAdmin
+        arguments:
+            - ''
+            - SevenManager\ContentBundle\Document\Homepage
+            - 'SonataAdminBundle:CRUD'
+        tags:
+            - { name: sonata.admin, manager_type: doctrine_phpcr, group: 'Seven Manager - Content', label: 'Homepage' }
+        calls:
+            - [setRouteBuilder, ['@sonata.admin.route.path_info_slashes']]
+
+    seven_manager_admin.admin.content.node:
+        class: SevenManager\AdminBundle\Admin\HomepageAdmin
+        #class: SevenManager\AdminBundle\Admin\NodeAdmin
+        arguments:
+            - ''
+            - SevenManager\ContentBundle\Document\Node
+            #- SevenManager\ContentBundle\Document\Homepage
+            - 'SonataAdminBundle:CRUD'
+        tags:
+            - { name: sonata.admin, manager_type: doctrine_phpcr, group: 'Seven Manager - Content', label: 'Node' }
+        calls:
+            - [setRouteBuilder, ['@sonata.admin.route.path_info_slashes']]
+
+    seven_manager_admin.admin.content.page:
+        class: SevenManager\AdminBundle\Admin\HomepageAdmin
+        #class: SevenManager\AdminBundle\Admin\PageAdmin
+        arguments:
+            - ''
+            #- SevenManager\ContentBundle\Document\Page
+            - SevenManager\ContentBundle\Document\Homepage
+            - 'SonataAdminBundle:CRUD'
+        tags:
+            - { name: sonata.admin, manager_type: doctrine_phpcr, group: 'Seven Manager - Content', label: 'Page' }
+        calls:
+            - [setRouteBuilder, ['@sonata.admin.route.path_info_slashes']]
+
+    seven_manager_admin.admin.content.post:
+        class: SevenManager\AdminBundle\Admin\HomepageAdmin
+        #class: SevenManager\AdminBundle\Admin\PostAdmin
+        arguments:
+            - ''
+            #- SevenManager\ContentBundle\Document\Post
+            - SevenManager\ContentBundle\Document\Homepage
+            - 'SonataAdminBundle:CRUD'
+        tags:
+            - { name: sonata.admin, manager_type: doctrine_phpcr, group: 'Seven Manager - Content', label: 'Post' }
+        calls:
+            - [setRouteBuilder, ['@sonata.admin.route.path_info_slashes']]
+
+    seven_manager_admin.admin.content.article:
+        class: SevenManager\AdminBundle\Admin\HomepageAdmin
+        #class: SevenManager\AdminBundle\Admin\PostAdmin
+        arguments:
+            - ''
+            #- SevenManager\ContentBundle\Document\Article
+            - SevenManager\ContentBundle\Document\Homepage
+            - 'SonataAdminBundle:CRUD'
+        tags:
+            - { name: sonata.admin, manager_type: doctrine_phpcr, group: 'Seven Manager - Content', label: 'Article' }
+        calls:
+            - [setRouteBuilder, ['@sonata.admin.route.path_info_slashes']]
+
+    seven_manager_admin.admin.content.gallery:
+        class: SevenManager\AdminBundle\Admin\HomepageAdmin
+        #class: SevenManager\AdminBundle\Admin\PostAdmin
+        arguments:
+            - ''
+            #- SevenManager\ContentBundle\Document\Gallery
+            - SevenManager\ContentBundle\Document\Homepage
+            - 'SonataAdminBundle:CRUD'
+        tags:
+            - { name: sonata.admin, manager_type: doctrine_phpcr, group: 'Seven Manager - Content', label: 'Gallery' }
+        calls:
+            - [setRouteBuilder, ['@sonata.admin.route.path_info_slashes']]
+
+
+    seven_manager_admin.admin.content.form:
+        class: SevenManager\AdminBundle\Admin\HomepageAdmin
+        #class: SevenManager\AdminBundle\Admin\FormAdmin
+        arguments:
+            - ''
+            #- SevenManager\ContentBundle\Document\Form
+            - SevenManager\ContentBundle\Document\Homepage
+            - 'SonataAdminBundle:CRUD'
+        tags:
+            - { name: sonata.admin, manager_type: doctrine_phpcr, group: 'Seven Manager - Content', label: 'Form' }
+        calls:
+            - [setRouteBuilder, ['@sonata.admin.route.path_info_slashes']]

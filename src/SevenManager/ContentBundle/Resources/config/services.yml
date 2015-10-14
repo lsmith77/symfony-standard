@@ -1,0 +1,8 @@
+services:
+    seven_manager_content.pages.phpcr.initializer:
+        class: Doctrine\Bundle\PHPCRBundle\Initializer\GenericInitializer
+        arguments:
+            - Seven Manager - Content Pages Initializer
+            - ["/seven-manager/homepage", "/seven-manager/page", "/seven-manager/article", "/seven-manager/node", "/seven-manager/post"]
+        tags:
+            - { name: doctrine_phpcr.initializer }
