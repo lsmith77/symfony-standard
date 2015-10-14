@@ -19,12 +19,12 @@
         use SharedProperties;
 
         /**
-         * @PHPCR\String()
+         * @PHPCR\String(type="string", nullable=true)
          */
         protected $name;
 
         /**
-         * @PHPCR\String()
+         * @PHPCR\String(type="string", nullable=true)
          */
         protected $label;
 

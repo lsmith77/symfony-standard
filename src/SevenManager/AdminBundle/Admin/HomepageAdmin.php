@@ -19,27 +19,33 @@
         {
             $listMapper
                 ->addIdentifier('title', 'text')
+                ->addIdentifier('name', 'text')
+                ->addIdentifier('path', 'text')
+                ->addIdentifier('lang', 'text')
             ;
         }
 
         protected function configureFormFields(FormMapper $formMapper)
         {
             $formMapper
-                ->with('form.group_general')
+                ->with('abc')
                 ->add('title', 'text')
+                ->add('name', 'text')
                 ->add('content', 'textarea')
                 ->end();
         }
 
         public function prePersist($document)
         {
-            $parent = $this->getModelManager()->find(null, '/page/homepage');
+            $parent = $this->getModelManager()->find(null, '/seven-manager/homepage');
             $document->setParentDocument($parent);
         }
 
         protected function configureDatagridFilters(DatagridMapper $datagridMapper)
         {
-            $datagridMapper->add('title', 'doctrine_phpcr_string');
+            $datagridMapper
+                ->add('title', 'doctrine_phpcr_string')
+                ->add('name',  'doctrine_phpcr_nodename');
         }
 
         public function getExportFormats()
