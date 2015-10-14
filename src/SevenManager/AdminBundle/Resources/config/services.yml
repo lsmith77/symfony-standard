@@ -39,8 +39,8 @@ services:
         #class: SevenManager\AdminBundle\Admin\NodeAdmin
         arguments:
             - ''
-            - SevenManager\ContentBundle\Document\Node
-            #- SevenManager\ContentBundle\Document\Homepage
+            - SevenManager\ContentBundle\Document\Homepage
+            #- SevenManager\ContentBundle\Document\Node
             - 'SonataAdminBundle:CRUD'
         tags:
             - { name: sonata.admin, manager_type: doctrine_phpcr, group: 'Seven Manager - Content', label: 'Node' }

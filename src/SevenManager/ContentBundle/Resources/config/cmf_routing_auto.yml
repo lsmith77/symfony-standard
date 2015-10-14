@@ -1,0 +1,6 @@
+SevenManager\ContentBundle\Document\Homepage:
+    #uri_schema: /seven-manager/homepage/{date}/{title}
+    uri_schema: /seven-manager/homepage/{title}
+    token_providers:
+        #date: [content_datetime, { method: getDate }]
+        title: [content_method, { method: getTitle }]

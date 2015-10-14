@@ -47,6 +47,8 @@
         public function setParentDocument($parent)
         {
             $this->parent = $parent;
+
+            return $this;
         }
 
         public function getTitle()
@@ -57,6 +59,8 @@
         public function setTitle($title)
         {
             $this->title = $title;
+
+            return $this;
         }
 
         public function getContent()
@@ -67,6 +71,8 @@
         public function setContent($content)
         {
             $this->content = $content;
+
+            return $this;
         }
 
         public function getRoutes()
