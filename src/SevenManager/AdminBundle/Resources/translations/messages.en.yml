@@ -1,4 +1,13 @@
 seven_manager:
+    shared:
+        labels:
+            homepage: Homepage
+            article: Article
+            node: Node
+            gallery: Gallery
+            page: Page
+            post: Post
+            form: Form
     admin:
         fields:
             title:
@@ -13,7 +22,18 @@ seven_manager:
         pages:
             homepage:
                 title: Add Homepage
-                body: Ce contenu est rendu par une action d'un controlleur Symfony2. Il n'a pas le inline editing.admin:
+            article:
+                title: Add an article
+            node:
+                title: Add a node
+            gallery:
+                title: Add a gallery
+            page:
+                title: Add a page
+            post:
+                title: Add a post
+            form:
+                title: Add a form
     front:
         homepage:
             title: Homepage Front label

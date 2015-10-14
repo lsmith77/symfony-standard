@@ -1,4 +1,13 @@
 seven_manager:
+    shared:
+        labels:
+            homepage: Page d'Accueil
+            article: Article
+            node: Nœud
+            gallery: Galerie
+            page: Page
+            post: Post
+            form: Formulaire
     admin:
         fields:
             title:
@@ -12,8 +21,19 @@ seven_manager:
         blocks:
         pages:
             homepage:
-                title: Ajouter Page  d'Accueil
-                body: Ce contenu est rendu par une action d'un controlleur Symfony2. Il n'a pas le inline editing.admin:
+                title: Ajouter Page d'Accueil
+            article:
+                title: Ajouter un article
+            node:
+                title: Ajouter un nœud
+            gallery:
+                title: Ajouter une galerie
+            page:
+                title: Ajouter une page
+            post:
+                title: Ajouter un post
+            form:
+                title: Ajouter un formulaire
     front:
         homepage:
             title: Homepage Front label

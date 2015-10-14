@@ -32,7 +32,7 @@
         {
             // Define Admin fields
             $formMapper
-                ->with('seven_manager.admin.pages.homepage.title')
+                ->with('seven_manager.admin.pages.form.title')
                 ->add('title', 'text')
                 ->add('subtitle', 'text', array('required' => false))
                 ->add('name', 'text', array('required' => false))
