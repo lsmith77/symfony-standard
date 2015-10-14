@@ -57,9 +57,11 @@ doctrine:
     orm:
         entity_managers:
             default:
-                #auto_mapping: false
+                auto_mapping: true
                 mappings:
-                    SonataMediaBundle: ~
+                    #SonataMediaBundle:
+                    #        mapping:    true
+                    #        prefix: Sonata\MediaBundle\PHPCR
                     #ApplicationSonataPageBundle: ~ # only once the ApplicationSonataPageBundle is generated
                     #SonataPageBundle: ~
     dbal:

@@ -32,43 +32,82 @@
          */
         protected $content;
 
+        /**
+         * @PHPCR\Referrers(
+         *     referringDocument="Symfony\Cmf\Bundle\RoutingBundle\Doctrine\Phpcr\Route",
+         *     referencedBy="content"
+         * )
+         */
         protected $routes;
 
+        /**
+         * @return mixed
+         */
         public function getId()
         {
             return $this->id;
         }
 
+        /**
+         * @return mixed
+         */
         public function getParentDocument()
         {
             return $this->parent;
         }
 
+        /**
+         * @param $parent
+         * @return $this
+         */
         public function setParentDocument($parent)
         {
             $this->parent = $parent;
+
+            return $this;
         }
 
+        /**
+         * @return mixed
+         */
         public function getTitle()
         {
             return $this->title;
         }
 
+        /**
+         * @param $title
+         * @return $this
+         */
         public function setTitle($title)
         {
             $this->title = $title;
+
+            return $this;
         }
 
+        /**
+         * @return mixed
+         */
         public function getContent()
         {
             return $this->content;
         }
 
+        /**
+         * @param $content
+         * @return $this
+         */
         public function setContent($content)
         {
             $this->content = $content;
+
+            return $this;
         }
 
+        /**
+         * @return mixed
+         */
         public function getRoutes()
         {
             return $this->routes;
