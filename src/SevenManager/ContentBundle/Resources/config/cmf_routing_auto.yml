@@ -7,31 +7,31 @@ SevenManager\ContentBundle\Document\Homepage:
         locale: [content_method, { method: getLocale }]
 
 SevenManager\ContentBundle\Document\Node:
-    uri_schema:/{locale}/seven-manager/node/{title}
+    uri_schema: /{locale}/seven-manager/node/{title}
     token_providers:
         title: [content_method, { method: getTitle }]
 
 SevenManager\ContentBundle\Document\Page:
-    uri_schema:/{locale}/seven-manager/page/{title}
+    uri_schema: /{locale}/seven-manager/page/{title}
     token_providers:
         title: [content_method, { method: getTitle }]
 
 SevenManager\ContentBundle\Document\Post:
-    uri_schema:/{locale}/seven-manager/post/{title}
+    uri_schema: /{locale}/seven-manager/post/{title}
     token_providers:
         title: [content_method, { method: getTitle }]
 
 SevenManager\ContentBundle\Document\Article:
-    uri_schema:/{locale}/seven-manager/article/{title}
+    uri_schema: /{locale}/seven-manager/article/{title}
     token_providers:
         title: [content_method, { method: getTitle }]
 
 SevenManager\ContentBundle\Document\Gallery:
-    uri_schema:/{locale}/seven-manager/gallery/{title}
+    uri_schema: /{locale}/seven-manager/gallery/{title}
     token_providers:
         title: [content_method, { method: getTitle }]
 
 SevenManager\ContentBundle\Document\Form:
-    uri_schema:/{locale}/seven-manager/form/{title}
+    uri_schema: /{locale}/seven-manager/form/{title}
     token_providers:
         title: [content_method, { method: getTitle }]

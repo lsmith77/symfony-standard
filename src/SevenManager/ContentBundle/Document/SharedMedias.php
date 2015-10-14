@@ -12,7 +12,6 @@
     use Symfony\Cmf\Bundle\MediaBundle\Doctrine\Phpcr\Image;
     use Symfony\Cmf\Bundle\MediaBundle\ImageInterface;
     use Symfony\Component\HttpFoundation\File\UploadedFile;
-    # use Symfony\Cmf\Bundle\CoreBundle\Translatable\TranslatableInterface; Soon
 
     trait SharedMedias
     {

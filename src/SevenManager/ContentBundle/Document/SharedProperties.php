@@ -47,7 +47,7 @@
         protected $locale;
 
         /**
-         * @PHPCR\Nodename(nullable=false)
+         * @PHPCR\Nodename()
          */
         protected $name;
 

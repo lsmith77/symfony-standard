@@ -17,6 +17,10 @@
 
     class HomepageAdmin extends Admin
     {
+
+        /**
+         * @param ListMapper $listMapper
+         */
         protected function configureListFields(ListMapper $listMapper)
         {
             $listMapper
@@ -47,7 +51,9 @@
                     'content' => 'seven_manager.admin.fields.content.helper',
                     'image' => 'seven_manager.admin.fields.image.helper',
                 ))
-                ->end();
+                ->end()
+            ;
+
         }
 
         /**
