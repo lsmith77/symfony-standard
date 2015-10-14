@@ -29,6 +29,11 @@
         protected $label;
 
         /**
+         * @PHPCR\String(type="string", nullable=true)
+         */
+        protected $subtitle;
+
+        /**
          * @return mixed
          */
         public function getName()
@@ -64,6 +69,26 @@
         public function setLabel($label)
         {
             $this->label = $label;
+
+            return $this;
+        }
+
+        /**
+         * @return mixed
+         */
+        public function getSubtitle()
+        {
+            return $this->label;
+        }
+
+        /**
+         * @param $subtitle
+         *
+         * @return $this
+         */
+        public function setSubtitle($subtitle)
+        {
+            $this->label = $subtitle;
 
             return $this;
         }

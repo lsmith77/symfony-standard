@@ -25,22 +25,42 @@
             ;
         }
 
+        /**
+         * @param FormMapper $formMapper
+         */
         protected function configureFormFields(FormMapper $formMapper)
         {
+            // Define Admin fields
             $formMapper
-                ->with('abc')
+                ->with('seven_manager.admin.pages.homepage.title')
                 ->add('title', 'text')
-                ->add('name', 'text')
+                ->add('subtitle', 'text', array('required' => false))
+                ->add('name', 'text', array('required' => false))
                 ->add('content', 'textarea')
+                ->setHelps(array(
+                    'title' => 'seven_manager.admin.fields.title.helper',
+                    'subtitle' => 'seven_manager.admin.fields.subtitle.helper',
+                    'name' => 'seven_manager.admin.fields.name.helper',
+                    'content' => 'seven_manager.admin.fields.content.helper',
+                ))
                 ->end();
         }
 
+        /**
+         * @param mixed $document
+         * @return $this
+         */
         public function prePersist($document)
         {
             $parent = $this->getModelManager()->find(null, '/seven-manager/homepage');
             $document->setParentDocument($parent);
+
+            return $this;
         }
 
+        /**
+         * @param DatagridMapper $datagridMapper
+         */
         protected function configureDatagridFilters(DatagridMapper $datagridMapper)
         {
             $datagridMapper
@@ -48,6 +68,9 @@
                 ->add('name',  'doctrine_phpcr_nodename');
         }
 
+        /**
+         * @return array
+         */
         public function getExportFormats()
         {
             return array();

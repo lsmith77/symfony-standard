@@ -1,0 +1,9 @@
+seven_manager:
+    admin:
+        homepage:
+            title: Add Homepage
+            body: Ce contenu est rendu par une action d'un controlleur Symfony2. Il n'a pas le inline editing.admin:
+    front:
+        homepage:
+            title: Homepage Front label
+            body: Homepage Front Description

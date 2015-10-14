@@ -1,0 +1,20 @@
+seven_manager:
+    admin:
+        fields:
+            title:
+              helper: Set page title
+            subtitle:
+              helper: Set page title
+            name:
+              helper: Set page unique name
+            content:
+              helper: Set page body
+        blocks:
+        pages:
+            homepage:
+                title: Add Homepage
+                body: Ce contenu est rendu par une action d'un controlleur Symfony2. Il n'a pas le inline editing.admin:
+    front:
+        homepage:
+            title: Homepage Front label
+            body: Homepage Front Description
