@@ -131,6 +131,16 @@ cmf_routing:
             Symfony\Cmf\Bundle\RoutingBundle\Doctrine\Phpcr\RedirectRoute:  cmf_routing.redirect_controller:redirectAction
 
         templates_by_class:
+            # Seven Manager Template by Class
+            SevenManager\ContentBundle\Document\Homepage:  SevenManagerContentBundle:Page:homepage.html.twig
+            SevenManager\ContentBundle\Document\Node:  SevenManagerContentBundle:Page:node.html.twig
+            SevenManager\ContentBundle\Document\Article:  SevenManagerContentBundle:Page:article.html.twig
+            SevenManager\ContentBundle\Document\Page:  SevenManagerContentBundle:Page:page.html.twig
+            SevenManager\ContentBundle\Document\Post:  SevenManagerContentBundle:Page:post.html.twig
+            SevenManager\ContentBundle\Document\Gallery:  SevenManagerContentBundle:Page:gallery.html.twig
+            SevenManager\ContentBundle\Document\Form:  SevenManagerContentBundle:Page:form.html.twig
+
+            # Default CMF Classes
             Symfony\Cmf\Bundle\SimpleCmsBundle\Doctrine\Phpcr\Page:  CmfSimpleCmsBundle:Page:index.html.twig
             Symfony\Cmf\Bundle\ContentBundle\Doctrine\Phpcr\StaticContent: static_content/index.html.twig
 
@@ -301,6 +311,7 @@ sonata_doctrine_phpcr_admin:
         SevenManager\ContentBundle\Document\Homepage:
             valid_children:
                 - SevenManager\ContentBundle\Document\Homepage
+
         SevenManager\ContentBundle\Document\Node:
             valid_children:
                 - SevenManager\ContentBundle\Document\Node
