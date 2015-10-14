@@ -10,18 +10,16 @@
 
     use Doctrine\ODM\PHPCR\Mapping\Annotations as PHPCR;
     use Symfony\Cmf\Component\Routing\RouteReferrersReadInterface;
+    use Symfony\Cmf\Bundle\CoreBundle\Translatable\TranslatableInterface;
 
     /**
      * @PHPCR\Document(referenceable=true)
      */
-    class Page implements RouteReferrersReadInterface
+    class Page implements
+        RouteReferrersReadInterface,
+        TranslatableInterface
     {
         use SharedProperties;
-
-        /**
-         * @PHPCR\String(type="string", nullable=true)
-         */
-        protected $name;
 
         /**
          * @PHPCR\String(type="string", nullable=true)
@@ -32,26 +30,6 @@
          * @PHPCR\String(type="string", nullable=true)
          */
         protected $subtitle;
-
-        /**
-         * @return mixed
-         */
-        public function getName()
-        {
-            return $this->name;
-        }
-
-        /**
-         * @param $name
-         *
-         * @return $this
-         */
-        public function setName($name)
-        {
-            $this->name = $name;
-
-            return $this;
-        }
 
         /**
          * @return mixed

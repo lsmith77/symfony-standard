@@ -9,50 +9,28 @@
     namespace SevenManager\ContentBundle\Document;
 
     use Doctrine\ODM\PHPCR\Mapping\Annotations as PHPCR;
+    use Symfony\Cmf\Bundle\CoreBundle\Translatable\TranslatableInterface;
     use Symfony\Cmf\Component\Routing\RouteReferrersReadInterface;
 
     /**
-     * @PHPCR\Document(referenceable=true)
+     * @PHPCR\Document(referenceable=true, translator="attribute")
      */
-    class Homepage implements RouteReferrersReadInterface
+    class Homepage implements
+        RouteReferrersReadInterface,
+        TranslatableInterface
     {
         use SharedProperties;
         use SharedMedias;
 
         /**
-         * @PHPCR\String(type="string", nullable=true)
-         */
-        protected $name;
-
-        /**
-         * @PHPCR\String(type="string", nullable=true)
+         * @PHPCR\String(type="string", nullable=true, translated=true)
          */
         protected $label;
 
         /**
-         * @PHPCR\String(type="string", nullable=true)
+         * @PHPCR\String(type="string", nullable=true, translated=true)
          */
         protected $subtitle;
-
-        /**
-         * @return mixed
-         */
-        public function getName()
-        {
-            return $this->name;
-        }
-
-        /**
-         * @param $name
-         *
-         * @return $this
-         */
-        public function setName($name)
-        {
-            $this->name = $name;
-
-            return $this;
-        }
 
         /**
          * @return mixed

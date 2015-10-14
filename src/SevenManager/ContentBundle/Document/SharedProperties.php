@@ -23,12 +23,12 @@
         protected $parent;
 
         /**
-         * @PHPCR\Nodename()
+         * @PHPCR\String(nullable=true, translated=true)
          */
         protected $title;
 
         /**
-         * @PHPCR\String(nullable=true)
+         * @PHPCR\String(nullable=true, translated=true)
          */
         protected $content;
 
@@ -39,6 +39,54 @@
          * )
          */
         protected $routes;
+
+        /**
+         * @var string
+         * @PHPCR\Locale()
+         */
+        protected $locale;
+
+        /**
+         * @PHPCR\Nodename(nullable=false)
+         */
+        protected $name;
+
+        /**
+         * @return mixed
+         */
+        public function getName()
+        {
+            return $this->name;
+        }
+
+        /**
+         * @param $name
+         *
+         * @return $this
+         */
+        public function setName($name)
+        {
+            $this->name = $name;
+
+            return $this;
+        }
+        /**
+         * {@inheritDoc}
+         */
+        public function getLocale()
+        {
+            return $this->locale;
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        public function setLocale($locale)
+        {
+            $this->locale = $locale;
+
+            return $this;
+        }
 
         /**
          * @return mixed

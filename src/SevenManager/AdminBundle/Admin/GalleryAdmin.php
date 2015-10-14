@@ -8,11 +8,17 @@
 
     namespace SevenManager\AdminBundle\Admin;
 
+    use SevenManager\ContentBundle\Document\Gallery;
     use Sonata\DoctrinePHPCRAdminBundle\Admin\Admin;
     use Sonata\AdminBundle\Datagrid\DatagridMapper;
     use Sonata\AdminBundle\Datagrid\ListMapper;
     use Sonata\AdminBundle\Form\FormMapper;
 
+    /**
+     * Class GalleryAdmin
+     *
+     * @package SevenManager\AdminBundle\Admin
+     */
     class GalleryAdmin extends Admin
     {
         protected function configureListFields(ListMapper $listMapper)
@@ -35,7 +41,7 @@
                 ->with('seven_manager.admin.pages.gallery.title')
                 ->add('title', 'text')
                 ->add('subtitle', 'text', array('required' => false))
-                ->add('name', 'text', array('required' => false))
+                ->add('name', 'text', array('required' => true))
                 ->add('content', 'textarea')
                 ->setHelps(array(
                     'title' => 'seven_manager.admin.fields.title.helper',
@@ -74,5 +80,18 @@
         public function getExportFormats()
         {
             return array();
+        }
+
+        /**
+         * @param mixed $object
+         * Add Title Label to breadcrumb
+         * @return mixed|string
+         */
+        public function toString($object)
+        {
+            return $object instanceof Gallery && $object->getTitle()
+                ? $object->getTitle()
+                : $this->trans('link_add', array(), 'SonataAdminBundle')
+                ;
         }
     }

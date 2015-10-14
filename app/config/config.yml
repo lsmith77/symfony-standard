@@ -311,7 +311,6 @@ sonata_doctrine_phpcr_admin:
         SevenManager\ContentBundle\Document\Homepage:
             valid_children:
                 - SevenManager\ContentBundle\Document\Homepage
-
         SevenManager\ContentBundle\Document\Node:
             valid_children:
                 - SevenManager\ContentBundle\Document\Node

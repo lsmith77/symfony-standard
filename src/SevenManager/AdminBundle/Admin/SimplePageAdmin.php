@@ -8,13 +8,22 @@
 
     namespace SevenManager\AdminBundle\Admin;
 
+    use SevenManager\BasicCmsBundle\Document\SimplePage;
     use Sonata\DoctrinePHPCRAdminBundle\Admin\Admin;
     use Sonata\AdminBundle\Datagrid\DatagridMapper;
     use Sonata\AdminBundle\Datagrid\ListMapper;
     use Sonata\AdminBundle\Form\FormMapper;
 
+    /**
+     * Class SimplePageAdmin
+     *
+     * @package SevenManager\AdminBundle\Admin
+     */
     class SimplePageAdmin extends Admin
     {
+        /**
+         * @param ListMapper $listMapper
+         */
         protected function configureListFields(ListMapper $listMapper)
         {
             $listMapper
@@ -22,6 +31,9 @@
             ;
         }
 
+        /**
+         * @param FormMapper $formMapper
+         */
         protected function configureFormFields(FormMapper $formMapper)
         {
             $formMapper
@@ -31,19 +43,41 @@
                 ->end();
         }
 
+        /**
+         * @param mixed $document
+         */
         public function prePersist($document)
         {
             $parent = $this->getModelManager()->find(null, '/cms/pages');
             $document->setParentDocument($parent);
         }
 
+        /**
+         * @param DatagridMapper $datagridMapper
+         */
         protected function configureDatagridFilters(DatagridMapper $datagridMapper)
         {
             $datagridMapper->add('title', 'doctrine_phpcr_string');
         }
 
+        /**
+         * @return array
+         */
         public function getExportFormats()
         {
             return array();
+        }
+
+        /**
+         * @param mixed $object
+         * Add Title Label to breadcrumb
+         * @return mixed|string
+         */
+        public function toString($object)
+        {
+            return $object instanceof SimplePage && $object->getTitle()
+                ? $object->getTitle()
+                : $this->trans('link_add', array(), 'SonataAdminBundle')
+                ;
         }
     }

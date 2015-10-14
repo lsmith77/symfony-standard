@@ -18,6 +18,8 @@ seven_manager:
               helper: Set page unique name
             content:
               helper: Set page body
+            image:
+              helper: Set page default image
         blocks:
         pages:
             homepage:

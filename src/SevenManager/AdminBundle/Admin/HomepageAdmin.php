@@ -8,6 +8,7 @@
 
     namespace SevenManager\AdminBundle\Admin;
 
+    use SevenManager\ContentBundle\Document\Homepage;
     use Sonata\DoctrinePHPCRAdminBundle\Admin\Admin;
     use Sonata\AdminBundle\Datagrid\DatagridMapper;
     use Sonata\AdminBundle\Datagrid\ListMapper;
@@ -36,7 +37,7 @@
                 ->with('seven_manager.admin.pages.homepage.title')
                 ->add('title', 'text')
                 ->add('subtitle', 'text', array('required' => false))
-                ->add('name', 'text', array('required' => false))
+                ->add('name', 'text', array('required' => true))
                 ->add('content', 'textarea')
                 ->add('image', 'cmf_media_image', array('required' => false))
                 ->setHelps(array(
@@ -77,5 +78,18 @@
         public function getExportFormats()
         {
             return array();
+        }
+
+        /**
+         * @param mixed $object
+         * Add Title Label to breadcrumb
+         * @return mixed|string
+         */
+        public function toString($object)
+        {
+            return $object instanceof Homepage && $object->getTitle()
+                ? $object->getTitle()
+                : $this->trans('link_add', array(), 'SonataAdminBundle')
+                ;
         }
     }

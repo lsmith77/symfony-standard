@@ -18,6 +18,8 @@ seven_manager:
               helper: Saisir un identifiant unique de la page
             content:
               helper: Saisir le contenu principal de la page
+            image:
+              helper: Saisir l'image principal de la page
         blocks:
         pages:
             homepage:

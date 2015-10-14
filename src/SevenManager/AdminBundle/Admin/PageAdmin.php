@@ -8,13 +8,22 @@
 
     namespace SevenManager\AdminBundle\Admin;
 
+    use SevenManager\ContentBundle\Document\Page;
     use Sonata\DoctrinePHPCRAdminBundle\Admin\Admin;
     use Sonata\AdminBundle\Datagrid\DatagridMapper;
     use Sonata\AdminBundle\Datagrid\ListMapper;
     use Sonata\AdminBundle\Form\FormMapper;
 
+    /**
+     * Class PageAdmin
+     *
+     * @package SevenManager\AdminBundle\Admin
+     */
     class PageAdmin extends Admin
     {
+        /**
+         * @param ListMapper $listMapper
+         */
         protected function configureListFields(ListMapper $listMapper)
         {
             $listMapper
@@ -35,7 +44,7 @@
                 ->with('seven_manager.admin.pages.page.title')
                 ->add('title', 'text')
                 ->add('subtitle', 'text', array('required' => false))
-                ->add('name', 'text', array('required' => false))
+                ->add('name', 'text', array('required' => true))
                 ->add('content', 'textarea')
                 ->setHelps(array(
                     'title' => 'seven_manager.admin.fields.title.helper',
@@ -74,5 +83,18 @@
         public function getExportFormats()
         {
             return array();
+        }
+
+        /**
+         * @param mixed $object
+         * Add Title Label to breadcrumb
+         * @return mixed|string
+         */
+        public function toString($object)
+        {
+            return $object instanceof Page && $object->getTitle()
+                ? $object->getTitle()
+                : $this->trans('link_add', array(), 'SonataAdminBundle')
+                ;
         }
     }

@@ -18,6 +18,8 @@ seven_manager:
               helper: Set page unique name (trad to de)
             content:
               helper: Set page body (trad to de)
+            image:
+              helper: Set page default image (trad to de)
         blocks:
         pages:
             homepage:
