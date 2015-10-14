@@ -44,8 +44,6 @@ class AppKernel extends Kernel
             new Sonata\BlockBundle\SonataBlockBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
             new Sonata\SeoBundle\SonataSeoBundle(),
-            // new Sonata\PageBundle\SonataPageBundle(),
-            // new Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle(),
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Sonata\CacheBundle\SonataCacheBundle(),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
@@ -55,6 +53,8 @@ class AppKernel extends Kernel
             new Sonata\FormatterBundle\SonataFormatterBundle(),
             new Sonata\MediaBundle\SonataMediaBundle(),
             new Sonata\IntlBundle\SonataIntlBundle(),
+            # new Sonata\PageBundle\SonataPageBundle(),
+            # new Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle(),
             # new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
 
             // Misc Bundles
