@@ -1,3 +1,0 @@
-seven_manager_basic_cms_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: SevenManagerBasicCmsBundle:Default:index }

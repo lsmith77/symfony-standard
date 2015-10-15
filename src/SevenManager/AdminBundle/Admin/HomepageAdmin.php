@@ -59,8 +59,8 @@
                         ->add('image', 'cmf_media_image', array('required' => false))
                     ->end()
                 ->end()
-                ->tab('Homepage children')
-                    ->with('Homepage children')
+                ->tab('Slideshow')
+                    ->with('Slideshow')
                     ->add(
                         'children',
                         'sonata_type_collection',

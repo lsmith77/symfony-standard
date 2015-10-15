@@ -1,0 +1,8 @@
+services:
+    seven_manager_fixtures.basic_cms.phpcr.initializer:
+        class: Doctrine\Bundle\PHPCRBundle\Initializer\GenericInitializer
+        arguments:
+            - Seven Manager - Simple Initializer
+            - ["/seven-manager/fixtures/pages", "/seven-manager/fixtures/posts", "/seven-manager/fixtures/routes", "/seven-manager/fixtures/type-a", "/seven-manager/fixtures/type-b", "/seven-manager/fixtures/type-c"]
+        tags:
+            - { name: doctrine_phpcr.initializer }

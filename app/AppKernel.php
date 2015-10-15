@@ -54,7 +54,6 @@ class AppKernel extends Kernel
             new Sonata\MediaBundle\SonataMediaBundle(),
             new Sonata\IntlBundle\SonataIntlBundle(),
             # new Sonata\PageBundle\SonataPageBundle(),
-            # new Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle(),
             # new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
 
             // Misc Bundles
@@ -74,12 +73,9 @@ class AppKernel extends Kernel
 
             // Custom Bundles
             new AppBundle\AppBundle(),
-            new BackBundle\BackBundle(),
             new SevenManager\AdminBundle\SevenManagerAdminBundle(),
-            new Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle(),
-            new SevenManager\PagesBundle\SevenManagerPagesBundle(),
-            new SevenManager\BasicCmsBundle\SevenManagerBasicCmsBundle(),
             new SevenManager\ContentBundle\SevenManagerContentBundle(),
+            new SevenManager\FixturesBundle\SevenManagerFixturesBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

@@ -1,8 +1,4 @@
-# Internal routing configuration to handle ESI
-#_internal:
-#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
-#   prefix:   /_internal
-
+# Sonata FO Routing
 _app:
     resource: "@AppBundle/Controller"
     type: annotation
@@ -15,6 +11,7 @@ home_redirect:
         statusCode: 301
         useReferrer: false
 
+# Sonata BO Rounting
 admin_wo_locale:
     pattern: /admin
     defaults:
@@ -45,9 +42,6 @@ sonata_admin:
     type: sonata_admin
     prefix: /{_locale}/admin
 
-_liip_imagine:
-    resource: "@LiipImagineBundle/Resources/config/routing.xml"
-
 fos_js_routing:
     resource: @FOSJsRoutingBundle/Resources/config/routing/routing.xml
 
@@ -61,29 +55,11 @@ create:
 create_image:
     resource: "@CmfCreateBundle/Resources/config/routing/image.xml"
 
-liip_search:
-    resource: "@CmfSearchBundle/Resources/config/routing/phpcr/search.xml"
-
-block_cache:
-    resource: "@CmfBlockBundle/Resources/config/routing/cache.xml"
-    prefix: /
-
 cmf_media_file:
     resource: "@CmfMediaBundle/Resources/config/routing/file.xml"
 
 cmf_media_image:
     resource: "@CmfMediaBundle/Resources/config/routing/image.xml"
-
-elfinder:
-     resource: "@FMElfinderBundle/Resources/config/routing.yml"
-
-#sonata_page_exceptions:
-#    resource: '@SonataPageBundle/Resources/config/routing/exceptions.xml'
-#    prefix: /
-
-#sonata_page_cache:
-#    resource: '@SonataPageBundle/Resources/config/routing/cache.xml'
-#    prefix: /
 
 gallery:
     resource: '@SonataMediaBundle/Resources/config/routing/gallery.xml'
@@ -93,20 +69,28 @@ media:
     resource: '@SonataMediaBundle/Resources/config/routing/media.xml'
     prefix: /media
 
+elfinder:
+     resource: "@FMElfinderBundle/Resources/config/routing.yml"
 
-# Seven Manager - Routes
+liip_search:
+    resource: "@CmfSearchBundle/Resources/config/routing/phpcr/search.xml"
+
+_liip_imagine:
+    resource: "@LiipImagineBundle/Resources/config/routing.xml"
+
+block_cache:
+    resource: "@CmfBlockBundle/Resources/config/routing/cache.xml"
+    prefix: /
+
+# Seven Manager Routing
+_seven_manager_admin:
+    resource: "@SevenManagerAdminBundle/Controller"
+    type: annotation
+
 seven_manager_content:
     resource: "@SevenManagerContentBundle/Resources/config/routing.yml"
     prefix:   /
 
-seven_manager_basic_cms:
-    resource: "@SevenManagerBasicCmsBundle/Resources/config/routing.yml"
+seven_manager_fixtures:
+    resource: "@SevenManagerFixturesBundle/Resources/config/routing.yml"
     prefix:   /
-
-seven_manager_pages:
-    resource: "@SevenManagerPagesBundle/Resources/config/routing.yml"
-    prefix:   /
-
-_seven_manager_admin:
-    resource: "@SevenManagerAdminBundle/Controller"
-    type: annotation
