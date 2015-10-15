@@ -9,6 +9,7 @@
     namespace SevenManager\ContentBundle\Document;
 
     use Doctrine\ODM\PHPCR\Mapping\Annotations as PHPCR;
+    use SevenManager\ContentBundle\Traits\SharedProperties;
     use Symfony\Cmf\Component\Routing\RouteReferrersReadInterface;
     use Symfony\Cmf\Bundle\CoreBundle\Translatable\TranslatableInterface;
 

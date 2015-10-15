@@ -6,7 +6,7 @@
  * Time: 10:16
  */
 
-    namespace SevenManager\ContentBundle\Document;
+    namespace SevenManager\ContentBundle\Traits;
 
     use Doctrine\ODM\PHPCR\Mapping\Annotations as PHPCR;
 

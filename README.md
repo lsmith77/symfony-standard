@@ -55,8 +55,8 @@ and licensed under the [MIT License](LICENSE).
 ## Doing ...
 
 #### Content types
-* Add export functions
-* Add block childs and/or arrayCollections
+* Add export content actions
+* Trad sonata_type_collection
 
 ## Contributing
 Thanks to

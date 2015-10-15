@@ -8,10 +8,10 @@
 
     namespace SevenManager\ContentBundle\Document;
 
-    use Doctrine\Common\Collections\ArrayCollection;
     use Doctrine\ODM\PHPCR\Mapping\Annotations as PHPCR;
     use SevenManager\ContentBundle\Block\childMediaBlock;
-    use SevenManager\ContentBundle\Block\childTextBlock;
+    use SevenManager\ContentBundle\Traits\SharedProperties;
+    use SevenManager\ContentBundle\Traits\SharedMedias;
     use Symfony\Cmf\Bundle\CoreBundle\Translatable\TranslatableInterface;
     use Symfony\Cmf\Component\Routing\RouteReferrersReadInterface;
 

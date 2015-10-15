@@ -6,7 +6,7 @@
  * Time: 10:16
  */
 
-    namespace SevenManager\ContentBundle\Document;
+    namespace SevenManager\ContentBundle\Traits;
 
     use Doctrine\Common\Collections\ArrayCollection;
     use Doctrine\ODM\PHPCR\ChildrenCollection;

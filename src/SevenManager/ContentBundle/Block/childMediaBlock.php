@@ -12,6 +12,10 @@ use Sonata\BlockBundle\Model\BlockInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ODM\PHPCR\ChildrenCollection;
 
+/**
+ * Class childMediaBlock
+ * @package SevenManager\ContentBundle\Block
+ */
 trait childMediaBlock {
 
     /**
@@ -103,6 +107,9 @@ trait childMediaBlock {
         return count($this->children) > 0;
     }
 
+    /**
+     * @return string
+     */
     public function getType()
     {
         return 'seven_manager.page.homepage';

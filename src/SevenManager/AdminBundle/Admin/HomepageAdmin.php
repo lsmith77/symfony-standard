@@ -26,7 +26,7 @@
          */
         protected function configureListFields(ListMapper $listMapper)
         {
-            parent::configureListFields($listMapper);
+            //parent::configureListFields($listMapper);
             $listMapper
                 ->addIdentifier('title', 'text')
                 ->addIdentifier('name', 'text')
@@ -41,7 +41,6 @@
         protected function configureFormFields(FormMapper $formMapper)
         {
             // Define Admin fields
-            parent::configureFormFields($formMapper);
             $formMapper
                 ->with('seven_manager.admin.pages.homepage.title')
                 ->add('title', 'text')
@@ -88,10 +87,6 @@
         }
 
         /**
-         * Generate a most likely unique name
-         *
-         * TODO: have blocks use the autoname annotation - https://github.com/symfony-cmf/BlockBundle/issues/149
-         *
          * @return string
          */
         private function generateName()

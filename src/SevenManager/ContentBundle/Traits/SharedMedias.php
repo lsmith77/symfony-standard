@@ -6,7 +6,7 @@
  * Time: 10:16
  */
 
-    namespace SevenManager\ContentBundle\Document;
+    namespace SevenManager\ContentBundle\Traits;
 
     use PHPCR\NodeInterface;
     use Symfony\Cmf\Bundle\MediaBundle\Doctrine\Phpcr\Image;
