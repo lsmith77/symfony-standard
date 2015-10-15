@@ -8,11 +8,11 @@
 
     namespace SevenManager\AdminBundle\Admin;
 
-    use SevenManager\ContentBundle\Document\Homepage;
     use Sonata\DoctrinePHPCRAdminBundle\Admin\Admin;
+    use Sonata\AdminBundle\Form\FormMapper;
     use Sonata\AdminBundle\Datagrid\DatagridMapper;
     use Sonata\AdminBundle\Datagrid\ListMapper;
-    use Sonata\AdminBundle\Form\FormMapper;
+    use SevenManager\ContentBundle\Document\Homepage;
 
     /**
      * Class HomepageAdmin
@@ -26,6 +26,7 @@
          */
         protected function configureListFields(ListMapper $listMapper)
         {
+            parent::configureListFields($listMapper);
             $listMapper
                 ->addIdentifier('title', 'text')
                 ->addIdentifier('name', 'text')
@@ -40,6 +41,7 @@
         protected function configureFormFields(FormMapper $formMapper)
         {
             // Define Admin fields
+            parent::configureFormFields($formMapper);
             $formMapper
                 ->with('seven_manager.admin.pages.homepage.title')
                 ->add('title', 'text')
@@ -54,16 +56,47 @@
                     'content' => 'seven_manager.admin.fields.content.helper',
                     'image' => 'seven_manager.admin.fields.image.helper',
                 ))
-                ->end()/**
-                ->with('abc')
-                ->add('content', 'sonata_type_collection', array(), array(
-                    'edit' => 'inline',
-                    'inline' => 'table',
-                    'sortable'  => 'position'
-                ))
-                ->end()*/
+                ->end()
+                ->with('Homepage children')
+                ->add(
+                    'children',
+                    'sonata_type_collection',
+                    array(),
+                    array(
+                        'edit' => 'inline',
+                        'inline' => 'table',
+                        'sortable'  => 'position',
+                        'admin_code' => 'cmf_block.imagine.imagine_admin'
+                    )
+                )
+                ->end()
             ;
 
+        }
+
+
+        /**
+         * {@inheritdoc}
+         */
+        public function preUpdate($slideshow)
+        {
+            foreach ($slideshow->getChildren() as $child) {
+                if (! $this->modelManager->getNormalizedIdentifier($child)) {
+                    $child->setName($this->generateName());
+                }
+            }
+        }
+
+        /**
+         * Generate a most likely unique name
+         *
+         * TODO: have blocks use the autoname annotation - https://github.com/symfony-cmf/BlockBundle/issues/149
+         *
+         * @return string
+         */
+        private function generateName()
+        {
+            return 'child_' . time() . '_' . rand();
         }
 
         /**

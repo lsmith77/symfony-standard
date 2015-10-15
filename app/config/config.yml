@@ -315,6 +315,12 @@ sonata_doctrine_phpcr_admin:
             valid_children:
                 - SevenManager\ContentBundle\Document\Homepage
                 - Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\ImagineBlock
+                - Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\SimpleBlock
+                - Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\ContainerBlock
+                - Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\ReferenceBlock
+                - Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\ActionBlock
+                - Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\SlideshowBlock
+                - Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\RssBlock
         SevenManager\ContentBundle\Document\Node:
             valid_children:
                 - SevenManager\ContentBundle\Document\Node

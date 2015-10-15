@@ -15,6 +15,7 @@
 
     trait SharedMedias
     {
+
         /**
          * @var Image
          */
