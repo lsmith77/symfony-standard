@@ -447,7 +447,7 @@ fm_elfinder:
                 driver: cmf_media.adapter.elfinder.phpcr_driver
                 path: %cmf_media.persistence.phpcr.media_basepath%
                 upload_allow: ['all']
-                upload_max_size: 2M
+                upload_max_size: 5M
 
 doctrine_cache:
     providers:

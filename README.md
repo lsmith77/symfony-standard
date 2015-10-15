@@ -29,8 +29,7 @@ and licensed under the [MIT License](LICENSE).
 
     **or**
 
-- [Symfony: The Recommended Way!](http://symfony.com/doc/current/book/installation.html#book-installation-permissions)  
-      
+- [Symfony: The Recommended Way!](http://symfony.com/doc/current/book/installation.html#book-installation-permissions)
   
   
 ## Documentation
@@ -53,6 +52,11 @@ and licensed under the [MIT License](LICENSE).
  - http://plugins.jetbrains.com/plugin/7219
 
 
+## Doing ...
+
+#### Content types
+* Add export functions
+* Add block childs and/or arrayCollections
 
 ## Contributing
 Thanks to

@@ -75,6 +75,8 @@
         {
             $datagridMapper
                 ->add('title', 'doctrine_phpcr_string')
+                ->add('subtitle', 'doctrine_phpcr_string')
+                ->add('content', 'doctrine_phpcr_string')
                 ->add('name',  'doctrine_phpcr_nodename');
         }
 
@@ -83,7 +85,7 @@
          */
         public function getExportFormats()
         {
-            return array();
+            return array(/**'json', 'xml', 'csv', 'xls'**/);
         }
 
         /**
