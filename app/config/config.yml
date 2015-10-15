@@ -231,8 +231,8 @@ sonata_admin:
         blocks:
             - { position: right, type: sonata.admin.block.admin_list }
             - { position: left, type: sonata_admin_doctrine_phpcr.tree_block }
-            - { position: left, type: sonata.block.service.text }
-            - { position: left, type: sonata.block.service.rss }
+            # { position: left, type: sonata.block.service.text }
+            #- { position: left, type: sonata.block.service.rss }
 
         groups:
 
@@ -250,7 +250,7 @@ sonata_admin:
                     - seven_manager_admin.admin.content.form
 
             content:
-                label: Content
+                label: Blocks
                 icon: '<i class="fa fa-file-text-o"></i>'
                 items:
                     - cmf_content.admin
@@ -260,44 +260,47 @@ sonata_admin:
                     - cmf_block.action_admin
                     - cmf_block.imagine.slideshow_admin
                     - cmf_block.imagine.imagine_admin
+                    - cmf_simple_cms.persistence.phpcr.admin.page
 
             routing:
-                label: URLs
+                label: Menu & URLs
                 icon: '<i class="fa fa-link"></i>'
-                items:
-                    - cmf_routing.route_admin
-                    - cmf_routing.redirect_route_admin
-
-            menu:
-                label: Menu
-                icon: '<i class="fa  fa-bars"></i>'
                 items:
                     - cmf_menu.menu_admin
                     - cmf_menu.node_admin
+                    - cmf_routing.route_admin
+                    - cmf_routing.redirect_route_admin
+
+            #menu:
+            #    label: Menu
+            #    icon: '<i class="fa  fa-bars"></i>'
+            #    items:
+            #        - cmf_menu.menu_admin
+            #        - cmf_menu.node_admin
 
             # Tutorial Content to Delete Soon
-            simplecms:
-                label: Simple CMS
-                icon: '<i class="fa fa-puzzle-piece"></i>'
-                items:
-                    - cmf_simple_cms.persistence.phpcr.admin.page
+            #simplecms:
+            #    label: Simple CMS
+            #    icon: '<i class="fa fa-puzzle-piece"></i>'
+            #    items:
+            #        - cmf_simple_cms.persistence.phpcr.admin.page
 
             # Custom Content to Delete Soon
-            content_types:
-                label: Content Types
-                icon: '<i class="fa fa-plus-square"></i>'
-                items:
-                    - cmf_back.admin.page_title_image
-                    - cmf_back.admin.page_title_desc
-                    - cmf_back.admin.page_title_desc_image
+            #content_types:
+            #    label: Content Types
+            #    icon: '<i class="fa fa-plus-square"></i>'
+            #    items:
+            #        - cmf_back.admin.page_title_image
+            #        - cmf_back.admin.page_title_desc
+            #        - cmf_back.admin.page_title_desc_image
 
             # Tutorial Content to Delete Soon
-            simple_content_types:
-                label: Simple Content Types
-                icon: '<i class="fa fa-plus-square"></i>'
-                items:
-                    - seven_manager_admin.admin.pages
-                    - seven_manager_admin.admin.posts
+            #simple_content_types:
+            #    label: Simple Content Types
+            #    icon: '<i class="fa fa-plus-square"></i>'
+            #    items:
+            #        - seven_manager_admin.admin.pages
+            #        - seven_manager_admin.admin.posts
 
 
 sonata_doctrine_phpcr_admin:
