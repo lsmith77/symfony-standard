@@ -42,32 +42,37 @@
         {
             // Define Admin fields
             $formMapper
-                ->with('seven_manager.admin.pages.homepage.title')
-                ->add('title', 'text')
-                ->add('subtitle', 'text', array('required' => false))
-                ->add('name', 'text', array('required' => true))
-                ->add('content', 'textarea')
-                ->add('image', 'cmf_media_image', array('required' => false))
-                ->setHelps(array(
-                    'title' => 'seven_manager.admin.fields.title.helper',
-                    'subtitle' => 'seven_manager.admin.fields.subtitle.helper',
-                    'name' => 'seven_manager.admin.fields.name.helper',
-                    'content' => 'seven_manager.admin.fields.content.helper',
-                    'image' => 'seven_manager.admin.fields.image.helper',
-                ))
+                ->tab('seven_manager.admin.pages.homepage.title')
+                    ->with('seven_manager.admin.pages.homepage.title')
+                    ->add('title', 'text')
+                    ->add('subtitle', 'text', array('required' => false))
+                    ->add('name', 'text', array('required' => true))
+                    ->add('content', 'textarea')
+                    ->add('image', 'cmf_media_image', array('required' => false))
+                    //->add('image', 'sonata_type_admin')
+                    ->setHelps(array(
+                        'title' => 'seven_manager.admin.fields.title.helper',
+                        'subtitle' => 'seven_manager.admin.fields.subtitle.helper',
+                        'name' => 'seven_manager.admin.fields.name.helper',
+                        'content' => 'seven_manager.admin.fields.content.helper',
+                        'image' => 'seven_manager.admin.fields.image.helper',
+                    ))
+                    ->end()
                 ->end()
-                ->with('Homepage children')
-                ->add(
-                    'children',
-                    'sonata_type_collection',
-                    array(),
-                    array(
-                        'edit' => 'inline',
-                        'inline' => 'table',
-                        'sortable'  => 'position',
-                        'admin_code' => 'cmf_block.imagine.imagine_admin'
+                ->tab('Homepage children')
+                    ->with('Homepage children')
+                    ->add(
+                        'children',
+                        'sonata_type_collection',
+                        array(),
+                        array(
+                            'edit' => 'inline',
+                            'inline' => 'table',
+                            'sortable'  => 'position',
+                            'admin_code' => 'cmf_block.imagine.imagine_admin'
+                        )
                     )
-                )
+                    ->end()
                 ->end()
             ;
 
@@ -77,9 +82,9 @@
         /**
          * {@inheritdoc}
          */
-        public function preUpdate($slideshow)
+        public function preUpdate($children)
         {
-            foreach ($slideshow->getChildren() as $child) {
+            foreach ($children->getChildren() as $child) {
                 if (! $this->modelManager->getNormalizedIdentifier($child)) {
                     $child->setName($this->generateName());
                 }
