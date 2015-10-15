@@ -14,7 +14,7 @@
     use Symfony\Cmf\Bundle\CoreBundle\Translatable\TranslatableInterface;
 
     /**
-     * @PHPCR\Document(referenceable=true)
+     * @PHPCR\Document(referenceable=true, translator="attribute")
      */
     class Form implements
         RouteReferrersReadInterface,
