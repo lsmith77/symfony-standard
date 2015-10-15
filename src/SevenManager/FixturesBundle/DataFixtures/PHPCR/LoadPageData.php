@@ -45,8 +45,7 @@ class LoadPageData implements FixtureInterface, OrderedFixtureInterface {
         $page->setTitle('Fixture loaded by PHP');
         $page->setBody('I have added this page myself!');
 
-        // get root document (/cms/simple)
-        $simpleCmsRoot = $documentManager->find(null, '/seven-manager/fixtures/simple');
+        $simpleCmsRoot = $documentManager->find(null, '/seven-manager/fixtures');
         $page->setParentDocument($simpleCmsRoot); // set the parent to the root
         $documentManager->persist($page); // add the Page in the queue
         $documentManager->flush(); // add the Page to PHPCR

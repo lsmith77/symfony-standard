@@ -24,7 +24,7 @@
         protected $name;
 
         /**
-         * @PHPCR\String()
+         * @PHPCR\String(nullable=true)
          */
         protected $label;
 

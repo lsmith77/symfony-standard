@@ -7,11 +7,12 @@
  */
 
 namespace SevenManager\FixturesBundle\DataFixtures\PHPCR;
+
 use Doctrine\ODM\PHPCR\DocumentManager;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
+use SevenManager\FixturesBundle\Document\SimplePage;
 use Symfony\Cmf\Bundle\RoutingBundle\Doctrine\Phpcr\Route;
-use Symfony\Cmf\Bundle\ContentBundle\Doctrine\Phpcr\StaticContent;
 use PHPCR\Util\NodeHelper;
 
 /**
@@ -36,18 +37,19 @@ class LoadDefaultRoutingData implements FixtureInterface
 
         $route = new Route();
         $route->setParentDocument($documentManager->find(null, '/seven-manager/fixtures/routes'));
-        $route->setName('my-page');
+        $route->setName('my-route');
 
         // link a content to the route
-        $content = new StaticContent();
-        $content->setParentDocument($documentManager->find(null, '/seven-manager/fixtures/content'));
-        $content->setName('my-content');
+        $content = new SimplePage();
+        $content->setParentDocument($documentManager->find(null, '/seven-manager/fixtures/pages'));
+        $content->setName('simple-page-loaded');
         $content->setTitle('My Content');
-        $content->setBody('Some Content');
-        $documentManager->persist($content);
+        $content->setContent('Some Content');
         $route->setContent($content);
 
+        $documentManager->persist($content);
         $documentManager->persist($route);
+
         $documentManager->flush();
     }
 }

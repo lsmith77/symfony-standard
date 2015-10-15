@@ -15,7 +15,8 @@ class DefaultController extends Controller
 {
 
     /**
-     * @param $name
+     * @param $namecomposer update
+     *
      *
      * @return \Symfony\Component\HttpFoundation\Response
      */

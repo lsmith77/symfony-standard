@@ -11,6 +11,7 @@
     use Doctrine\Common\DataFixtures\FixtureInterface;
     use Doctrine\Common\Persistence\ObjectManager;
     use Doctrine\ODM\PHPCR\DocumentManager;
+    use PHPCR\Util\NodeHelper;
     use Symfony\Cmf\Bundle\SimpleCmsBundle\Doctrine\Phpcr\Page;
 
     /**
@@ -31,6 +32,8 @@
                 throw new \RuntimeException("Fixture requires a PHPCR ODM DocumentManager instance, instance of '$class' given.");
             }
 
+            $session = $objectManager->getPhpcrSession();
+            NodeHelper::createPath($session, '/seven-manager/fixtures/simple');
             $parent = $objectManager->find(null, '/seven-manager/fixtures/simple');
 
             $pageOne = new Page();
