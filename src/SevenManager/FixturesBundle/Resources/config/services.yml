@@ -3,6 +3,6 @@ services:
         class: Doctrine\Bundle\PHPCRBundle\Initializer\GenericInitializer
         arguments:
             - Seven Manager - Fixtures Initializer
-            - ["/seven-manager/fixtures/pages", "/seven-manager/fixtures/posts", "/seven-manager/fixtures/content", "/seven-manager/fixtures/routes", "/seven-manager/fixtures/type-a", "/seven-manager/fixtures/type-b", "/seven-manager/fixtures/type-c"]
+            - ["/seven-manager", "/seven-manager/fixtures/pages", "/seven-manager/fixtures/posts", "/seven-manager/fixtures/content", "/seven-manager/fixtures/routes", "/seven-manager/fixtures/type-a", "/seven-manager/fixtures/type-b", "/seven-manager/fixtures/type-c"]
         tags:
             - { name: doctrine_phpcr.initializer }

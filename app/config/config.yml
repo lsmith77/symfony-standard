@@ -207,6 +207,10 @@ sonata_block:
         Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\RssBlock:
             cache: cmf.block.cache.js_async
 
+# Default Template Configuration
+cmf_content:
+    default_template: SevenManagerContentBundle:Page:homepage.html.twig
+
 # Admin Configuration
 sonata_admin:
     extensions:

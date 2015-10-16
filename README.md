@@ -57,6 +57,10 @@ and licensed under the [MIT License](LICENSE).
 #### Content types
 * Add export content actions
 * Trad sonata_type_collection
+* MakeFile
+* Create Collections of other collections
+* Custom in a given Content Type the desired blocks as child
+* Specify the requirements or assumptions before "Quick Start"
 
 ## Contributing
 Thanks to
