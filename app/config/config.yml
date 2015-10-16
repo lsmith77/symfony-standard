@@ -241,10 +241,18 @@ sonata_admin:
         user_block: admin/user_block.html.twig
     dashboard:
         blocks:
-            - { position: right, type: sonata.admin.block.admin_list }
+            -
+              position: left
+              type: sonata.block.service.text
+              settings:
+                  content: >
+                      <h2>Welcome to Seven Manager</h2>
+                      <p>Be free to follow, use or help improve this structure totaly based in Symfony CMF!</p>
+                      <p>Fell free to play arround (documents, blocks, fixtures), add functionnalities and/or use
+                      Seven Manager Bundle as a kickstart to a new project.</p>
+
             - { position: left, type: sonata_admin_doctrine_phpcr.tree_block }
-            # { position: left, type: sonata.block.service.text }
-            #- { position: left, type: sonata.block.service.rss }
+            - { position: right, type: sonata.admin.block.admin_list }
         groups:
             # Seven Manager - Content
             seven_manager_content:

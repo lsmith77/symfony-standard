@@ -85,6 +85,17 @@
 
         }
 
+        /**
+         * @param DatagridMapper $datagridMapper
+         */
+        protected function configureDatagridFilters(DatagridMapper $datagridMapper)
+        {
+            $datagridMapper
+                ->add('title', 'doctrine_phpcr_string')
+                ->add('subtitle', 'doctrine_phpcr_string')
+                ->add('content', 'doctrine_phpcr_string')
+                ->add('name',  'doctrine_phpcr_nodename');
+        }
 
         /**
          * {@inheritdoc}
@@ -96,14 +107,6 @@
                     $child->setName($this->generateName());
                 }
             }
-        }
-
-        /**
-         * @return string
-         */
-        private function generateName()
-        {
-            return 'child_' . time() . '_' . rand();
         }
 
         /**
@@ -119,16 +122,13 @@
         }
 
         /**
-         * @param DatagridMapper $datagridMapper
+         * @return string
          */
-        protected function configureDatagridFilters(DatagridMapper $datagridMapper)
+        private function generateName()
         {
-            $datagridMapper
-                ->add('title', 'doctrine_phpcr_string')
-                ->add('subtitle', 'doctrine_phpcr_string')
-                ->add('content', 'doctrine_phpcr_string')
-                ->add('name',  'doctrine_phpcr_nodename');
+            return 'child_' . time() . '_' . rand();
         }
+
 
         /**
          * @return array
