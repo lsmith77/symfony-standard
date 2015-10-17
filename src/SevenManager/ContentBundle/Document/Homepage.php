@@ -32,6 +32,52 @@
          */
         use childMediaBlock;
 
+        /******** REFERENCED BY MODEL ********/
+
+        /**
+         * @PHPCR\ReferenceOne(targetDocument="SevenManager\ContentBundle\Document\Page", strategy="hard")
+         */
+        protected $title1;
+
+        /**
+         * @return mixed
+         */
+        public function getTitle1()
+        {
+            return $this->title1;
+        }
+
+        /**
+         * @param mixed $title1
+         */
+        public function setTitle1($title1)
+        {
+            $this->title1 = $title1;
+        }
+
+        /**
+         * @PHPCR\ReferenceOne(targetDocument="Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\ImagineBlock", strategy="hard")
+         */
+        protected $docImage;
+
+        /**
+         * @return mixed
+         */
+        public function getDocImage()
+        {
+            return $this->docImage;
+        }
+
+        /**
+         * @param mixed $docImage
+         */
+        public function setDocImage($docImage)
+        {
+            $this->docImage = $docImage;
+        }
+
+        /******** REFERENCED BY MODEL ********/
+
         /**
          * @PHPCR\String(type="string", nullable=true, translated=true)
          */

@@ -19,7 +19,7 @@ and licensed under the [MIT License](LICENSE).
 - cd symfony-sonata
 
 ### Option 1
-####  1.1 - Install everything using Makefile (optional)
+####  1.1 - Install everything using Makefile
 ***make** command must be installed*
 - make install-requirements
 - make install-vendors

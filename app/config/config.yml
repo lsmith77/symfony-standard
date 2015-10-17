@@ -243,6 +243,7 @@ sonata_admin:
     templates:
         layout:     admin/custom_layout.html.twig
         user_block: admin/user_block.html.twig
+        show:                       SonataAdminBundle:CRUD:base_show.html.twig
         list:                       SonataAdminBundle:CRUD:list.html.twig
         action:                     SonataAdminBundle:CRUD:action.html.twig
         select:                     SonataAdminBundle:CRUD:list__select.html.twig

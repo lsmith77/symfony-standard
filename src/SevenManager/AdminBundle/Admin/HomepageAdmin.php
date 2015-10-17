@@ -8,6 +8,7 @@
 
     namespace SevenManager\AdminBundle\Admin;
 
+    use Sonata\AdminBundle\Show\ShowMapper;
     use Sonata\DoctrinePHPCRAdminBundle\Admin\Admin;
     use Sonata\AdminBundle\Form\FormMapper;
     use Sonata\AdminBundle\Datagrid\DatagridMapper;
@@ -20,6 +21,32 @@
      */
     class HomepageAdmin extends Admin
     {
+
+        /**
+         * @param ShowMapper $showMapper
+         */
+        protected function configureShowFields(ShowMapper $showMapper)
+        {
+            // here we set the fields of the ShowMapper variable,
+            // $showMapper (but this can be called anything)
+            $showMapper
+
+                // The default option is to just display the
+                // value as text (for boolean this will be 1 or 0)
+                ->add('title')
+                ->add('name')
+                ->add('subtitle')
+                ->add('content')
+
+                // The boolean option is actually very cool
+                // true   shows a check mark and the 'yes' label
+                // false  shows a check mark and the 'no' label
+                ->add('Boolean one', 'boolean')
+                ->add('Boolean two', 'boolean')
+                ->add('Boolean three', 'boolean')
+            ;
+
+        }
 
         /**
          * @param ListMapper $listMapper
@@ -48,6 +75,15 @@
          */
         protected function configureFormFields(FormMapper $formMapper)
         {
+
+            // sonata_type_admin field type, the child Admin’s hooks are not fired
+            // sonata_type_model  will use an instance of ModelType to render that field
+            // sonata_type_model_autocomplet
+            // https://sonata-project.org/bundles/admin/master/doc/reference/form_types.html
+
+            $imageFieldOptions = array();
+            $docImageOptions = array();
+
             // Define Admin fields
             $formMapper
                 ->tab('seven_manager.admin.pages.homepage.title')
@@ -82,6 +118,12 @@
                             'admin_code' => 'cmf_block.imagine.imagine_admin'
                         )
                     )
+                    ->end()
+                ->end()
+                ->tab('References')
+                    ->with('References')
+                    ->add('title1', 'sonata_type_model', $imageFieldOptions)
+                    ->add('docImage', 'sonata_type_model', $docImageOptions)
                     ->end()
                 ->end()
                 ->setHelps( array(
@@ -120,6 +162,16 @@
         }
 
         /**
+         * @param $document
+         *
+         * @return $this
+         */
+        public function postUpdate($document)
+        {
+            return $this;
+        }
+
+        /**
          * @param mixed $document
          * @return $this
          */
@@ -132,13 +184,42 @@
         }
 
         /**
+         * @param $document
+         *
+         * @return $this
+         */
+        public function postPersist($document)
+        {
+            return $this;
+        }
+
+        /**
+         * @param $document
+         *
+         * @return $this
+         */
+        public function preRemove($document)
+        {
+            return $this;
+        }
+
+        /**
+         * @param $document
+         *
+         * @return $this
+         */
+        public function postRemove($document)
+        {
+            return $this;
+        }
+
+        /**
          * @return string
          */
         private function generateName()
         {
             return 'child_' . time() . '_' . rand();
         }
-
 
         /**
          * @return array
@@ -155,9 +236,7 @@
          */
         public function toString($object)
         {
-            return $object instanceof Homepage && $object->getTitle()
-                ? $object->getTitle()
-                : $this->trans('link_add', array(), 'SonataAdminBundle')
-                ;
+            return $object instanceof Homepage && $object->getTitle() ?
+                $object->getTitle() : $this->trans('link_add', array(), 'SonataAdminBundle') ;
         }
     }
