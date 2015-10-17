@@ -1,5 +1,4 @@
 install-requirements:
-	 sudo apt-get install git
 	 sudo apt-get install php5-cli
 	 curl -s http://getcomposer.org/installer | php; sudo mv composer.phar /usr/local/bin/composer; bash
 

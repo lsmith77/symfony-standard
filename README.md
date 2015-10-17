@@ -6,25 +6,38 @@ and licensed under the [MIT License](LICENSE).
 
 ## Quick start
 
-#### Requirements
+### Requirements
 
+* composer
+* Git 1.6+
 * PHP >=5.3.9
+* php5-intl
+* phpunit 3.6+ (optional)
 
-#### Clone this and change to new directory
+### Clone and enter in project's directory
 - git clone https://github.com/luiseverino-com/symfony-sonata.git
 - cd symfony-sonata
 
-#### Install Vendors/Dependencies
+### Option 1
+####  1.1 - Install everything using Makefile (optional)
+***make** command must be installed*
+- make install-requirements
+- make install-vendors
+- make install-structure
+- make set-permissions
+
+### Option 2
+#### 2.1 - Install Vendors/Dependencies
 - curl -s http://getcomposer.org/installer | php
 - php composer.phar install
 
-#### Setup Database and project structure
+#### 2.2 - Setup Database and project structure
 - php app/console doctrine:database:create
 - php app/console doctrine:phpcr:init:dbal
 - php app/console doctrine:phpcr:repository:init
 - php app/console doctrine:phpcr:fixtures:load
 
-#### Set permissions
+####  2.3 - Set permissions
 - chmod -R 777 app web
 
     **or**
@@ -54,13 +67,11 @@ and licensed under the [MIT License](LICENSE).
 
 ## Doing ...
 
-#### Content types
+### Content types
 * Add export content actions
 * Trad sonata_type_collection
-* MakeFile
-* Create Collections of other collections
-* Custom in a given Content Type the desired blocks as child
-* Specify the requirements or assumptions before "Quick Start"
+* Create "Collections of collections"
+* Select Block childs in a content type
 
 ## Contributing
 Thanks to
