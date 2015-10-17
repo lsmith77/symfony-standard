@@ -30,6 +30,16 @@
             $listMapper
                 ->addIdentifier('title', 'text')
                 ->addIdentifier('name', 'text')
+                //->add('isVariation', 'boolean')
+                //->add('enabled', null, array('editable' => true))
+                // You may also specify the actions you want to be displayed in the list
+                ->add('_action', 'actions', array(
+                    'actions' => array(
+                        'show' => array(),
+                        'edit' => array(),
+                        'delete' => array(),
+                    )
+                ))
             ;
         }
 

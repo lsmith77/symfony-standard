@@ -5,12 +5,12 @@
 
 a, a:visited {
     background:inherit;
-    color:#79A325;
+    color:#FF6600;
     text-decoration:none;
 }
 
 a:hover {
-    color:#79A325;
+    color:#FF6600;
 }
 
 .hero-unit {
@@ -44,7 +44,7 @@ hr {
 }
 
 #banner .hero-unit {
-    background-color: #a3ca5f;
+    background-color: #FF6600;
     padding: 2em;
     margin-bottom: .5em;
 }
@@ -69,7 +69,7 @@ hr {
 
 #breadcrumb .breadcrumb, #raw_format .raw_format {
     border: none;
-    background-color: #4b4b4b;
+    background-color: #333333;
     background-image: none;
     box-shadow: none;
     margin-bottom: .5em;
@@ -82,7 +82,7 @@ hr {
 }
 
 #breadcrumb .breadcrumb li a {
-    color: #a3ca5f;
+    color: #FF6600;
 }
 
 #breadcrumb .breadcrumb li:after {
@@ -156,7 +156,7 @@ hr {
 
 #navigation .current > a,
 #menu-service .current > a {
-    color: #4b4b4b;
+    color: #333333;
 }
 
 #content-container {
@@ -187,7 +187,7 @@ hr {
 .articleContainer ul.tags li {
     margin-right: .5em;
     display: inline;
-    background-color: #4B4B4B;
+    background-color: #333333;
     font-size: 1em;
     padding: 2px 4px 4px 4px;
     font-weight: normal;
