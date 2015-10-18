@@ -107,23 +107,28 @@
                 ->end()
                 ->tab('Slideshow')
                     ->with('Slideshow')
-                    ->add(
-                        'children',
-                        'sonata_type_collection',
-                        array(),
-                        array(
-                            'edit' => 'inline',
-                            'inline' => 'table',
-                            'sortable'  => 'position',
-                            'admin_code' => 'cmf_block.imagine.imagine_admin'
+                        ->add(
+                            'children',
+                            'sonata_type_collection',
+                            array(),
+                            array(
+                                'edit' => 'inline',
+                                'inline' => 'table',
+                                'sortable'  => 'position',
+                                'admin_code' => 'cmf_block.imagine.imagine_admin'
+                            )
                         )
-                    )
                     ->end()
                 ->end()
                 ->tab('References')
                     ->with('References')
-                    ->add('title1', 'sonata_type_model', $imageFieldOptions)
-                    ->add('docImage', 'sonata_type_model', $docImageOptions)
+                        ->add('title1', 'sonata_type_model', $imageFieldOptions)
+                        ->add('docImage', 'sonata_type_model', $docImageOptions)
+                    ->end()
+                ->end()
+                ->tab('Auto-complete')
+                    ->with('Auto-complete')
+                        ->add('node', 'sonata_type_model_autocomplete', array('property' => 'title','model_manager' => $this->modelManager,))
                     ->end()
                 ->end()
                 ->setHelps( array(

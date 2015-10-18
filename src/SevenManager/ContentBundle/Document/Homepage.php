@@ -60,6 +60,28 @@
          */
         protected $docImage;
 
+
+        /**
+         * @PHPCR\ReferenceOne(targetDocument="SevenManager\AdminBundle\Admin\NodeAdmin", strategy="hard")
+         */
+        protected $node;
+
+        /**
+         * @return mixed
+         */
+        public function getNode()
+        {
+            return $this->node;
+        }
+
+        /**
+         * @param mixed $node
+         */
+        public function setNode($node)
+        {
+            $this->node = $node;
+        }
+
         /**
          * @return mixed
          */
