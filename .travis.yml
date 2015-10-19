@@ -22,7 +22,3 @@ before_script:
   - app/console doctrine:phpcr:repository:init -e=test
 
 script: phpunit -c app
-
-notifications:
-  irc: "irc.freenode.org#symfony-cmf"
-  email: "symfony-cmf-devs@googlegroups.com"
